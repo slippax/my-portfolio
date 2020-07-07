@@ -1,0 +1,57 @@
+.headertext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -90px;
+    margin-left: -50px;
+   
+}
+
+.greeting {
+  font-size: 10px;
+  font-weight: 300;
+  padding-right: 10px;
+  margin: 0;
+  padding-bottom: 0px;
+  padding-top: 5px;
+  animation: fadein 2s;
+}
+
+.name {
+  font-size: 17px;
+  font-weight: 300;
+  margin: 0;
+  padding-bottom: 3px;
+  animation: fadein 3s;
+}
+
+.tagline {
+  font-size: 13px;
+  font-weight: 300;
+  margin: 0;
+  
+}
+
+.button {
+  padding-left: 50px;
+  padding-top: 10px;
+  animation: fadein 10s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
