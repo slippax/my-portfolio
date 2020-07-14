@@ -19,7 +19,7 @@ ul {
 @media (min-width: 320px) and (max-width: 480px) {
   .Container {
     font-size: 19px;
-    padding-top: 50%;
+    padding-top: 20%;
     padding-bottom: 100%;
   }
   ul {
