@@ -28,7 +28,7 @@ const Portfolio = () => {
         }}
       ></section>
       <ReactScrollWheelHandler
-        upHandler={() => navigate("/", { replace: true })}
+        upHandler={() => navigate("/My-Portfolio/", { replace: true })}
         downHandler={() =>
           scrollToComponent(projects, {
             offset: 0,

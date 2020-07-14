@@ -18,7 +18,7 @@ function SplashPage() {
       <ParticleComponent />
       <Tada left>
         <ReactScrollWheelHandler
-          downHandler={() => navigate("/portfolio", { replace: true })}
+          downHandler={() => navigate("/My-Portfolio/portfolio", { replace: true })}
         >
           <p className={classes.greeting}>Hi, my name is</p>
           <p className={classes.name}>Stephen Lippa</p>
@@ -31,7 +31,7 @@ function SplashPage() {
         <span className={classes.tagline}>build things for the web.</span>
       </Typist>
       <div className={classes.button}>
-        <Link to="/portfolio">
+        <Link to="/My-Portfolio/portfolio">
           <AwesomeButton type="primary" size="small">
             <ArrowDropDownOutlinedIcon fontSize="large" />
           </AwesomeButton>
