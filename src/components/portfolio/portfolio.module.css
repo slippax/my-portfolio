@@ -1,3 +1,23 @@
-.text {
-    text-align: center;
+.menu {
+    position: fixed; /* Set the navbar to fixed position */
+  top: 10%; 
+  left: 50%;
+  z-index: 100;
+}
+
+.button {
+    position: fixed;
+    left: 50%;
+    z-index: 100;
+    
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .button {
+    position: fixed;
+    left: 40%;
+    z-index: 100;
+    
+}
+
 }

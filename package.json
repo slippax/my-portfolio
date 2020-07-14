@@ -10,13 +10,18 @@
     "@testing-library/user-event": "^7.2.1",
     "framer-motion": "^1.11.1",
     "history": "^5.0.0",
+    "material-ui-popup-state": "^1.6.1",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-awesome-button": "^6.5.1",
     "react-dom": "^16.13.1",
+    "react-particles-js": "^3.2.1",
+    "react-reveal": "^1.2.2",
     "react-router": "^6.0.0-beta.0",
     "react-router-dom": "^6.0.0-beta.0",
     "react-scripts": "3.4.1",
+    "react-scroll-to-component": "^1.0.2",
+    "react-scroll-wheel-handler": "^1.1.5",
     "react-typist": "^2.0.5"
   },
   "scripts": {
