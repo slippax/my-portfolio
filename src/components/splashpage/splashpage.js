@@ -63,7 +63,7 @@ function SplashPage() {
               borderWidth="3"
               borderStyle="solid"
               icon="linkedin"
-              url="https://ca.linkedin.com/in/stephen-lippa"
+              url="https://ca.linkedin.com/in/stephen-lippa-465203198"
               iconColor="rgba(255,255,255,1)"
               backgroundColor="rgba(77,100,100,0.66)"
               iconSize="4"
