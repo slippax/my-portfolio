@@ -177,13 +177,16 @@
   font-size: 27px;
   font-weight: 300;
   margin: 0;
-  
 }
 
 .button {
   padding-left: 110px;
-  padding-top: 10px;
+  padding-top: 30px;
   animation: fadein 2s;
+}
+
+.icontainer {
+  padding-left: 76px;
 }
 
   

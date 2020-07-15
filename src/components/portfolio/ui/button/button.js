@@ -10,7 +10,7 @@ const button = () => {
   return (
     <div className={classes.button}>
       <Wobble left>
-        <Link to="/my-portfolio">
+        <Link to="/">
           <AwesomeButton type="primary" size="small">
             <ArrowDropUpOutlinedIcon fontSize="small" />
           </AwesomeButton>
