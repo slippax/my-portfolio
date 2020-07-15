@@ -18,7 +18,7 @@ function SplashPage() {
   return (
     <ReactScrollWheelHandler
     downHandler={() =>
-      navigate("/my-portfolio/portfolio", { replace: true })
+      navigate("/portfolio", { replace: true })
     }
   >
     <div className={classes.headertext}>
@@ -33,7 +33,7 @@ function SplashPage() {
         <span className={classes.tagline}>build things for the web.</span>
       </Typist>
       <div className={classes.button}>
-        <Link to="/my-portfolio/portfolio">
+        <Link to="/portfolio">
           <AwesomeButton type="primary" size="small">
             <ArrowDropDownOutlinedIcon fontSize="large" />
           </AwesomeButton>
