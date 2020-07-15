@@ -1,5 +1,7 @@
 body {
   background-color: gainsboro;
+  -webkit-overflow-scrolling: touch;
+  overflow: hidden;
 }
 
 Menu {
