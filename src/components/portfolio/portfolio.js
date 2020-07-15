@@ -24,7 +24,7 @@ const Portfolio = () => {
 
   return (
     <div>
-      <PageProgress color={'gray'} height={6}/>
+      <PageProgress color={'gray'} height={5}/>
       <section
         ref={(section) => {
           aboutMe = section;

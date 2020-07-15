@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import ArrowDropUpOutlinedIcon from "@material-ui/icons/ArrowDropUpOutlined";
+import ArrowDropUpOutlinedIcon from "@material-ui/icons/Home";
 import { AwesomeButton } from "react-awesome-button";
 import Wobble from "react-reveal/Fade";
 import classes from "./button.module.css";

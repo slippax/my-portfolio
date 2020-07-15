@@ -35,8 +35,8 @@ function SplashPage() {
       </Typist>
       <div className={classes.button}>
         <Link to="/portfolio">
-          <AwesomeButton type="primary" size="small">
-            <ArrowDropDownOutlinedIcon fontSize="large" />
+          <AwesomeButton type="primary" size="medium">
+            <ArrowDropDownOutlinedIcon fontSize="medium" />
           </AwesomeButton>
         </Link>
       </div>
