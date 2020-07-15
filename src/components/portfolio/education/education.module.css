@@ -2,6 +2,10 @@
   padding-bottom: 100%;
   padding-top: 30%;
 }
+.education {
+  border-bottom: 1px solid gray;
+  color: darkslategray;
+}
 
 @media (min-width: 320px) and (max-width: 480px) {
   .Container {

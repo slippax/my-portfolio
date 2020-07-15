@@ -10,7 +10,8 @@ import ReactScrollWheelHandler from "react-scroll-wheel-handler";
 import scrollToComponent from "react-scroll-to-component";
 import { useNavigate } from "react-router-dom";
 import classes from "./portfolio.module.css";
-
+import { SocialMediaIconsReact } from "social-media-icons-react";
+import RubberBand from 'react-reveal/RubberBand';
 const Portfolio = () => {
   let aboutMe = null;
   let projects = null;
@@ -40,7 +41,42 @@ const Portfolio = () => {
         <div className={classes.button}>
           <ButtonComponent />
         </div>
-        <div className={classes.menu}></div>
+        <div className={classes.menu}>
+        <div className={classes.icontainer}>
+      <div className={classes.icongit}>
+        <RubberBand>
+        <SocialMediaIconsReact
+          borderColor="rgba(0,0,0,0.25)"
+          borderWidth="3"
+          borderStyle="solid"
+          icon="github"
+          url="https://github.com/slippax"
+          iconColor="rgba(255,255,255,1)"
+          backgroundColor="rgba(77,100,100,0.66)"
+          iconSize="4"
+          roundness="50%"
+          size="30"
+        />
+        </RubberBand>
+      </div>
+      <div className={classes.iconlinked}>
+        <RubberBand>
+        <SocialMediaIconsReact
+          borderColor="rgba(0,0,0,0.25)"
+          borderWidth="3"
+          borderStyle="solid"
+          icon="linkedin"
+          url="https://ca.linkedin.com/in/stephen-lippa"
+          iconColor="rgba(255,255,255,1)"
+          backgroundColor="rgba(77,100,100,0.66)"
+          iconSize="4"
+          roundness="50%"
+          size="30"
+        />
+        </RubberBand>
+      </div>
+      </div>
+        </div>
 
         <LightSpeed left>
           <AboutMe />

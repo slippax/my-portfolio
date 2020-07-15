@@ -9,20 +9,22 @@ import { Link } from "react-router-dom";
 import ReactScrollWheelHandler from "react-scroll-wheel-handler";
 import Tada from "react-reveal/Fade";
 import ParticleComponent from "../portfolio/ui/particles/particles";
+import { SocialMediaIconsReact } from "social-media-icons-react";
+import RubberBand from "react-reveal/RubberBand";
 
 function SplashPage() {
   let navigate = useNavigate();
 
   return (
+    <ReactScrollWheelHandler
+    downHandler={() =>
+      navigate("/my-portfolio/portfolio", { replace: true })
+    }
+  >
     <div className={classes.headertext}>
-      <ParticleComponent />
       <Tada left>
-        <ReactScrollWheelHandler
-          downHandler={() => navigate("/my-portfolio/portfolio", { replace: true })}
-        >
-          <p className={classes.greeting}>Hi, my name is</p>
-          <p className={classes.name}>Stephen Lippa</p>
-        </ReactScrollWheelHandler>
+        <p className={classes.greeting}>Hi, my name is</p>
+        <p className={classes.name}>Stephen Lippa</p>
       </Tada>
       <Typist>
         <Typist.Delay ms={1000} />
@@ -37,8 +39,43 @@ function SplashPage() {
           </AwesomeButton>
         </Link>
       </div>
+      <div className={classes.icontainer}>
+        <div className={classes.icongit}>
+          <RubberBand>
+            <SocialMediaIconsReact
+              borderColor="rgba(0,0,0,0.25)"
+              borderWidth="3"
+              borderStyle="solid"
+              icon="github"
+              url="https://github.com/slippax"
+              iconColor="rgba(255,255,255,1)"
+              backgroundColor="rgba(77,100,100,0.66)"
+              iconSize="4"
+              roundness="50%"
+              size="60"
+            />
+          </RubberBand>
+        </div>
+        <div className={classes.iconlinked}>
+          <RubberBand>
+            <SocialMediaIconsReact
+              borderColor="rgba(0,0,0,0.25)"
+              borderWidth="3"
+              borderStyle="solid"
+              icon="linkedin"
+              url="https://ca.linkedin.com/in/stephen-lippa"
+              iconColor="rgba(255,255,255,1)"
+              backgroundColor="rgba(77,100,100,0.66)"
+              iconSize="4"
+              roundness="50%"
+              size="60"
+            />
+          </RubberBand>
+        </div>
+      </div>
+      <ParticleComponent />
     </div>
+    </ReactScrollWheelHandler>
   );
 }
-
 export default SplashPage;

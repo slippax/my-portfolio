@@ -5,6 +5,7 @@
 
 .workXP {
     border-bottom: 1px solid gray;
+    color: darkslategray;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {

@@ -23,6 +23,7 @@
   margin: 0;
   padding-bottom: 3px;
   animation: fadein 2s;
+  color: darkslategray;
 }
 
 .tagline {
@@ -38,6 +39,21 @@
   animation: fadein 2s;
 }
 
+.icontainer {
+  padding-top: 50px;
+  display: flex;
+  padding-left: 70px;
+}
+
+.icongit {
+  padding: 5px;
+  z-index: 100;
+}
+
+.iconlinked {
+  padding: 5px;
+  z-index: 100;
+}
 
 @keyframes fadein {
   from {
@@ -64,7 +80,9 @@
 
 @media (min-width: 1281px) {
   
-  
+  .icontainer {
+    padding-left: 90px;
+  }
   
 }
 
@@ -75,7 +93,9 @@
 
 @media (min-width: 1025px) and (max-width: 1280px) {
   
-  
+  .icontainer {
+    padding-left: 90px;
+  }
   
 }
 
@@ -86,7 +106,9 @@
 
 @media (min-width: 768px) and (max-width: 1024px) {
   
-  
+  .icontainer {
+    padding-left: 90px;
+  }
   
 }
 
@@ -96,7 +118,9 @@
 */
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  
+  .icontainer {
+    padding-left: 90px;
+  }
  
   
 }
@@ -108,7 +132,9 @@
 
 @media (min-width: 481px) and (max-width: 767px) {
   
-  
+  .icontainer {
+    padding-left: 90px;
+  }
 }
 
 /* 
@@ -120,11 +146,12 @@
   
   .headertext {
     position: absolute;
-    top: 40%;
+    top: 35%;
     left: 10%;
     width: 90%;
     margin-top: -90px;
     font-size: 30px;
+    z-index: 100;
 }
 
 .greeting {
