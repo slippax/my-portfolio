@@ -11,11 +11,12 @@ import Tada from "react-reveal/Fade";
 import ParticleComponent from "../portfolio/ui/particles/particles";
 import { SocialMediaIconsReact } from "social-media-icons-react";
 import RubberBand from "react-reveal/RubberBand";
-
 function SplashPage() {
   let navigate = useNavigate();
 
   return (
+    <div>
+      
     <ReactScrollWheelHandler
     downHandler={() =>
       navigate("/portfolio", { replace: true })
@@ -76,6 +77,7 @@ function SplashPage() {
       <ParticleComponent />
     </div>
     </ReactScrollWheelHandler>
+    </div>
   );
 }
 export default SplashPage;

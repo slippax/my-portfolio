@@ -12,6 +12,7 @@ import { useNavigate } from "react-router-dom";
 import classes from "./portfolio.module.css";
 import { SocialMediaIconsReact } from "social-media-icons-react";
 import RubberBand from 'react-reveal/RubberBand';
+import PageProgress from 'react-page-progress';
 const Portfolio = () => {
   let aboutMe = null;
   let projects = null;
@@ -23,6 +24,7 @@ const Portfolio = () => {
 
   return (
     <div>
+      <PageProgress color={'gray'} height={6}/>
       <section
         ref={(section) => {
           aboutMe = section;
