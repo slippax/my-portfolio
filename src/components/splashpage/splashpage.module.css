@@ -83,7 +83,14 @@
   .icontainer {
     padding-left: 90px;
   }
-  
+  .headertext {
+    position: absolute;
+    top: 50%;
+    left: 44%;
+    margin-top: -90px;
+    font-size: 30px;
+}
+
 }
 
 /* 

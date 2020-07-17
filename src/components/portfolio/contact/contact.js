@@ -1,7 +1,9 @@
 import React from "react";
 import { Container } from "@material-ui/core";
 import classes from './contact.module.css'
-
+import { AwesomeButton } from "react-awesome-button";
+import "react-awesome-button/dist/themes/theme-c137.css";
+import ArrowDropDownOutlinedIcon from "@material-ui/icons/MailOutlined";
 const contact = () => {
   return (
     <div>
@@ -12,6 +14,15 @@ const contact = () => {
           Whether you have a question or just want to say hi, I'll try my best
           to get back to you!
         </p>
+        <div className={classes.button} >
+          
+              <AwesomeButton type="primary" size="medium" onPress={()=> {
+                window.open('mailto:slippa@me.com');
+              }}>
+                <ArrowDropDownOutlinedIcon fontSize="medium" />
+              </AwesomeButton>
+           
+          </div>
       </Container>
     </div>
   );

@@ -8,6 +8,13 @@
     color: darkslategray;
 }
 
+@media (min-width: 1281px) {
+  .Container {
+    font-size: 19px;
+    padding-top: 10%;
+    padding-bottom: 100%;
+  }
+}
 @media (min-width: 320px) and (max-width: 480px) {
     .Container {
       font-size: 19px;
