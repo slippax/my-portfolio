@@ -16,7 +16,7 @@ function SplashPage() {
   let navigate = useNavigate();
 
   useEffect(() => {
-    setTimeout(window.scrollTo(x,y),100);
+    setTimeout(window.scrollTo(0,0),100);
     console.log('hello');
 });
 
