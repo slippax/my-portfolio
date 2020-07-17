@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { useNavigate } from "react-router-dom";
 import classes from "./splashpage.module.css";
 import Typist from "react-typist";
@@ -14,6 +14,11 @@ import ParticleComponent from '../portfolio/ui/particles/particles';
 
 function SplashPage() {
   let navigate = useNavigate();
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+    console.log('hello');
+});
 
   return (
     <div>
