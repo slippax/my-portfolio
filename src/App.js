@@ -7,10 +7,14 @@ function App() {
   const location = useLocation();
   return (
     <div>
-    <Routes basename={process.env.PUBLIC_URL} location={location} key={location.pathname}>
-      <Route path="/" element={<SplashPage />} />
-      <Route path="/portfolio" element={<Portfolio />} />
-    </Routes>
+      <Routes
+        basename={process.env.PUBLIC_URL}
+        location={location}
+        key={location.pathname}
+      >
+        <Route path="/" element={<SplashPage />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+      </Routes>
     </div>
   );
 }

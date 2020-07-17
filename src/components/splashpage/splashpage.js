@@ -10,14 +10,14 @@ import ReactScrollWheelHandler from "react-scroll-wheel-handler";
 import Tada from "react-reveal/Fade";
 import { SocialMediaIconsReact } from "social-media-icons-react";
 import RubberBand from "react-reveal/RubberBand";
-import ParticleComponent from "../portfolio/ui/particles/particles";
+import ParticleComponent from '../portfolio/ui/particles/particles';
 
 function SplashPage() {
   let navigate = useNavigate();
 
   return (
     <div>
-      <ParticleComponent />
+      <ParticleComponent/>
       <ReactScrollWheelHandler
         downHandler={() => navigate("/portfolio", { replace: true })}
       >
