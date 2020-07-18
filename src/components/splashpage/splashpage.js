@@ -21,8 +21,7 @@ function SplashPage() {
 });
 
   return (
-    <div>
-      <ParticleComponent/>
+    <div className={classes.container}>
       <ReactScrollWheelHandler
         downHandler={() => navigate("/portfolio", { replace: true })}
       >
@@ -80,6 +79,7 @@ function SplashPage() {
           </div>
         </div>
       </ReactScrollWheelHandler>
+    
     </div>
   );
 }

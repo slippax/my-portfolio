@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Particles from "react-particles-js";
+
 
 let params = {
   particles: {
@@ -22,11 +22,7 @@ let params = {
       polygon: {
         nb_sides: 5,
       },
-      image: {
-        src: "img/github.svg",
-        width: 100,
-        height: 100,
-      },
+      
     },
     opacity: {
       value: 0.2,
