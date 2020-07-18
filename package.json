@@ -23,6 +23,7 @@
     "react-scripts": "3.4.1",
     "react-scroll-to-component": "^1.0.2",
     "react-scroll-wheel-handler": "^1.1.5",
+    "react-tsparticles": "^1.17.1",
     "react-typist": "^2.0.5",
     "social-media-icons-react": "^1.0.10"
   },

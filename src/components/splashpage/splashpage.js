@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import classes from "./splashpage.module.css";
 import Typist from "react-typist";
@@ -10,15 +10,12 @@ import ReactScrollWheelHandler from "react-scroll-wheel-handler";
 import Tada from "react-reveal/Fade";
 import { SocialMediaIconsReact } from "social-media-icons-react";
 import RubberBand from "react-reveal/RubberBand";
-import ParticleComponent from '../portfolio/ui/particles/particles';
+import ParticleComponent from "../portfolio/ui/particles/particles";
 
 function SplashPage() {
   let navigate = useNavigate();
 
-  useEffect(() => {
-    
-    
-});
+  useEffect(() => {});
 
   return (
     <div className={classes.container}>
@@ -79,7 +76,9 @@ function SplashPage() {
           </div>
         </div>
       </ReactScrollWheelHandler>
-    
+      <div>
+      <ParticleComponent />
+      </div>
     </div>
   );
 }
