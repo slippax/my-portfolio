@@ -25,6 +25,13 @@
     padding-bottom: 60%;
   }
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .Container {
+    padding-top: 10%;
+    padding-bottom: 50%;
+  }
+}
 @media (min-width: 320px) and (max-width: 480px) {
   .Container {
     font-size: 19px;
