@@ -77,7 +77,7 @@ function SplashPage() {
         </div>
       </ReactScrollWheelHandler>
       <div>
-      <ParticleComponent />
+        <ParticleComponent />
       </div>
     </div>
   );
