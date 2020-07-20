@@ -1,7 +1,6 @@
 import React from "react";
 import AboutMe from "./aboutme/aboutme";
 import WorkXp from "./workxp/workxp";
-import Education from "./education/education";
 import Projects from "./projects/projects";
 import Contact from "./contact/contact";
 import LightSpeed from "react-reveal/Fade";
@@ -17,7 +16,6 @@ const Portfolio = () => {
   let aboutMe = null;
   let projects = null;
   let workXp = null;
-  let education = null;
   let contact = null;
   //may use this in the future.
   let navigate = useNavigate();
@@ -117,7 +115,7 @@ const Portfolio = () => {
           })
         }
         downHandler={() =>
-          scrollToComponent(education, {
+          scrollToComponent(contact, {
             offset: 0,
             align: "top",
           })
@@ -129,30 +127,12 @@ const Portfolio = () => {
       </ReactScrollWheelHandler>
       <section
         ref={(section) => {
-          education = section;
-        }}
-      ></section>
-      <ReactScrollWheelHandler
-        upHandler={() => scrollToComponent(workXp, { offset: 0, align: "top" })}
-        downHandler={() =>
-          scrollToComponent(contact, {
-            offset: 0,
-            align: "top",
-          })
-        }
-      >
-        <LightSpeed left>
-          <Education />
-        </LightSpeed>
-      </ReactScrollWheelHandler>
-      <section
-        ref={(section) => {
           contact = section;
         }}
       ></section>
       <ReactScrollWheelHandler
         upHandler={() =>
-          scrollToComponent(education, {
+          scrollToComponent(workXp, {
             offset: 0,
             align: "top",
           })

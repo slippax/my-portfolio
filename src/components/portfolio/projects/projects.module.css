@@ -10,9 +10,9 @@
 
 @media (min-width: 1281px) {
   .Container {
-    font-size: 19px;
+    font-size: 25px;
     padding-top: 10%;
-    padding-bottom: 100%;
+    padding-bottom: 40%;
   }
 }
 
@@ -22,6 +22,11 @@
   */
 
 @media (min-width: 1025px) and (max-width: 1280px) {
+  .Container {
+    font-size: 23px;
+    padding-top: 10%;
+    padding-bottom: 50%;
+  }
 }
 
 /* 
