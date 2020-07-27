@@ -12,30 +12,56 @@ import classes from "./portfolio.module.css";
 import { SocialMediaIconsReact } from "social-media-icons-react";
 import RubberBand from "react-reveal/RubberBand";
 import PageProgress from "react-page-progress";
+import Menu from "../portfolio/ui/menu/sidebar";
 const Portfolio = () => {
   let pages = {
     aboutMe: null,
     projects: null,
     workXp: null,
     contact: null,
-    pageNumber: 0,
   };
+  let navigate = useNavigate();
 
   const [pause, setPause] = useState(false);
+  const [menuToggle, setMenuToggle] = useState(false);
 
   useEffect(() => {
+    pauseHandler();
+  }, []);
+
+  useEffect(() => {
+    setMenuToggle(false);
+  }, [menuToggle]);
+
+  const pauseHandler = () => {
     setPause(true);
     setTimeout(() => {
       setPause(false);
       console.log("timer released");
-    }, 2000);
-  }, []);
+    }, 1500);
+  };
 
-  //may use this in the future.
-  let navigate = useNavigate();
+  const scrollToComponentHandler = (page) => {
+    scrollToComponent(page, {
+      offset: 0,
+      align: "top",
+      duration: 1500,
+    });
+    pauseHandler();
+    if (!menuToggle) {
+      setMenuToggle(true);
+    }
+  };
 
   return (
     <div>
+      <Menu
+        open={menuToggle}
+        aboutClick={() => scrollToComponentHandler(pages.aboutMe)}
+        projectClick={() => scrollToComponentHandler(pages.projects)}
+        workClick={() => scrollToComponentHandler(pages.workXp)}
+        contactClick={() => scrollToComponentHandler(pages.contact)}
+      />
       <PageProgress color={"gray"} height={5} />
       <section
         ref={(section) => {
@@ -45,13 +71,7 @@ const Portfolio = () => {
       <ReactScrollWheelHandler
         pauseListeners={pause}
         upHandler={() => navigate("/", { replace: true })}
-        downHandler={() =>
-          scrollToComponent(pages.projects, {
-            offset: 0,
-            align: "top",
-            duration: 1500,
-          })
-        }
+        downHandler={() => scrollToComponentHandler(pages.projects)}
       >
         <div className={classes.button}>
           <ButtonComponent />
@@ -70,7 +90,7 @@ const Portfolio = () => {
                   backgroundColor="rgba(77,100,100,0.66)"
                   iconSize="4"
                   roundness="50%"
-                  size="30"
+                  size="50"
                 />
               </RubberBand>
             </div>
@@ -86,7 +106,7 @@ const Portfolio = () => {
                   backgroundColor="rgba(77,100,100,0.66)"
                   iconSize="4"
                   roundness="50%"
-                  size="30"
+                  size="50"
                 />
               </RubberBand>
             </div>
@@ -102,39 +122,24 @@ const Portfolio = () => {
           pages.projects = section;
         }}
       ></section>
-      <ReactScrollWheelHandler pauseListeners={pause}
-        upHandler={() =>
-          scrollToComponent(pages.aboutMe, {
-            offset: 0,
-            align: "top",
-          })
-        }
-        downHandler={() =>
-          scrollToComponent(pages.workXp, { offset: 0, align: "top" })
-        }
+      <ReactScrollWheelHandler
+        pauseListeners={pause}
+        upHandler={() => scrollToComponentHandler(pages.aboutMe)}
+        downHandler={() => scrollToComponentHandler(pages.workXp)}
       >
         <LightSpeed left>
           <Projects />
         </LightSpeed>
-      </ReactScrollWheelHandler> 
+      </ReactScrollWheelHandler>
       <section
         ref={(section) => {
           pages.workXp = section;
         }}
       ></section>
-      <ReactScrollWheelHandler pauseListeners={pause}
-        upHandler={() =>
-          scrollToComponent(pages.projects, {
-            offset: 0,
-            align: "top",
-          })
-        }
-        downHandler={() =>
-          scrollToComponent(pages.contact, {
-            offset: 0,
-            align: "top",
-          })
-        }
+      <ReactScrollWheelHandler
+        pauseListeners={pause}
+        upHandler={() => scrollToComponentHandler(pages.projects)}
+        downHandler={() => scrollToComponentHandler(pages.contact)}
       >
         <LightSpeed left>
           <WorkXp />
@@ -145,13 +150,9 @@ const Portfolio = () => {
           pages.contact = section;
         }}
       ></section>
-      <ReactScrollWheelHandler pauseListeners={pause}
-        upHandler={() =>
-          scrollToComponent(pages.workXp, {
-            offset: 0,
-            align: "top",
-          })
-        }
+      <ReactScrollWheelHandler
+        pauseListeners={pause}
+        upHandler={() => scrollToComponentHandler(pages.workXp)}
       >
         <LightSpeed left>
           <Contact />

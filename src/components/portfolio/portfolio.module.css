@@ -1,15 +1,15 @@
 .menu {
     position: fixed; /* Set the navbar to fixed position */
-  top: 2%; 
-  left:2%;
+  top: 80%; 
+  left:40%;
   z-index: 100;
 }
 
 .button {
     position: fixed;
-    left: 50%;
+    right: 4%;
     z-index: 100;
-    
+    top: 1.1%;
 }
 
 .icontainer {
@@ -33,7 +33,12 @@
     left: 80%;
     top: 1.2%;
     z-index: 100;
-    
+}
+.menu {
+  position: fixed; /* Set the navbar to fixed position */
+top: 85%; 
+left:34%;
+z-index: 100;
 }
 
 }
