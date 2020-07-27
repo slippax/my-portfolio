@@ -45,7 +45,7 @@ const Portfolio = () => {
     scrollToComponent(page, {
       offset: 0,
       align: "top",
-      duration: 500,
+      duration: 800,
     });
     pauseHandler();
     if (!menuToggle) {
