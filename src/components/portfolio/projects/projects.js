@@ -8,8 +8,9 @@ import Zoom from "react-reveal/Zoom";
 const projects = () => {
   return (
     <div className={classes.Container}>
+      <Zoom cascade>
       <Container maxWidth="sm">
-        <Zoom cascade>
+        
           <h3 className={classes.projects}>Projects</h3>
           <Card
             name={"Ez-Sens"}
@@ -19,8 +20,9 @@ const projects = () => {
             image={ezsens}
             project={"https://slippax.github.io/Ez-Sens/"}
           />
-        </Zoom>
+        
       </Container>
+      </Zoom>
     </div>
   );
 };
