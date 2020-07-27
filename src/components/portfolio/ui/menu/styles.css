@@ -1,8 +1,8 @@
 #page-wrap {
-    text-align: center;
-    overflow: auto;
-    top: 45%;
-    position: relative;
+  text-align: center;
+  overflow: auto;
+  top: 45%;
+  position: relative;
 }
 
 /* Individual item */
@@ -28,7 +28,7 @@
   position: fixed;
   width: 36px;
   height: 30px;
-  left: 36px;
+  left: 21px;
   top: 25px;
 }
 

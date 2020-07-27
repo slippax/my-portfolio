@@ -62,7 +62,7 @@
 @media (min-width: 320px) and (max-width: 480px) {
   .Container {
     font-size: 19px;
-    padding-top: 20%;
+    padding-top: 15%;
     padding-bottom: 100%;
   }
 }

@@ -38,7 +38,7 @@ const Portfolio = () => {
     setTimeout(() => {
       setPause(false);
       console.log("timer released");
-    }, 1500);
+    }, 500);
   };
 
   const scrollToComponentHandler = (page) => {
