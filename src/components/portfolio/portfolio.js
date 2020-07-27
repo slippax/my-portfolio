@@ -10,7 +10,7 @@ import scrollToComponent from "react-scroll-to-component";
 import { useNavigate } from "react-router-dom";
 import classes from "./portfolio.module.css";
 import { SocialMediaIconsReact } from "social-media-icons-react";
-import RubberBand from "react-reveal/RubberBand";
+import RubberBand from "react-reveal/Pulse";
 import PageProgress from "react-page-progress";
 import Menu from "../portfolio/ui/menu/sidebar";
 const Portfolio = () => {
@@ -38,14 +38,14 @@ const Portfolio = () => {
     setTimeout(() => {
       setPause(false);
       console.log("timer released");
-    }, 500);
+    }, 800);
   };
 
   const scrollToComponentHandler = (page) => {
     scrollToComponent(page, {
       offset: 0,
       align: "top",
-      duration: 1500,
+      duration: 1000,
     });
     pauseHandler();
     if (!menuToggle) {
@@ -113,7 +113,7 @@ const Portfolio = () => {
           </div>
         </div>
 
-        <LightSpeed left>
+        <LightSpeed top>
           <AboutMe />
         </LightSpeed>
       </ReactScrollWheelHandler>
@@ -127,7 +127,7 @@ const Portfolio = () => {
         upHandler={() => scrollToComponentHandler(pages.aboutMe)}
         downHandler={() => scrollToComponentHandler(pages.workXp)}
       >
-        <LightSpeed left>
+        <LightSpeed top>
           <Projects />
         </LightSpeed>
       </ReactScrollWheelHandler>
@@ -141,7 +141,7 @@ const Portfolio = () => {
         upHandler={() => scrollToComponentHandler(pages.projects)}
         downHandler={() => scrollToComponentHandler(pages.contact)}
       >
-        <LightSpeed left>
+        <LightSpeed top>
           <WorkXp />
         </LightSpeed>
       </ReactScrollWheelHandler>
@@ -154,7 +154,7 @@ const Portfolio = () => {
         pauseListeners={pause}
         upHandler={() => scrollToComponentHandler(pages.workXp)}
       >
-        <LightSpeed left>
+        <LightSpeed top>
           <Contact />
         </LightSpeed>
       </ReactScrollWheelHandler>

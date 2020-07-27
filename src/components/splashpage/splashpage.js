@@ -7,9 +7,9 @@ import "react-awesome-button/dist/themes/theme-c137.css";
 import ArrowDropDownOutlinedIcon from "@material-ui/icons/ArrowDropDownOutlined";
 import { Link } from "react-router-dom";
 import ReactScrollWheelHandler from "react-scroll-wheel-handler";
-import Tada from "react-reveal/Fade";
+import Tada from "react-reveal/Zoom";
 import { SocialMediaIconsReact } from "social-media-icons-react";
-import RubberBand from "react-reveal/RubberBand";
+import RubberBand from "react-reveal/Pulse";
 import ParticleComponent from "../portfolio/ui/particles/particles";
 
 function SplashPage() {

@@ -11,8 +11,8 @@ const button = () => {
     <div className={classes.button}>
       <Wobble left>
         <Link to="/">
-          <AwesomeButton type="primary" size="small">
-            <ArrowDropUpOutlinedIcon fontSize="small" />
+          <AwesomeButton type="primary" size="medium">
+            <ArrowDropUpOutlinedIcon fontSize="medium" />
           </AwesomeButton>
         </Link>
       </Wobble>
