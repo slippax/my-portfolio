@@ -3,14 +3,14 @@ import AboutMe from "./aboutme/aboutme";
 import WorkXp from "./workxp/workxp";
 import Projects from "./projects/projects";
 import Contact from "./contact/contact";
-import LightSpeed from "react-reveal/Fade";
+import LightSpeed from "react-reveal/Zoom";
 import ButtonComponent from "./ui/button/button";
 import ReactScrollWheelHandler from "react-scroll-wheel-handler";
 import scrollToComponent from "react-scroll-to-component";
 import { useNavigate } from "react-router-dom";
 import classes from "./portfolio.module.css";
 import { SocialMediaIconsReact } from "social-media-icons-react";
-import RubberBand from "react-reveal/Pulse";
+import RubberBand from "react-reveal/Flip";
 import PageProgress from "react-page-progress";
 import Menu from "../portfolio/ui/menu/sidebar";
 const Portfolio = () => {
@@ -45,7 +45,7 @@ const Portfolio = () => {
     scrollToComponent(page, {
       offset: 0,
       align: "top",
-      duration: 1000,
+      duration: 500,
     });
     pauseHandler();
     if (!menuToggle) {
@@ -74,12 +74,14 @@ const Portfolio = () => {
         downHandler={() => scrollToComponentHandler(pages.projects)}
       >
         <div className={classes.button}>
-          <ButtonComponent />
+          <RubberBand bottom>
+            <ButtonComponent />
+          </RubberBand>
         </div>
         <div className={classes.menu}>
           <div className={classes.icontainer}>
             <div className={classes.icongit}>
-              <RubberBand>
+              <RubberBand bottom>
                 <SocialMediaIconsReact
                   borderColor="rgba(0,0,0,0.25)"
                   borderWidth="3"
@@ -95,7 +97,7 @@ const Portfolio = () => {
               </RubberBand>
             </div>
             <div className={classes.iconlinked}>
-              <RubberBand>
+              <RubberBand bottom>
                 <SocialMediaIconsReact
                   borderColor="rgba(0,0,0,0.25)"
                   borderWidth="3"
@@ -113,7 +115,7 @@ const Portfolio = () => {
           </div>
         </div>
 
-        <LightSpeed top>
+        <LightSpeed>
           <AboutMe />
         </LightSpeed>
       </ReactScrollWheelHandler>
@@ -127,7 +129,7 @@ const Portfolio = () => {
         upHandler={() => scrollToComponentHandler(pages.aboutMe)}
         downHandler={() => scrollToComponentHandler(pages.workXp)}
       >
-        <LightSpeed top>
+        <LightSpeed>
           <Projects />
         </LightSpeed>
       </ReactScrollWheelHandler>
@@ -141,7 +143,7 @@ const Portfolio = () => {
         upHandler={() => scrollToComponentHandler(pages.projects)}
         downHandler={() => scrollToComponentHandler(pages.contact)}
       >
-        <LightSpeed top>
+        <LightSpeed>
           <WorkXp />
         </LightSpeed>
       </ReactScrollWheelHandler>
@@ -154,7 +156,7 @@ const Portfolio = () => {
         pauseListeners={pause}
         upHandler={() => scrollToComponentHandler(pages.workXp)}
       >
-        <LightSpeed top>
+        <LightSpeed>
           <Contact />
         </LightSpeed>
       </ReactScrollWheelHandler>

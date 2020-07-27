@@ -7,9 +7,9 @@ import "react-awesome-button/dist/themes/theme-c137.css";
 import ArrowDropDownOutlinedIcon from "@material-ui/icons/ArrowDropDownOutlined";
 import { Link } from "react-router-dom";
 import ReactScrollWheelHandler from "react-scroll-wheel-handler";
-import Tada from "react-reveal/Zoom";
+import Tada from "react-reveal/Flip";
 import { SocialMediaIconsReact } from "social-media-icons-react";
-import RubberBand from "react-reveal/Pulse";
+import RubberBand from "react-reveal/Flip";
 import ParticleComponent from "../portfolio/ui/particles/particles";
 
 function SplashPage() {
@@ -21,7 +21,7 @@ function SplashPage() {
         downHandler={() => navigate("/portfolio", { replace: true })}
       >
         <div className={classes.headertext}>
-          <Tada left>
+          <Tada top>
             <p className={classes.greeting}>Hi, my name is</p>
             <p className={classes.name}>Stephen Lippa</p>
           </Tada>
@@ -40,7 +40,7 @@ function SplashPage() {
           </div>
           <div className={classes.icontainer}>
             <div className={classes.icongit}>
-              <RubberBand>
+              <RubberBand bottom>
                 <SocialMediaIconsReact
                   borderColor="rgba(0,0,0,0.25)"
                   borderWidth="3"
@@ -56,7 +56,7 @@ function SplashPage() {
               </RubberBand>
             </div>
             <div className={classes.iconlinked}>
-              <RubberBand>
+              <RubberBand bottom>
                 <SocialMediaIconsReact
                   borderColor="rgba(0,0,0,0.25)"
                   borderWidth="3"
