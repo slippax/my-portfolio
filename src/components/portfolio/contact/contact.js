@@ -4,10 +4,12 @@ import classes from './contact.module.css'
 import { AwesomeButton } from "react-awesome-button";
 import "react-awesome-button/dist/themes/theme-c137.css";
 import ArrowDropDownOutlinedIcon from "@material-ui/icons/MailOutlined";
+import Zoom from "react-reveal/Zoom";
 const contact = () => {
   return (
     <div>
       <Container maxWidth="sm" className={classes.Container}>
+      <Zoom cascade>
         <h3 className={classes.contact}>Get In Touch</h3>
         <p>
           I'm currently looking for new opportunities, my inbox is always open.
@@ -23,6 +25,7 @@ const contact = () => {
               </AwesomeButton>
            
           </div>
+          </Zoom>
       </Container>
     </div>
   );

@@ -3,7 +3,6 @@ import AboutMe from "./aboutme/aboutme";
 import WorkXp from "./workxp/workxp";
 import Projects from "./projects/projects";
 import Contact from "./contact/contact";
-import LightSpeed from "react-reveal/Zoom";
 import ButtonComponent from "./ui/button/button";
 import ReactScrollWheelHandler from "react-scroll-wheel-handler";
 import scrollToComponent from "react-scroll-to-component";
@@ -45,7 +44,7 @@ const Portfolio = () => {
     scrollToComponent(page, {
       offset: 0,
       align: "top",
-      duration: 800,
+      duration: 700,
     });
     pauseHandler();
     if (!menuToggle) {
@@ -114,10 +113,7 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
-
-        <LightSpeed>
-          <AboutMe />
-        </LightSpeed>
+        <AboutMe />
       </ReactScrollWheelHandler>
       <section
         ref={(section) => {
@@ -129,9 +125,7 @@ const Portfolio = () => {
         upHandler={() => scrollToComponentHandler(pages.aboutMe)}
         downHandler={() => scrollToComponentHandler(pages.workXp)}
       >
-        <LightSpeed>
-          <Projects />
-        </LightSpeed>
+        <Projects />
       </ReactScrollWheelHandler>
       <section
         ref={(section) => {
@@ -143,9 +137,7 @@ const Portfolio = () => {
         upHandler={() => scrollToComponentHandler(pages.projects)}
         downHandler={() => scrollToComponentHandler(pages.contact)}
       >
-        <LightSpeed>
-          <WorkXp />
-        </LightSpeed>
+        <WorkXp />
       </ReactScrollWheelHandler>
       <section
         ref={(section) => {
@@ -156,9 +148,7 @@ const Portfolio = () => {
         pauseListeners={pause}
         upHandler={() => scrollToComponentHandler(pages.workXp)}
       >
-        <LightSpeed>
-          <Contact />
-        </LightSpeed>
+        <Contact />
       </ReactScrollWheelHandler>
     </div>
   );

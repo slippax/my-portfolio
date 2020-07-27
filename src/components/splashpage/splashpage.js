@@ -7,7 +7,7 @@ import "react-awesome-button/dist/themes/theme-c137.css";
 import ArrowDropDownOutlinedIcon from "@material-ui/icons/ArrowDropDownOutlined";
 import { Link } from "react-router-dom";
 import ReactScrollWheelHandler from "react-scroll-wheel-handler";
-import Tada from "react-reveal/Flip";
+import Tada from "react-reveal/Zoom";
 import { SocialMediaIconsReact } from "social-media-icons-react";
 import RubberBand from "react-reveal/Flip";
 import ParticleComponent from "../portfolio/ui/particles/particles";
@@ -21,12 +21,12 @@ function SplashPage() {
         downHandler={() => navigate("/portfolio", { replace: true })}
       >
         <div className={classes.headertext}>
-          <Tada top>
+          <Tada top cascade>
             <p className={classes.greeting}>Hi, my name is</p>
             <p className={classes.name}>Stephen Lippa</p>
           </Tada>
           <Typist>
-            <Typist.Delay ms={1000} />
+            <Typist.Delay ms={1500} />
             <span className={classes.tagline}>I am a front end developer.</span>
             <Typist.Backspace count={25} delay={200} />
             <span className={classes.tagline}>build things for the web.</span>
