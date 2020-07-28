@@ -8,8 +8,8 @@ import Zoom from "react-reveal/Zoom";
 const contact = () => {
   return (
     <div>
-      <Zoom cascade>
-        <Container maxWidth="sm" className={classes.Container}>
+      <Container maxWidth="sm" className={classes.Container}>
+        <Zoom>
           <h3 className={classes.contact}>Get In Touch</h3>
           <p>
             I'm currently looking for new opportunities, my inbox is always
@@ -27,8 +27,8 @@ const contact = () => {
               <ArrowDropDownOutlinedIcon fontSize="medium" />
             </AwesomeButton>
           </div>
-        </Container>
-      </Zoom>
+        </Zoom>
+      </Container>
     </div>
   );
 };

@@ -1,39 +1,47 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import Card from "@material-ui/core/Card";
-import CardActionArea from "@material-ui/core/CardActionArea";
-import CardContent from "@material-ui/core/CardContent";
-import CardMedia from "@material-ui/core/CardMedia";
-import Typography from "@material-ui/core/Typography";
+import ReactCardCarousel from "react-card-carousel";
 
 const card = (props) => {
   const styles = makeStyles({
     root: {
-      maxWidth: 345,
+      position: "relative",
+      height: "60vh",
+      width: "100%",
+      display: "flex",
+      flex: 1,
+      justifyContent: "center",
+      alignItems: "middle",
     },
     media: {
-      height: 300,
+      height: "300px",
+      width: "220px",
+      paddingTop: "20px",
+      textAlign: "center",
+      background: "#7A8E8E",
+      color: "#FFF",
+      fontFamily: "sans-serif",
+      fontSize: "12px",
+      textTransform: "uppercase",
+      borderRadius: "10px",
+      boxSizing: "border-box",
     },
   });
   const classes = styles();
   return (
-    <Card className={classes.root} onClick={() =>  props.project }>
-      <CardActionArea>
-        <CardMedia
-          className={classes.media}
-          image={props.image}
-          title="Project Media"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-            {props.name}
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            {props.text}
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-    </Card>
+    <div className={classes.root}>
+      <ReactCardCarousel autoplay={true} autoplay_speed={3000}>
+        <div className={classes.media} onClick={()=>window.open('https://slippax.github.io/Ez-Sens/')}>
+          <p>Ez Sens</p>
+          <img src={props.ezsensimage} alt="project"></img>
+        </div>
+        <div className={classes.media} onClick={()=>window.open('https://github.com/slippax/weather-grabbr')}>
+          <p>Weather Grabbr</p>
+          <img src={props.weatherimage} alt="weather"></img>
+        </div>
+        <div className={classes.media}>Habit Tracker</div>
+      </ReactCardCarousel>
+    </div>
   );
 };
 

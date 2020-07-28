@@ -11,7 +11,7 @@
 @media (min-width: 1281px) {
   .Container {
     font-size: 25px;
-    padding-top: 10%;
+    padding-top: 5%;
     padding-bottom: 40%;
   }
 }
@@ -19,7 +19,7 @@
 @media (min-width: 1025px) and (max-width: 1280px) {
   .Container {
     font-size: 23px;
-    padding-top: 10%;
+    padding-top: 7%;
     padding-bottom: 50%;
   }
 }
@@ -27,7 +27,7 @@
 @media (min-width: 768px) and (max-width: 1024px) {
   
   .Container {
- 
+    font-size: 20px;
     padding-top: 10%;
     padding-bottom: 50%;
   }

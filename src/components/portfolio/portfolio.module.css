@@ -1,15 +1,15 @@
 .menu {
-    position: fixed; /* Set the navbar to fixed position */
-  top: 80%; 
-  left:40%;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 80%;
+  left: 40%;
   z-index: 100;
 }
 
 .button {
-    position: fixed;
-    right: 4%;
-    z-index: 100;
-    top: 1.1%;
+  position: fixed;
+  right: 4%;
+  z-index: 100;
+  top: 1.1%;
 }
 
 .icontainer {
@@ -18,27 +18,69 @@
 
 .icongit {
   padding: 5px;
- 
 }
 
 .iconlinked {
   padding: 5px;
- 
 }
 
+@media (min-width: 1281px) {
+  .menu {
+    position: fixed; /* Set the navbar to fixed position */
+    top: 90%;
+    left: 45%;
+    z-index: 100;
+  }
+}
 
+/* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .menu {
+    position: fixed; /* Set the navbar to fixed position */
+    top: 90%;
+    left: 45%;
+    z-index: 100;
+  }
+}
+
+/* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+}
+
+/* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+}
+
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+
+@media (min-width: 481px) and (max-width: 767px) {
+}
 @media (min-width: 320px) and (max-width: 480px) {
   .button {
     position: fixed;
     left: 75%;
     top: 1.2%;
     z-index: 100;
-}
-.menu {
-  position: fixed; /* Set the navbar to fixed position */
-top: 88%; 
-left:34%;
-z-index: 100;
-}
-
+  }
+  .menu {
+    position: fixed; /* Set the navbar to fixed position */
+    top: 88%;
+    left: 34%;
+    z-index: 100;
+  }
 }
