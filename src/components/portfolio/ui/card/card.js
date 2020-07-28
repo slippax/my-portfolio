@@ -6,12 +6,13 @@ const card = (props) => {
   const styles = makeStyles({
     root: {
       position: "relative",
-      height: "60vh",
+      height: "35vh",
       width: "100%",
       display: "flex",
       flex: 1,
       justifyContent: "center",
       alignItems: "middle",
+      paddingTop: '45px',
     },
     media: {
       height: "300px",
