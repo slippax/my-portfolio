@@ -86,17 +86,17 @@
 
 @media (min-width: 1281px) {
   .icontainer {
-    padding-left: 140px;
+    padding-left: 182px;
   }
   .headertext {
     position: absolute;
     top: 45%;
-    left: 40%;
+    left: 35%;
     margin-top: -90px;
     font-size: 40px;
   }
   .greeting {
-    font-size: 60px;
+    font-size: 70px;
     font-weight: 300;
     padding-right: 10px;
     margin: 0;
@@ -106,7 +106,7 @@
   }
 
   .name {
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 300;
     margin: 0;
     padding-bottom: 3px;
@@ -115,13 +115,13 @@
   }
 
   .tagline {
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 300;
     margin: 0;
   }
 
   .button {
-    padding-left: 180px;
+    padding-left: 220px;
     padding-top: 30px;
     animation: fadein 2s;
   }
