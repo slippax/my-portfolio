@@ -16,13 +16,13 @@ const card = (props) => {
         <div
           className={classes.media}
           onClick={() =>
-            window.open("https://github.com/slippax/weather-grabbr")
+            window.open("http://slippax.github.io/weather-grabbr")
           }
         >
           <p>Weather Grabbr</p>
           <img src={props.weatherimage} alt="weather"></img>
         </div>
-        <div className={classes.media}>Habit Tracker</div>
+        <div className={classes.media}>Habit Tracker (Under Construction)</div>
       </ReactCardCarousel>
     </div>
   );
