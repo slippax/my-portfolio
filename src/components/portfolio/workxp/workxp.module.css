@@ -38,6 +38,14 @@
     }
   }
 }
+@media (min-width: 481px) and (max-width: 767px) {
+  .Container {
+    font-size: 15px;
+    padding-top: 7%;
+    padding-bottom: 40%;
+  }
+}
+
 @media (min-width: 320px) and (max-width: 480px) {
   .Container {
     font-size: 19px;

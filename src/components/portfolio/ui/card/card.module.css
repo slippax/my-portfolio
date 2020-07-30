@@ -69,12 +69,13 @@
 
 @media (min-width: 481px) and (max-width: 767px) {
     .media {
-        height: 330px;
-        width: 300px;
-      }
-      .root {
-        padding-top: 45px;
+      height: 220px;
+      width: 280px;
+      padding-top: 0px;
     }
+    .root {
+      padding-top: 30px;
+  }
 }
 @media (min-width: 320px) and (max-width: 480px) {
 }

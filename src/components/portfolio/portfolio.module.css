@@ -82,6 +82,18 @@
 
 @media (min-width: 481px) and (max-width: 767px) {
 }
+.button {
+  position: fixed;
+  left: 88%;
+  top: 1.2%;
+  z-index: 100;
+}
+.menu {
+  position: fixed; /* Set the navbar to fixed position */
+  top: 82%;
+  left: 42%;
+  z-index: 100;
+}
 @media (min-width: 320px) and (max-width: 480px) {
   .button {
     position: fixed;

@@ -235,9 +235,39 @@
 
 @media (min-width: 481px) and (max-width: 767px) {
   .icontainer {
+    padding-top: 80px;
     padding-left: 90px;
   }
+  .headertext {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    right: 20%;
+    margin-top: -90px;
+    font-size: 30px;
+  }
 }
+.greeting {
+    font-size: 50px;
+    font-weight: 300;
+    padding-right: 0px;
+    margin: 0;
+    padding-bottom: 5px;
+    padding-top: 0px;
+    animation: fadein 2s;
+  }
+  .name {
+    font-size: 40px;
+    font-weight: 300;
+    margin: 0;
+    padding-bottom: 5px;
+    animation: fadein 2s;
+  }
+  .tagline {
+    font-size: 30px;
+    font-weight: 300;
+    margin: 0;
+  }
 
 /* 
   ##Device = Most of the Smartphones Mobiles (Portrait)
