@@ -62,7 +62,11 @@ ul {
 */
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  
+  .Container {
+    font-size: 15px;
+    padding-top: 4%;
+    padding-bottom: 40%;
+  }
   
   
 }

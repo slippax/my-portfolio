@@ -32,6 +32,14 @@
     padding-bottom: 50%;
     font-size: 20px;
   }
+
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .Container {
+      font-size: 15px;
+      padding-top: 10%;
+      padding-bottom: 40%;
+    }
+  }
 }
 @media (min-width: 320px) and (max-width: 480px) {
   .Container {

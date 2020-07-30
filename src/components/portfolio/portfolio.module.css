@@ -61,6 +61,18 @@
   */
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .button {
+    position: fixed;
+    left: 88%;
+    top: 1.2%;
+    z-index: 100;
+  }
+  .menu {
+    position: fixed; /* Set the navbar to fixed position */
+    top: 82%;
+    left: 42%;
+    z-index: 100;
+  }
 }
 
 /* 

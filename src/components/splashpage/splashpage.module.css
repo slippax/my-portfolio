@@ -195,10 +195,39 @@
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .icontainer {
+    padding-top: 54px;
     padding-left: 90px;
   }
+  .headertext {
+    position: absolute;
+    top: 32%;
+    left: 30%;
+    right: 20%;
+    margin-top: -90px;
+    font-size: 30px;
+  }
 }
-
+.greeting {
+    font-size: 50px;
+    font-weight: 300;
+    padding-right: 0px;
+    margin: 0;
+    padding-bottom: 5px;
+    padding-top: 0px;
+    animation: fadein 2s;
+  }
+  .name {
+    font-size: 40px;
+    font-weight: 300;
+    margin: 0;
+    padding-bottom: 5px;
+    animation: fadein 2s;
+  }
+  .tagline {
+    font-size: 30px;
+    font-weight: 300;
+    margin: 0;
+  }
 /* 
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
   ##Screen = B/w 481px to 767px

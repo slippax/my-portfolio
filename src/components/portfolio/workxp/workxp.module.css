@@ -1,11 +1,11 @@
 .Container {
-    padding-bottom: 100%;
-    padding-top: 30%;
+  padding-bottom: 100%;
+  padding-top: 30%;
 }
 
 .workXP {
-    border-bottom: 1px solid gray;
-    color: darkslategray;
+  border-bottom: 1px solid gray;
+  color: darkslategray;
 }
 
 @media (min-width: 1281px) {
@@ -25,19 +25,23 @@
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  
   .Container {
     font-size: 20px;
     padding-top: 10%;
     padding-bottom: 50%;
   }
-  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .Container {
+      font-size: 15px;
+      padding-top: 4%;
+      padding-bottom: 40%;
+    }
+  }
 }
 @media (min-width: 320px) and (max-width: 480px) {
-    .Container {
-      font-size: 19px;
-      padding-top: 17%;
-      padding-bottom: 100%;
-    }
-  
+  .Container {
+    font-size: 19px;
+    padding-top: 17%;
+    padding-bottom: 100%;
   }
+}
