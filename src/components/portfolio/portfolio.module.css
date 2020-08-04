@@ -7,7 +7,7 @@
 
 .button {
   position: fixed;
-  right: 4%;
+  right: 2%;
   z-index: 100;
   top: 1.1%;
 }
@@ -28,6 +28,12 @@
   .menu {
     position: fixed; /* Set the navbar to fixed position */
     top: 90%;
+    left: 47%;
+    z-index: 100;
+  }
+  .icontainer {
+    position: fixed; /* Set the navbar to fixed position */
+    top: 90%;
     left: 46%;
     z-index: 100;
   }
@@ -45,6 +51,12 @@
     left: 45%;
     z-index: 100;
   }
+  .icontainer {
+    position: fixed; /* Set the navbar to fixed position */
+    top: 90%;
+    left: 45%;
+    z-index: 100;
+  }
 }
 
 /* 
@@ -52,7 +64,24 @@
     ##Screen = B/w 768px to 1024px
   */
 @media (min-width: 768px) and (max-width: 1024px) {
-  
+  .button {
+    position: fixed;
+    left: 88%;
+    top: 1.2%;
+    z-index: 100;
+  }
+  .menu {
+    position: fixed; /* Set the navbar to fixed position */
+    top: 82%;
+    left: 42%;
+    z-index: 100;
+  }
+  .icontainer {
+    position: fixed; /* Set the navbar to fixed position */
+    top: 90%;
+    left: 42%;
+    z-index: 100;
+  }
 }
 
 /* 
@@ -69,7 +98,13 @@
   }
   .menu {
     position: fixed; /* Set the navbar to fixed position */
-    top: 82%;
+    top: 90%;
+    left: 45%;
+    z-index: 100;
+  }
+  .icontainer {
+    position: fixed; /* Set the navbar to fixed position */
+    top: 89%;
     left: 42%;
     z-index: 100;
   }
@@ -81,19 +116,26 @@
   */
 
 @media (min-width: 481px) and (max-width: 767px) {
+  .button {
+    position: fixed;
+    left: 82%;
+    top: 1.2%;
+    z-index: 100;
+  }
+  .menu {
+    position: fixed; /* Set the navbar to fixed position */
+    top: 82%;
+    left: 42%;
+    z-index: 100;
+  }
+  .icontainer {
+    position: fixed; /* Set the navbar to fixed position */
+    top: 89%;
+    left: 42%;
+    z-index: 100;
+  }
 }
-.button {
-  position: fixed;
-  left: 88%;
-  top: 1.2%;
-  z-index: 100;
-}
-.menu {
-  position: fixed; /* Set the navbar to fixed position */
-  top: 82%;
-  left: 42%;
-  z-index: 100;
-}
+
 @media (min-width: 320px) and (max-width: 480px) {
   .button {
     position: fixed;

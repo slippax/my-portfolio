@@ -11,7 +11,7 @@
 @media (min-width: 1281px) {
   .Container {
     font-size: 25px;
-    padding-top: 4%;
+    padding-top: 3.5%;
     padding-bottom: 40%;
   }
 }
@@ -19,7 +19,7 @@
 @media (min-width: 1025px) and (max-width: 1280px) {
   .Container {
     font-size: 23px;
-    padding-top: 7%;
+    padding-top: 5%;
     padding-bottom: 50%;
   }
 }
@@ -32,8 +32,8 @@
   }
   @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .Container {
-      font-size: 15px;
-      padding-top: 4%;
+      font-size: 19px;
+      padding-top: 10%;
       padding-bottom: 40%;
     }
   }
@@ -41,8 +41,9 @@
 @media (min-width: 481px) and (max-width: 767px) {
   .Container {
     font-size: 15px;
-    padding-top: 7%;
+    padding-top: 11%;
     padding-bottom: 40%;
+    font-size: 19px;
   }
 }
 
