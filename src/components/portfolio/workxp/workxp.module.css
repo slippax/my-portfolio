@@ -33,8 +33,9 @@
   @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .Container {
       font-size: 19px;
-      padding-top: 10%;
-      padding-bottom: 40%;
+    padding-top: 4.5%;
+    padding-bottom: 50%;
+    font-size: 16px;
     }
   }
 }

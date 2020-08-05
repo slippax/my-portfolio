@@ -195,13 +195,13 @@
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .icontainer {
-    padding-top: 54px;
+    padding-top: 49px;
     padding-left: 90px;
   }
   .headertext {
     position: absolute;
-    top: 40%;
-    left: 35%;
+    top: 27%;
+    left: 31%;
     right: 20%;
     margin-top: -90px;
     font-size: 30px;
@@ -227,6 +227,9 @@
     font-size: 30px;
     font-weight: 300;
     margin: 0;
+  }
+  .button {
+    padding-top: 15px;
   }
 /* 
   ##Device = Low Resolution Tablets, Mobiles (Landscape)

@@ -104,7 +104,7 @@
   }
   .icontainer {
     position: fixed; /* Set the navbar to fixed position */
-    top: 89%;
+    top: 83%;
     left: 42%;
     z-index: 100;
   }
