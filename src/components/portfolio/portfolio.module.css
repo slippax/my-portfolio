@@ -53,7 +53,7 @@
   }
   .icontainer {
     position: fixed; /* Set the navbar to fixed position */
-    top: 90%;
+    top: 89%;
     left: 45%;
     z-index: 100;
   }
@@ -104,7 +104,7 @@
   }
   .icontainer {
     position: fixed; /* Set the navbar to fixed position */
-    top: 83%;
+    top: 87%;
     left: 42%;
     z-index: 100;
   }

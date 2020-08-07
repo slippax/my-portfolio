@@ -34,7 +34,7 @@ ul {
 @media (min-width: 1025px) and (max-width: 1280px) {
   .Container {
     font-size: 23px;
-    padding-top: 5%;
+    padding-top: 3%;
     padding-bottom: 50%;
   }
 
