@@ -24,7 +24,7 @@ const contact = () => {
                 window.open("mailto:slippa@me.com");
               }}
             >
-              <ArrowDropDownOutlinedIcon fontSize="medium" />
+              <ArrowDropDownOutlinedIcon fontSize="large" />
             </AwesomeButton>
           </div>
         </Zoom>

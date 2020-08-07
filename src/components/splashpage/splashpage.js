@@ -34,7 +34,7 @@ function SplashPage() {
           <div className={classes.button}>
             <Link to="/portfolio">
               <AwesomeButton type="primary" size="medium">
-                <ArrowDropDownOutlinedIcon fontSize="medium" />
+                <ArrowDropDownOutlinedIcon fontSize="large" />
               </AwesomeButton>
             </Link>
           </div>
