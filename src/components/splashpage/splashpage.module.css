@@ -1,4 +1,4 @@
-.headertext {
+.headerText {
   position: absolute;
   top: 50%;
   left: 30%;
@@ -7,7 +7,7 @@
   font-size: 30px;
 }
 
-.greeting {
+.greetingText {
   font-size: 50px;
   font-weight: 300;
   padding-right: 10px;
@@ -17,7 +17,7 @@
   animation: fadein 2s;
 }
 
-.name {
+.nameText {
   font-size: 30px;
   font-weight: 300;
   margin: 0;
@@ -26,7 +26,7 @@
   color: darkslategray;
 }
 
-.tagline {
+.taglineText {
   font-size: 30px;
   font-weight: 300;
   margin: 0;
@@ -86,17 +86,17 @@
 
 @media (min-width: 1281px) {
   .icontainer {
-    padding-left: 105px;
+    padding-left: 189px;
   }
-  .headertext {
+  .headerText {
     position: absolute;
     top: 45%;
-    left: 39%;
+    left: 33.5%;
     margin-top: -90px;
     font-size: 40px;
   }
-  .greeting {
-    font-size: 70px;
+  .greetingText {
+    font-size: 60px;
     font-weight: 300;
     padding-right: 10px;
     margin: 0;
@@ -105,7 +105,7 @@
     animation: fadein 2s;
   }
 
-  .name {
+  .nameText {
     font-size: 50px;
     font-weight: 300;
     margin: 0;
@@ -114,14 +114,14 @@
     color: darkslategray;
   }
 
-  .tagline {
-    font-size: 50px;
+  .taglineText {
+    font-size: 45px;
     font-weight: 300;
     margin: 0;
   }
 
   .button {
-    padding-left: 140px;
+    padding-left: 220px;
     padding-top: 30px;
     animation: fadein 2s;
   }
@@ -133,20 +133,20 @@
 */
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-  .headertext {
+  .headerText {
     position: absolute;
     top: 40%;
-    left: 35%;
+    left: 32%;
     width: 90%;
     margin-top: -90px;
     font-size: 30px;
     z-index: 100;
   }
   .icontainer {
-    padding-left: 104px;
+    padding-left: 175px;
   }
 
-  .greeting {
+  .greetingText {
     font-size: 60px;
     font-weight: 300;
     padding-right: 10px;
@@ -156,8 +156,8 @@
     animation: fadein 2s;
   }
 
-  .name {
-    font-size: 40px;
+  .nameText {
+    font-size: 50px;
     font-weight: 300;
     margin: 0;
     padding-bottom: 3px;
@@ -165,13 +165,13 @@
     color: darkslategray;
   }
 
-  .tagline {
-    font-size: 40px;
+  .taglineText {
+    font-size: 45px;
     font-weight: 300;
     margin: 0;
   }
   .button {
-    padding-left: 140px;
+    padding-left: 208px;
     padding-top: 30px;
     animation: fadein 2s;
   }
@@ -186,6 +186,7 @@
   .icontainer {
     padding-left: 90px;
   }
+  
 }
 
 /* 
@@ -196,18 +197,18 @@
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .icontainer {
     padding-top: 49px;
-    padding-left: 90px;
+    padding-left: 115px;
   }
-  .headertext {
+  .headerText {
     position: absolute;
-    top: 27%;
-    left: 31%;
+    top: 40%;
+    left: 30%;
     right: 20%;
     margin-top: -90px;
     font-size: 30px;
   }
-}
-.greeting {
+
+.greetingText {
     font-size: 50px;
     font-weight: 300;
     padding-right: 0px;
@@ -216,21 +217,23 @@
     padding-top: 0px;
     animation: fadein 2s;
   }
-  .name {
+  .nameText {
     font-size: 40px;
     font-weight: 300;
     margin: 0;
     padding-bottom: 5px;
     animation: fadein 2s;
   }
-  .tagline {
-    font-size: 30px;
+  .taglineText {
+    font-size: 35px;
     font-weight: 300;
     margin: 0;
   }
   .button {
-    padding-top: 15px;
+    padding-top: 40px;
+    padding-left: 145px;
   }
+}
 /* 
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
   ##Screen = B/w 481px to 767px
@@ -238,10 +241,10 @@
 
 @media (min-width: 481px) and (max-width: 767px) {
   .icontainer {
-    padding-top: 80px;
-    padding-left: 90px;
+    padding-top: 50px;
+    padding-left: 105px;
   }
-  .headertext {
+  .headerText {
     position: absolute;
     top: 30%;
     left: 30%;
@@ -249,8 +252,8 @@
     margin-top: -90px;
     font-size: 30px;
   }
-}
-.greeting {
+
+.greetingText {
     font-size: 50px;
     font-weight: 300;
     padding-right: 0px;
@@ -259,26 +262,30 @@
     padding-top: 0px;
     animation: fadein 2s;
   }
-  .name {
+  .nameText {
     font-size: 40px;
     font-weight: 300;
     margin: 0;
     padding-bottom: 5px;
     animation: fadein 2s;
   }
-  .tagline {
-    font-size: 30px;
+  .taglineText {
+    font-size: 35px;
     font-weight: 300;
     margin: 0;
   }
-
+  .button {
+    padding-top: 25px;
+    padding-left: 136px;
+  }
+}
 /* 
   ##Device = Most of the Smartphones Mobiles (Portrait)
   ##Screen = B/w 320px to 479px
 */
 
 @media (min-width: 320px) and (max-width: 480px) {
-  .headertext {
+  .headerText {
     position: absolute;
     top: 35%;
     left: 10%;
@@ -288,7 +295,7 @@
     z-index: 100;
   }
 
-  .greeting {
+  .greetingText {
     font-size: 39px;
     font-weight: 300;
     padding-right: 0px;
@@ -298,7 +305,7 @@
     animation: fadein 2s;
   }
 
-  .name {
+  .nameText {
     font-size: 35px;
     font-weight: 300;
     margin: 0;
@@ -306,7 +313,7 @@
     animation: fadein 2s;
   }
 
-  .tagline {
+  .taglineText {
     font-size: 27px;
     font-weight: 300;
     margin: 0;

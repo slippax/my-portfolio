@@ -20,16 +20,16 @@ function SplashPage() {
       <ReactScrollWheelHandler
         downHandler={() => navigate("/portfolio", { replace: true })}
       >
-        <div className={classes.headertext}>
+        <div className={classes.headerText}>
           <Tada top cascade>
-            <p className={classes.greeting}>Hi, my name is</p>
-            <p className={classes.name}>Stephen Lippa</p>
+            <p className={classes.greetingText}>Hi, my name is</p>
+            <p className={classes.nameText}>Stephen Lippa</p>
           </Tada>
           <Typist>
             <Typist.Delay ms={1500} />
-            <span className={classes.tagline}>I am a front end developer.</span>
+            <span className={classes.taglineText}>I am a front end developer.</span>
             <Typist.Backspace count={25} delay={200} />
-            <span className={classes.tagline}>build things for the web.</span>
+            <span className={classes.taglineText}>build things for the web.</span>
           </Typist>
           <div className={classes.button}>
             <Link to="/portfolio">
