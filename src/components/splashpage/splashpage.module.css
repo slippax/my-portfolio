@@ -86,12 +86,12 @@
 
 @media (min-width: 1281px) {
   .icontainer {
-    padding-left: 182px;
+    padding-left: 105px;
   }
   .headertext {
     position: absolute;
     top: 45%;
-    left: 36%;
+    left: 39%;
     margin-top: -90px;
     font-size: 40px;
   }
@@ -121,7 +121,7 @@
   }
 
   .button {
-    padding-left: 220px;
+    padding-left: 140px;
     padding-top: 30px;
     animation: fadein 2s;
   }
