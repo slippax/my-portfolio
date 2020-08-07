@@ -12,7 +12,7 @@ const button = () => {
       <Wobble left>
         <Link to="/">
           <AwesomeButton type="primary" size="medium">
-            <ArrowDropUpOutlinedIcon fontSize="large" />
+            <ArrowDropUpOutlinedIcon fontSize="default" />
           </AwesomeButton>
         </Link>
       </Wobble>
