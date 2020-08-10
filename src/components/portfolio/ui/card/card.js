@@ -10,22 +10,20 @@ const card = (props) => {
           className={classes.media}
           onClick={() => window.open("https://slippax.github.io/Ez-Sens/")}
         >
-          <p>Ez Sens</p>
           <img src={props.ezsensimage} alt="project"></img>
         </div>
         <div
           className={classes.media}
-          onClick={() =>
-            window.open("http://slippax.github.io/weather-grabbr")
-          }
+          onClick={() => window.open("http://slippax.github.io/weather-grabbr")}
         >
-          <p>Weather Grabbr</p>
+        
           <img src={props.weatherimage} alt="weather"></img>
         </div>
-        <div className={classes.media} onClick={() =>
-            window.open("https://slippax.github.io/todoz/")
-          }><p>Todoz</p>
-        <img src={props.todozimage} alt="todoz"></img>
+        <div
+          className={classes.media}
+          onClick={() => window.open("https://slippax.github.io/todoz/")}
+        >
+          <img src={props.todozimage} alt="todoz"></img>
         </div>
       </ReactCardCarousel>
     </div>

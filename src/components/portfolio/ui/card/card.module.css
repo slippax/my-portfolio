@@ -12,7 +12,7 @@
 .media {
   height: 300px;
   width: 220px;
-  padding-top: 20px;
+  padding-top: 10px;
   text-align: center;
   background: #7a8e8e;
   color: #fff;
@@ -26,7 +26,7 @@
 
 @media (min-width: 1281px) {
     .media {
-        height: 450px;
+        height: 400px;
         width: 400px;
       }
       .root {
@@ -37,7 +37,7 @@
 
 @media (min-width: 1025px) and (max-width: 1280px) {
     .media {
-        height: 450px;
+        height: 400px;
         width: 350px;
       }
       .root {
@@ -48,7 +48,7 @@
 @media (min-width: 768px) and (max-width: 1024px) {
     .media {
         height: 400px;
-        width: 300px;
+        width: 350px;
       }
       .root {
         padding-top: 200px;
@@ -59,8 +59,8 @@
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .media {
     height: 200px;
-    width: 300px;
-    padding-top: 0px;
+    width: 350px;
+    padding-top: 10px;
   }
   .root {
     padding-top: 30px;
@@ -69,13 +69,22 @@
 
 @media (min-width: 481px) and (max-width: 767px) {
     .media {
-      height: 220px;
+      height: 300px;
       width: 280px;
-      padding-top: 0px;
+      padding-top: 10px;
     }
     .root {
-      padding-top: 30px;
+      padding-top: 100px;
   }
 }
 @media (min-width: 320px) and (max-width: 480px) {
+  .media {
+    height: 250px;
+    width: 240px;
+    padding-top: 10px;
+  }
+  .root {
+    padding-top: 100px;
+}
+  
 }

@@ -4,7 +4,7 @@ import classes from "./projects.module.css";
 import Card from "../ui/card/card";
 import ezsens from "./ezsens.JPG";
 import weathergrabbr from "./weathergrabbr.JPG";
-import todoz from './todoz.png';
+import todoz from "./todoz.JPG";
 import Zoom from "react-reveal/Zoom";
 
 const projects = () => {
@@ -13,7 +13,11 @@ const projects = () => {
       <Container maxWidth="sm">
         <Zoom>
           <h3 className={classes.projects}>Projects</h3>
-          <Card ezsensimage = {ezsens} weatherimage= {weathergrabbr} todozimage={todoz}/>
+          <Card
+            ezsensimage={ezsens}
+            weatherimage={weathergrabbr}
+            todozimage={todoz}
+          />
         </Zoom>
       </Container>
     </div>
