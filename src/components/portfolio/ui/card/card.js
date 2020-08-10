@@ -22,7 +22,11 @@ const card = (props) => {
           <p>Weather Grabbr</p>
           <img src={props.weatherimage} alt="weather"></img>
         </div>
-        <div className={classes.media}>Habit Tracker (Under Construction)</div>
+        <div className={classes.media} onClick={() =>
+            window.open("https://slippax.github.io/todoz/")
+          }><p>Todoz</p>
+        <img src={props.todozimage} alt="todoz"></img>
+        </div>
       </ReactCardCarousel>
     </div>
   );
