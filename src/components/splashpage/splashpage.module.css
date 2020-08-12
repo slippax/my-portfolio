@@ -86,12 +86,12 @@
 
 @media (min-width: 1281px) {
   .icontainer {
-    padding-left: 189px;
+    padding-left: 183px;
   }
   .headerText {
     position: absolute;
     top: 45%;
-    left: 36%;
+    left: 35.5%;
     margin-top: -90px;
     font-size: 40px;
   }

@@ -19,7 +19,7 @@ ul {
 @media (min-width: 1281px) {
   .Container {
     font-size: 25px;
-    padding-top: 3%;
+    padding-top: 5%;
     padding-bottom: 40%;
   }
   
@@ -34,7 +34,7 @@ ul {
 @media (min-width: 1025px) and (max-width: 1280px) {
   .Container {
     font-size: 23px;
-    padding-top: 3%;
+    padding-top: 7%;
     padding-bottom: 50%;
   }
 
@@ -64,7 +64,7 @@ ul {
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .Container {
     font-size: 19px;
-    padding-top: 2.5%;
+    padding-top: 8%;
     padding-bottom: 50%;
     font-size: 16px;
   }
