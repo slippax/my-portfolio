@@ -7,9 +7,9 @@ import "react-awesome-button/dist/themes/theme-c137.css";
 import ArrowDropDownOutlinedIcon from "@material-ui/icons/ArrowDropDownOutlined";
 import { Link } from "react-router-dom";
 import ReactScrollWheelHandler from "react-scroll-wheel-handler";
-import Tada from "react-reveal/Zoom";
+import Flip from "react-reveal/Zoom";
+import Fade from "react-reveal/Fade";
 import { SocialMediaIconsReact } from "social-media-icons-react";
-import RubberBand from "react-reveal/Flip";
 import ParticleComponent from "../portfolio/ui/particles/particles";
 
 function SplashPage() {
@@ -21,26 +21,29 @@ function SplashPage() {
         downHandler={() => navigate("/portfolio", { replace: true })}
       >
         <div className={classes.headerText}>
-          <Tada top cascade>
+          <Flip cascade>
             <p className={classes.greetingText}>Hi, my name is</p>
             <p className={classes.nameText}>Stephen Lippa</p>
-          </Tada>
+          </Flip>
           <Typist>
-            <Typist.Delay ms={1500} />
+            <Typist.Delay ms={2000} />
             <span className={classes.taglineText}>I am a front end developer.</span>
             <Typist.Backspace count={25} delay={200} />
             <span className={classes.taglineText}>build things for the web.</span>
           </Typist>
+          <Fade bottom>
           <div className={classes.button}>
             <Link to="/portfolio">
               <AwesomeButton type="primary" size="medium">
                 <ArrowDropDownOutlinedIcon fontSize="large" />
               </AwesomeButton>
             </Link>
+            
           </div>
+          </Fade>
           <div className={classes.icontainer}>
             <div className={classes.icongit}>
-              <RubberBand bottom>
+              <Flip>
                 <SocialMediaIconsReact
                   borderColor="rgba(0,0,0,0.25)"
                   borderWidth="3"
@@ -53,10 +56,10 @@ function SplashPage() {
                   roundness="50%"
                   size="60"
                 />
-              </RubberBand>
+              </Flip>
             </div>
             <div className={classes.iconlinked}>
-              <RubberBand bottom>
+              <Flip>
                 <SocialMediaIconsReact
                   borderColor="rgba(0,0,0,0.25)"
                   borderWidth="3"
@@ -69,7 +72,7 @@ function SplashPage() {
                   roundness="50%"
                   size="60"
                 />
-              </RubberBand>
+              </Flip>
             </div>
           </div>
         </div>

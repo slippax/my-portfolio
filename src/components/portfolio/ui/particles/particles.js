@@ -97,7 +97,7 @@ const particles = () => {
           emitters: {
             direction: "top",
             life: {},
-            rate: { quantity: 1.2, delay: 0.5 },
+            rate: { quantity: 1.0, delay: 0.5 },
             size: { mode: "percent", height: 0, width: 100 },
             position: { x: 50, y: 100 },
           },

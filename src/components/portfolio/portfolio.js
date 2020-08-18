@@ -9,7 +9,7 @@ import scrollToComponent from "react-scroll-to-component";
 import { useNavigate } from "react-router-dom";
 import classes from "./portfolio.module.css";
 import { SocialMediaIconsReact } from "social-media-icons-react";
-import RubberBand from "react-reveal/Flip";
+import RubberBand from "react-reveal/Zoom";
 import PageProgress from "react-page-progress";
 import Menu from "../portfolio/ui/menu/sidebar";
 const Portfolio = () => {
@@ -36,7 +36,6 @@ const Portfolio = () => {
     setPause(true);
     setTimeout(() => {
       setPause(false);
-      console.log("timer released");
     }, 800);
   };
 
@@ -73,14 +72,14 @@ const Portfolio = () => {
         downHandler={() => scrollToComponentHandler(pages.projects)}
       >
         <div className={classes.button}>
-          <RubberBand bottom>
+          <RubberBand>
             <ButtonComponent />
           </RubberBand>
         </div>
         <div className={classes.menu}>
           <div className={classes.icontainer}>
             <div className={classes.icongit}>
-              <RubberBand bottom>
+              <RubberBand>
                 <SocialMediaIconsReact
                   borderColor="rgba(0,0,0,0.25)"
                   borderWidth="3"
@@ -96,7 +95,7 @@ const Portfolio = () => {
               </RubberBand>
             </div>
             <div className={classes.iconlinked}>
-              <RubberBand bottom>
+              <RubberBand>
                 <SocialMediaIconsReact
                   borderColor="rgba(0,0,0,0.25)"
                   borderWidth="3"

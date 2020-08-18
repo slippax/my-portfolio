@@ -10,7 +10,7 @@ const aboutme = () => {
   return (
     <div>
       <Container maxWidth="sm" className={classes.Container}>
-        <Zoom cascade top>
+        <Zoom top cascade>
           <h3 className={classes.aboutme}>About me</h3>
           <div>
             <p>

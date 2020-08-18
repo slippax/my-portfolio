@@ -9,8 +9,8 @@ import Zoom from "react-reveal/Zoom";
 
 const projects = () => {
   return (
-    <div className={classes.Container}>
-      <Container maxWidth="sm">
+    <div >
+      <Container maxWidth="sm" className={classes.Container}>
         <Zoom>
           <h3 className={classes.projects}>Projects</h3>
           <Card
