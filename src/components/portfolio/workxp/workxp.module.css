@@ -11,7 +11,7 @@
 @media (min-width: 1281px) {
   .Container {
     font-size: 25px;
-    padding-top: 7%;
+    padding-top: 4%;
     padding-bottom: 40%;
   }
 }
@@ -30,18 +30,17 @@
     padding-top: 10%;
     padding-bottom: 50%;
   }
-  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    .Container {
-      font-size: 19px;
-    padding-top: 4.5%;
+}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .Container {
+    font-size: 20px;
+    padding-top: 10%;
     padding-bottom: 50%;
-    font-size: 16px;
-    }
   }
 }
+
 @media (min-width: 481px) and (max-width: 767px) {
   .Container {
-    font-size: 15px;
     padding-top: 11%;
     padding-bottom: 40%;
     font-size: 19px;

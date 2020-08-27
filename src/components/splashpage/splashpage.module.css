@@ -201,7 +201,7 @@
   }
   .headerText {
     position: absolute;
-    top: 40%;
+    top: 35%;
     left: 30%;
     right: 20%;
     margin-top: -90px;
@@ -209,7 +209,7 @@
   }
 
 .greetingText {
-    font-size: 50px;
+    font-size: 55px;
     font-weight: 300;
     padding-right: 0px;
     margin: 0;
@@ -218,14 +218,14 @@
     animation: fadein 1s;
   }
   .nameText {
-    font-size: 40px;
+    font-size: 45px;
     font-weight: 300;
     margin: 0;
     padding-bottom: 5px;
     animation: fadein 1s;
   }
   .taglineText {
-    font-size: 35px;
+    font-size: 40px;
     font-weight: 300;
     margin: 0;
   }

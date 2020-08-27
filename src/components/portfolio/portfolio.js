@@ -13,12 +13,7 @@ import RubberBand from "react-reveal/Zoom";
 import PageProgress from "react-page-progress";
 import Menu from "../portfolio/ui/menu/sidebar";
 const Portfolio = () => {
-  let pages = {
-    aboutMe: null,
-    projects: null,
-    workXp: null,
-    contact: null,
-  };
+  let pages = {};
   let navigate = useNavigate();
 
   const [pause, setPause] = useState(false);

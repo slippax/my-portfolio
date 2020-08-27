@@ -62,14 +62,14 @@ img {
   */
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  img {
-    max-width: 100%;
-    max-height: 75%;
-  }
   .Container {
-    font-size: 19px;
-    padding-top: 3.5%;
-    padding-bottom: 40%;
+    font-size: 23px;
+    padding-top: 5%;
+    padding-bottom: 50%;
+  }
+  img {
+    max-width: 90%;
+    max-height: 100%;
   }
 }
 
