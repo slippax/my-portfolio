@@ -90,7 +90,7 @@
   }
   .headerText {
     position: absolute;
-    top: 45%;
+    top: 40%;
     left: 35.5%;
     margin-top: -90px;
     font-size: 40px;
@@ -186,7 +186,6 @@
   .icontainer {
     padding-left: 90px;
   }
-  
 }
 
 /* 
@@ -208,7 +207,7 @@
     font-size: 30px;
   }
 
-.greetingText {
+  .greetingText {
     font-size: 55px;
     font-weight: 300;
     padding-right: 0px;
@@ -253,7 +252,7 @@
     font-size: 30px;
   }
 
-.greetingText {
+  .greetingText {
     font-size: 50px;
     font-weight: 300;
     padding-right: 0px;
