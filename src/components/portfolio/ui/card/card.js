@@ -16,7 +16,6 @@ const card = (props) => {
           className={classes.media}
           onClick={() => window.open("http://slippax.github.io/weather-grabbr")}
         >
-        
           <img src={props.weatherimage} alt="weather"></img>
         </div>
         <div
@@ -24,6 +23,12 @@ const card = (props) => {
           onClick={() => window.open("https://slippax.github.io/todoz/")}
         >
           <img src={props.todozimage} alt="todoz"></img>
+        </div>
+        <div
+          className={classes.media}
+          onClick={() => window.open("https://slippax.github.io/type-god")}
+        >
+          <img src={props.typeimage} alt="type"></img>
         </div>
       </ReactCardCarousel>
     </div>
