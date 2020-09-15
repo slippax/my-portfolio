@@ -1,5 +1,5 @@
 .section{
-    display: inline-flex;
+  
     color: dimgray;
     font-size: 19px;
     cursor: pointer;
@@ -9,14 +9,10 @@
   .sectionbox{
    text-align: center;
    position: fixed; /* Set the navbar to fixed position */
-  top: 0.5%;
+  top: 30%;
   left: 5%;
   z-index: 100;
   outline: none;
-  }
-  .seperator {
-   padding-left: 2px;
-   padding-right: 2px;
   }
 
   .aboutme:hover{
@@ -37,9 +33,7 @@
   @media (min-width: 1281px) {
   
     .section{
-        display: inline-flex;
-
-        font-size: 19px;
+        font-size: 21px;
         cursor: pointer;
         outline: none;
         border-top: 1px darkslategray;
@@ -47,10 +41,12 @@
       .sectionbox{
        text-align: center;
        position: fixed; /* Set the navbar to fixed position */
-      top: 0.5%;
-      left: 6%;
+      top: 20%;
+      left: 14%;
       z-index: 100;
       outline: none;
+      padding-right: 40px;
+      border-right: 2px solid darkslategray;
       }
     
   }
@@ -62,8 +58,7 @@
   
   @media (min-width: 1025px) and (max-width: 1280px) {
     .section{
-        display: inline-flex;
-        font-size: 19px;
+        font-size: 20px;
         cursor: pointer;
         outline: none;
         border-top: 1px darkslategray;
@@ -71,10 +66,12 @@
       .sectionbox{
        text-align: center;
        position: fixed; /* Set the navbar to fixed position */
-      top: 0.5%;
-      left: 8%;
+      top: 20%;
+      left: 5%;
       z-index: 100;
       outline: none;
+      padding-right: 40px;
+      border-right: 2px solid darkslategray;
       }
     
   }

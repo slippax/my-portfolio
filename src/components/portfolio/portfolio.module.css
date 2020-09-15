@@ -25,6 +25,12 @@
 }
 
 @media (min-width: 1281px) {
+  .mobilemenu {
+    display: none;
+  }
+  .button {
+   display: none;
+  }
   .menu {
     position: fixed; /* Set the navbar to fixed position */
     top: 90%;
@@ -45,6 +51,12 @@
   */
 
 @media (min-width: 1025px) and (max-width: 1280px) {
+  .mobilemenu {
+    display: none;
+  }
+  .button {
+    display: none;
+  }
   .menu {
     position: fixed; /* Set the navbar to fixed position */
     top: 90%;

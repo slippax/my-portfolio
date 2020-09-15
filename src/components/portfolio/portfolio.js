@@ -49,6 +49,7 @@ const Portfolio = () => {
 
   return (
     <div>
+      <div className={classes.mobilemenu}>
       <Menu
         open={menuToggle}
         aboutClick={() => scrollToComponentHandler(pages.aboutMe)}
@@ -56,8 +57,9 @@ const Portfolio = () => {
         workClick={() => scrollToComponentHandler(pages.workXp)}
         contactClick={() => scrollToComponentHandler(pages.contact)}
       />
+      </div>
       <PageProgress color={"gray"} height={5} />
-      <SectionHeader clickedabout={()=> scrollToComponentHandler(pages.aboutMe)}clickedprojects={()=> scrollToComponentHandler(pages.projects)} clickedwork={()=> scrollToComponentHandler(pages.workXp)} clickedcontact={()=> scrollToComponentHandler(pages.contact)} />
+      <SectionHeader clickedabout={()=> scrollToComponentHandler(pages.aboutMe)}clickedprojects={()=> scrollToComponentHandler(pages.projects)} clickedwork={()=> scrollToComponentHandler(pages.workXp)} clickedcontact={()=> scrollToComponentHandler(pages.contact)} clickedhome={()=> navigate("/", { replace: true }) } />
       <section
         ref={(section) => {
           pages.aboutMe = section;

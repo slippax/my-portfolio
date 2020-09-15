@@ -92,7 +92,7 @@ img {
 
 @media (min-width: 320px) and (max-width: 480px) {
   .Container {
-    font-size: 22px;
+    font-size: 19px;
     padding-top: 17%;
     padding-bottom: 100%;
   }
