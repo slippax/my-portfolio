@@ -8,27 +8,31 @@ const card = (props) => {
       <ReactCardCarousel autoplay={true} autoplay_speed={3000}>
         <div
           className={classes.media}
-          onClick={() => window.open("https://slippax.github.io/Ez-Sens/")}
+          
         >
-          <img src={props.ezsensimage} alt="project"></img>
+          <img src={props.ezsensimage} alt="project" onClick={() => window.open("https://slippax.github.io/Ez-Sens/")}></img>
+          <p>Mouse sensitivity converter for common FPS titles.</p>
         </div>
         <div
           className={classes.media}
-          onClick={() => window.open("http://slippax.github.io/weather-grabbr")}
+         
         >
-          <img src={props.weatherimage} alt="weather"></img>
+          <img src={props.weatherimage} alt="weather"  onClick={() => window.open("http://slippax.github.io/weather-grabbr")}></img>
+          <p>Weather data fetcher using open weather API.</p>
         </div>
         <div
           className={classes.media}
-          onClick={() => window.open("https://slippax.github.io/todoz/")}
+          
         >
-          <img src={props.todozimage} alt="todoz"></img>
+          <img src={props.todozimage} alt="todoz" onClick={() => window.open("https://slippax.github.io/todoz/")}></img>
+          <p>Todo List using Redux</p>
         </div>
         <div
           className={classes.media}
-          onClick={() => window.open("https://slippax.github.io/type-god")}
+          
         >
-          <img src={props.typeimage} alt="type"></img>
+          <img src={props.typeimage} alt="type" onClick={() => window.open("https://slippax.github.io/type-god")}></img>
+          <p>Typing challenge using google firebase auth & realtime database</p>
         </div>
       </ReactCardCarousel>
     </div>

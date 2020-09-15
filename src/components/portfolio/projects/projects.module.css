@@ -4,13 +4,13 @@
   color: darkslategray;
 }
 
-.projects {
-  border-bottom: 1px solid gray;
-}
 img {
   border-radius: 7%;
 }
 
+.projectstitle{
+  border-bottom: 2px solid darkslategray;
+}
 @media (min-width: 1281px) {
   .Container {
     font-size: 25px;
@@ -19,7 +19,7 @@ img {
   }
   img {
     max-width: 90%;
-    max-height: 90%;
+    max-height: 80%;
   }
 }
 
@@ -31,12 +31,12 @@ img {
 @media (min-width: 1025px) and (max-width: 1280px) {
   .Container {
     font-size: 23px;
-    padding-top: 3%;
+    padding-top: 6%;
     padding-bottom: 50%;
   }
   img {
     max-width: 90%;
-    max-height: 90%;
+    max-height: 80%;
   }
 }
 
@@ -47,12 +47,12 @@ img {
 @media (min-width: 768px) and (max-width: 1024px) {
   .Container {
     font-size: 23px;
-    padding-top: 5%;
+    padding-top: 6%;
     padding-bottom: 50%;
   }
   img {
     max-width: 90%;
-    max-height: 90%;
+    max-height: 80%;
   }
 }
 
@@ -69,7 +69,7 @@ img {
   }
   img {
     max-width: 90%;
-    max-height:90%;
+    max-height:80%;
   }
 }
 
@@ -81,10 +81,10 @@ img {
 @media (min-width: 481px) and (max-width: 767px) {
   img {
     max-width: 90%;
-    max-height: 80%;
+    max-height: 70%;
   }
   .Container {
-    font-size: 15px;
+    font-size: 22px;
     padding-top: 10%;
     padding-bottom: 40%;
   }
@@ -92,13 +92,13 @@ img {
 
 @media (min-width: 320px) and (max-width: 480px) {
   .Container {
-    font-size: 19px;
+    font-size: 22px;
     padding-top: 17%;
     padding-bottom: 100%;
   }
 
   img {
     max-width: 90%;
-    max-height: 90%;
+    max-height: 70%;
   }
 }

@@ -4,14 +4,14 @@
 }
 
 .workXP {
-  border-bottom: 1px solid gray;
   color: darkslategray;
+  border-bottom: 2px solid darkslategray;
 }
 
 @media (min-width: 1281px) {
   .Container {
     font-size: 25px;
-    padding-top: 4%;
+    padding-top: 6%;
     padding-bottom: 40%;
   }
 }
@@ -19,21 +19,21 @@
 @media (min-width: 1025px) and (max-width: 1280px) {
   .Container {
     font-size: 23px;
-    padding-top: 5%;
+    padding-top: 6%;
     padding-bottom: 50%;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .Container {
-    font-size: 20px;
+    font-size: 22px;
     padding-top: 10%;
     padding-bottom: 50%;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .Container {
-    font-size: 20px;
+    font-size: 22px;
     padding-top: 10%;
     padding-bottom: 50%;
   }
@@ -42,14 +42,14 @@
 @media (min-width: 481px) and (max-width: 767px) {
   .Container {
     padding-top: 11%;
-    padding-bottom: 40%;
+    padding-bottom: 50%;
     font-size: 19px;
   }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
   .Container {
-    font-size: 19px;
+    font-size: 22px;
     padding-top: 17%;
     padding-bottom: 100%;
   }

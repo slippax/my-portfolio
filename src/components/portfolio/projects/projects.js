@@ -13,7 +13,7 @@ const projects = () => {
     <div >
       <Container maxWidth="sm" className={classes.Container}>
         <Zoom>
-          <h3 className={classes.projects}>Projects</h3>
+          <h3 className={classes.projectstitle}>Projects</h3>
           <Card
             ezsensimage={ezsens}
             weatherimage={weathergrabbr}

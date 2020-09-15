@@ -1,17 +1,14 @@
 import React from "react";
 import classes from "./aboutme.module.css";
-
 import "react-awesome-button/dist/styles.css";
-
 import Container from "@material-ui/core/Container";
 import Zoom from "react-reveal/Zoom";
-
 const aboutme = () => {
   return (
     <div>
       <Container maxWidth="sm" className={classes.Container}>
         <Zoom>
-          <h3 className={classes.aboutme}>About me</h3>
+          <h3 className={classes.about}>About me</h3>
           <div>
             <p>
               Hello! I'm Stephen, a front end developer based in Toronto,

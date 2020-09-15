@@ -12,6 +12,7 @@ import { SocialMediaIconsReact } from "social-media-icons-react";
 import RubberBand from "react-reveal/Zoom";
 import PageProgress from "react-page-progress";
 import Menu from "../portfolio/ui/menu/sidebar";
+import SectionHeader from '../portfolio/ui/sectionheader/sectionheader';
 const Portfolio = () => {
   let pages = {};
   let navigate = useNavigate();
@@ -56,6 +57,7 @@ const Portfolio = () => {
         contactClick={() => scrollToComponentHandler(pages.contact)}
       />
       <PageProgress color={"gray"} height={5} />
+      <SectionHeader clickedabout={()=> scrollToComponentHandler(pages.aboutMe)}clickedprojects={()=> scrollToComponentHandler(pages.projects)} clickedwork={()=> scrollToComponentHandler(pages.workXp)} clickedcontact={()=> scrollToComponentHandler(pages.contact)} />
       <section
         ref={(section) => {
           pages.aboutMe = section;
@@ -107,7 +109,7 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
-        <AboutMe />
+        <AboutMe clickedabout={()=> scrollToComponentHandler(pages.aboutMe)}clickedprojects={()=> scrollToComponentHandler(pages.projects)} clickedwork={()=> scrollToComponentHandler(pages.workXp)} clickedcontact={()=> scrollToComponentHandler(pages.contact)} />
       </ReactScrollWheelHandler>
       <section
         ref={(section) => {
@@ -119,7 +121,7 @@ const Portfolio = () => {
         upHandler={() => scrollToComponentHandler(pages.aboutMe)}
         downHandler={() => scrollToComponentHandler(pages.workXp)}
       >
-        <Projects />
+        <Projects clickedabout={()=> scrollToComponentHandler(pages.aboutMe)}clickedprojects={()=> scrollToComponentHandler(pages.projects)} clickedwork={()=> scrollToComponentHandler(pages.workXp)} clickedcontact={()=> scrollToComponentHandler(pages.contact)} />
       </ReactScrollWheelHandler>
       <section
         ref={(section) => {
@@ -131,7 +133,7 @@ const Portfolio = () => {
         upHandler={() => scrollToComponentHandler(pages.projects)}
         downHandler={() => scrollToComponentHandler(pages.contact)}
       >
-        <WorkXp />
+        <WorkXp clickedabout={()=> scrollToComponentHandler(pages.aboutMe)}clickedprojects={()=> scrollToComponentHandler(pages.projects)} clickedwork={()=> scrollToComponentHandler(pages.workXp)} clickedcontact={()=> scrollToComponentHandler(pages.contact)} />
       </ReactScrollWheelHandler>
       <section
         ref={(section) => {
@@ -142,7 +144,7 @@ const Portfolio = () => {
         pauseListeners={pause}
         upHandler={() => scrollToComponentHandler(pages.workXp)}
       >
-        <Contact />
+        <Contact clickedabout={()=> scrollToComponentHandler(pages.aboutMe)}clickedprojects={()=> scrollToComponentHandler(pages.projects)} clickedwork={()=> scrollToComponentHandler(pages.workXp)} clickedcontact={()=> scrollToComponentHandler(pages.contact)} />
       </ReactScrollWheelHandler>
     </div>
   );

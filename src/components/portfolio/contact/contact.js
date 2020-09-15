@@ -10,7 +10,7 @@ const contact = () => {
     <div>
       <Container maxWidth="sm" className={classes.Container}>
         <Zoom>
-          <h3 className={classes.contact}>Get In Touch</h3>
+          <h3 className={classes.contacttitle}>Get In Touch</h3>
           <p>
             I'm currently looking for new opportunities, my inbox is always
             open. Whether you have a question or just want to say hi, I'll try

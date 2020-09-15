@@ -3,12 +3,15 @@
   padding-bottom: 100%;
 }
 .contact {
-  border-bottom: 1px solid gray;
   color: darkslategray;
 }
 
 .button {
   text-align: center;
+}
+.contacttitle{
+  color: darkslategray;
+  border-bottom: 2px solid darkslategray;
 }
 @media (min-width: 1281px) {
   .Container {
@@ -30,12 +33,12 @@
   .Container {
     padding-top: 10%;
     padding-bottom: 50%;
-    font-size: 20px;
+    font-size: 22px;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .Container {
-    font-size: 20px;
+    font-size: 22px;
     padding-top: 10%;
     padding-bottom: 50%;
   }
@@ -43,19 +46,15 @@
 
 @media (min-width: 481px) and (max-width: 767px) {
   .Container {
-    font-size: 19px;
+    font-size: 22px;
     padding-top: 8%;
     padding-bottom: 40%;
   }
 }
 @media (min-width: 320px) and (max-width: 480px) {
   .Container {
-    font-size: 19px;
+    font-size: 22px;
     padding-top: 17%;
     padding-bottom: 150%;
-  }
-
-  .contact {
-    border-bottom: 1px solid gray;
   }
 }
