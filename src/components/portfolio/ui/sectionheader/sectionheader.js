@@ -14,6 +14,7 @@ const sectionheader = (props) => {
             <h3 className={classes.work} onClick={props.clickedwork}>Work</h3>
 
             <h3 className={classes.work} onClick={props.clickedcontact}>Contact</h3>
+            <div></div>
           </div>
           </div>
           </Flip>

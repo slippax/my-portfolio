@@ -1,6 +1,6 @@
 .section{
   
-    color: dimgray;
+    color: darkslategray;
     font-size: 19px;
     cursor: pointer;
     outline: none;
@@ -41,8 +41,8 @@
       .sectionbox{
        text-align: center;
        position: fixed; /* Set the navbar to fixed position */
-      top: 20%;
-      left: 14%;
+      top: 27%;
+      left: 10%;
       z-index: 100;
       outline: none;
       padding-right: 40px;
@@ -66,7 +66,7 @@
       .sectionbox{
        text-align: center;
        position: fixed; /* Set the navbar to fixed position */
-      top: 20%;
+      top: 25%;
       left: 5%;
       z-index: 100;
       outline: none;

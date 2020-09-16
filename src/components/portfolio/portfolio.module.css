@@ -32,15 +32,16 @@
    display: none;
   }
   .menu {
-    position: fixed; /* Set the navbar to fixed position */
+    position: fixed; 
     top: 90%;
-    left: 47%;
+    left: 46%;
     z-index: 100;
   }
   .icontainer {
-    position: fixed; /* Set the navbar to fixed position */
-    top: 90%;
-    left: 46%;
+    display: inline;
+    position: fixed; 
+    top: 39%;
+    left: 75%;
     z-index: 100;
   }
 }
@@ -64,9 +65,10 @@
     z-index: 100;
   }
   .icontainer {
+    display: inline;
     position: fixed; /* Set the navbar to fixed position */
-    top: 89%;
-    left: 45%;
+    top: 35%;
+    left: 84%;
     z-index: 100;
   }
 }
