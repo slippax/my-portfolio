@@ -34,6 +34,8 @@
     .media {
         height: 450px;
         width: 380px;
+        padding-top:1px;
+        padding-bottom: 100px;
       }
       .root {
         padding-bottom: 50px;
