@@ -120,7 +120,7 @@ img {
 @media (min-width: 320px) and (max-width: 480px) {
   .Container {
     font-size: 19px;
-    margin-top: 20%;
+    margin-top: 12%;
     margin-bottom: 100%;
   }
   .paddingbox{

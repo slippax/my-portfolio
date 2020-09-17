@@ -6,12 +6,12 @@ import ezsens from "./ezsens.JPG";
 import weathergrabbr from "./weathergrabbr.JPG";
 import todoz from "./todoz.JPG";
 import type from  "./type.JPG"
-import Zoom from "react-reveal/Bounce";
+import Zoom from "react-reveal/Zoom";
 
 const projects = () => {
   return (
     <div >
-      <Zoom bottom>
+      <Zoom>
       <div className={classes.paddingbox}></div>
       <Container maxWidth="sm" className={classes.Container}>
         

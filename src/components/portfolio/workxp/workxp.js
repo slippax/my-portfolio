@@ -1,12 +1,12 @@
 import React from "react";
 import Container from "@material-ui/core/Container";
 import classes from "./workxp.module.css";
-import Zoom from "react-reveal/Bounce";
+import Zoom from "react-reveal/Zoom";
 
 const workxp = (props) => {
   return (
     <div>
-      <Zoom bottom>
+      <Zoom >
         <div className={classes.paddingbox}></div>
         <Container maxWidth="sm" className={classes.Container}>
           <h3 className={classes.workXP}>Work Experience</h3>

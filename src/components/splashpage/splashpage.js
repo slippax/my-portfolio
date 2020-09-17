@@ -10,8 +10,6 @@ import ReactScrollWheelHandler from "react-scroll-wheel-handler";
 import Flip from "react-reveal/Zoom";
 import Fade from "react-reveal/Fade";
 import { SocialMediaIconsReact } from "social-media-icons-react";
-import ParticleComponent from "../portfolio/ui/particles/particles";
-
 function SplashPage() {
   let navigate = useNavigate();
 
@@ -21,7 +19,7 @@ function SplashPage() {
         downHandler={() => navigate("/portfolio", { replace: true })}
       >
         <div className={classes.headerText}>
-          <Flip top cascade>
+          <Flip cascade>
             <p className={classes.greetingText}>Hi, my name is</p>
             <p className={classes.nameText}>Stephen Lippa</p>
           </Flip>
@@ -77,9 +75,6 @@ function SplashPage() {
           </div>
         </div>
       </ReactScrollWheelHandler>
-      <div>
-        <ParticleComponent />
-      </div>
     </div>
   );
 }

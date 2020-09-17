@@ -4,11 +4,11 @@ import classes from "./contact.module.css";
 import { AwesomeButton } from "react-awesome-button";
 import "react-awesome-button/dist/themes/theme-c137.css";
 import ArrowDropDownOutlinedIcon from "@material-ui/icons/MailOutlined";
-import Zoom from "react-reveal/Bounce";
+import Zoom from "react-reveal/Zoom";
 const contact = () => {
   return (
     <div>
-      <Zoom bottom>
+      <Zoom>
       <div className={classes.paddingbox}></div>
       <Container maxWidth="sm" className={classes.Container}>
         
