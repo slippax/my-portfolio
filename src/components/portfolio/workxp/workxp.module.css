@@ -1,6 +1,8 @@
 .Container {
-  padding-bottom: 100%;
-  padding-top: 30%;
+  border: 2px solid darkslategray;
+  border-radius: 4vw 4vw 4vw 4vw;
+  box-shadow: 3px 4px 5px 10px rgba(0, 0, 0, 0.38);
+  background: gainsboro;
 }
 
 .workXP {
@@ -11,46 +13,73 @@
 @media (min-width: 1281px) {
   .Container {
     font-size: 25px;
-    padding-top: 6%;
-    padding-bottom: 40%;
+    margin-top: 5%;
+    margin-bottom: 40%;
   }
+  .Container:hover{
+    box-shadow: 5px 6px 7px 11px rgba(0, 0, 0, 0.38);
+    background: #eaeaea;
+  }
+  .paddingbox{
+    padding-top: 6%;
+  }
+  
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
   .Container {
     font-size: 23px;
+    margin-top: 6%;
+    margin-bottom: 50%;
+  }
+  .Container:hover{
+    box-shadow: 5px 6px 7px 11px rgba(0, 0, 0, 0.38);
+    background: #eaeaea;
+  }
+  .paddingbox{
     padding-top: 6%;
-    padding-bottom: 50%;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .Container {
     font-size: 22px;
+    margin-top: 4%;
+    margin-bottom: 50%;
+  }
+  .paddingbox{
     padding-top: 10%;
-    padding-bottom: 50%;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .Container {
     font-size: 22px;
+    margin-top: 4%;
+    margin-bottom: 50%;
+  }
+  .paddingbox{
     padding-top: 10%;
-    padding-bottom: 50%;
   }
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
   .Container {
-    padding-top: 11%;
-    padding-bottom: 50%;
+    margin-top: 20%;
+    margin-bottom: 50%;
     font-size: 19px;
+  }
+  .paddingbox{
+    padding-top: 5%;
   }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
   .Container {
     font-size: 19px;
-    padding-top: 17%;
-    padding-bottom: 100%;
+    margin-top: 20%;
+    margin-bottom: 100%;
+  }
+  .paddingbox{
+    padding-top: 9%;
   }
 }

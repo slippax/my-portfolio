@@ -1,13 +1,14 @@
 import React from "react";
 import Container from "@material-ui/core/Container";
 import classes from "./workxp.module.css";
-import Zoom from "react-reveal/Zoom";
+import Zoom from "react-reveal/Bounce";
 
 const workxp = (props) => {
   return (
     <div>
-      <Container maxWidth="sm" className={classes.Container}>
-        <Zoom>
+      <Zoom bottom>
+        <div className={classes.paddingbox}></div>
+        <Container maxWidth="sm" className={classes.Container}>
           <h3 className={classes.workXP}>Work Experience</h3>
           <h3>
             <strong>Apple</strong>
@@ -27,8 +28,8 @@ const workxp = (props) => {
             issues. Discovering needs for customers and repairing customer
             relationships.
           </p>
-        </Zoom>
-      </Container>
+        </Container>
+      </Zoom>
     </div>
   );
 };

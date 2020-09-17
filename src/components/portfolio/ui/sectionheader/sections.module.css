@@ -1,149 +1,148 @@
-.section{
-  
-    color: darkslategray;
-    font-size: 19px;
-    cursor: pointer;
-    outline: none;
-    border-top: 1px darkslategray;
-  }
-  .sectionbox{
-   text-align: center;
-   position: fixed; /* Set the navbar to fixed position */
+.section {
+  color: darkslategray;
+  font-size: 19px;
+  cursor: pointer;
+  outline: none;
+  border-top: 1px darkslategray;
+}
+.sectionbox {
+  text-align: center;
+  position: fixed; /* Set the navbar to fixed position */
   top: 30%;
   left: 5%;
   z-index: 100;
   outline: none;
-  }
+}
 
-  .aboutme:hover{
-      color: darkgoldenrod;
-  }
+.aboutme:hover {
+  color: darkgoldenrod;
+}
 
-  .projects:hover{
-    color: darkgoldenrod;
-  }
+.projects:hover {
+  color: darkgoldenrod;
+}
 
-  .work:hover{
-    color: darkgoldenrod;
-  }
+.work:hover {
+  color: darkgoldenrod;
+}
 
-  .contact:hover{
-    color: darkgoldenrod;
+.contact:hover {
+  color: darkgoldenrod;
+}
+@media (min-width: 1281px) {
+  .section {
+    font-size: 22px;
+    cursor: pointer;
+    outline: none;
+    border-top: 1px darkslategray;
   }
-  @media (min-width: 1281px) {
-  
-    .section{
-        font-size: 21px;
-        cursor: pointer;
-        outline: none;
-        border-top: 1px darkslategray;
-      }
-      .sectionbox{
-       text-align: center;
-       position: fixed; /* Set the navbar to fixed position */
-      top: 27%;
-      left: 10%;
-      z-index: 100;
-      outline: none;
-      padding-right: 40px;
-      border-right: 2px solid darkslategray;
-      }
-    
+  .sectionbox {
+    text-align: center;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 30%;
+    left: -3%;
+    z-index: 100;
+    outline: none;
+    padding-right: 40px;
+    border: 3px solid darkslategray;
+    border-radius: 0vw 5vw 5vw 0vw;
+    background: gainsboro;
+    padding-left: 100px;
+    box-shadow: 3px 4px 6px 7px rgba(0, 0, 0, 0.38);
   }
-  
-  /* 
+  .sectionbox:hover{
+    background: #eaeaea;
+    box-shadow: 4px 5px 10px 10px rgba(0, 0, 0, 0.38);
+  }
+}
+
+/* 
     ##Device = Laptops, Desktops
     ##Screen = B/w 1025px to 1280px
   */
-  
-  @media (min-width: 1025px) and (max-width: 1280px) {
-    .section{
-        font-size: 20px;
-        cursor: pointer;
-        outline: none;
-        border-top: 1px darkslategray;
-      }
-      .sectionbox{
-       text-align: center;
-       position: fixed; /* Set the navbar to fixed position */
-      top: 25%;
-      left: 5%;
-      z-index: 100;
-      outline: none;
-      padding-right: 40px;
-      border-right: 2px solid darkslategray;
-      }
-    
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .section {
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+    border-top: 1px darkslategray;
   }
-  
-  /* 
+  .sectionbox {
+    text-align: center;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 30%;
+    left: -5%;
+    z-index: 100;
+    outline: none;
+    padding-right: 40px;
+    border: 3px solid darkslategray;
+    border-radius: 0vw 5vw 5vw 0vw;
+    background: gainsboro;
+    padding-left: 100px;
+    box-shadow: 3px 4px 6px 7px rgba(0, 0, 0, 0.38);
+  }
+  .sectionbox:hover{
+    background: #eaeaea;
+    box-shadow: 4px 5px 10px 10px rgba(0, 0, 0, 0.38);
+  }
+}
+
+/* 
     ##Device = Tablets, Ipads (portrait)
     ##Screen = B/w 768px to 1024px
   */
-  
-  @media (min-width: 768px) and (max-width: 1024px) {
-    
-    .section{
-        display: none;
-      }
-      .sectionbox{
-       display: none;
-      }
-    
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .section {
+    display: none;
   }
-  
-  /* 
+  .sectionbox {
+    display: none;
+  }
+}
+
+/* 
     ##Device = Tablets, Ipads (landscape)
     ##Screen = B/w 768px to 1024px
   */
-  
-  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    
-    .section{
-        display: none;
-      
-      }
 
-      .sectionbox{
-       display: none;
-       
-       }
-    
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .section {
+    display: none;
   }
-  
-  /* 
+
+  .sectionbox {
+    display: none;
+  }
+}
+
+/* 
     ##Device = Low Resolution Tablets, Mobiles (Landscape)
     ##Screen = B/w 481px to 767px
   */
-  
-  @media (min-width: 481px) and (max-width: 767px) {
-    
-    .section{
-        display: none;
-      
-      }
 
-      .sectionbox{
-       display: none;
-       
-       }
-    
+@media (min-width: 481px) and (max-width: 767px) {
+  .section {
+    display: none;
   }
-  
-  /* 
+
+  .sectionbox {
+    display: none;
+  }
+}
+
+/* 
     ##Device = Most of the Smartphones Mobiles (Portrait)
     ##Screen = B/w 320px to 479px
   */
-  
-  @media (min-width: 320px) and (max-width: 480px) {
 
-    .section{
-        display: none;
-      
-      }
-
-      .sectionbox{
-       display: none;
-       
-       }
+@media (min-width: 320px) and (max-width: 480px) {
+  .section {
+    display: none;
   }
+
+  .sectionbox {
+    display: none;
+  }
+}

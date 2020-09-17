@@ -3,6 +3,7 @@
   overflow: auto;
   top: 45%;
   position: relative;
+
 }
 
 /* Individual item */
@@ -14,6 +15,7 @@
   margin-bottom: 10px;
   color: #d1d1d1;
   transition: color 0.2s;
+  outline: none;
 }
 
 /* Change color on hover */

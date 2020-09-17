@@ -13,6 +13,7 @@ import RubberBand from "react-reveal/Zoom";
 import PageProgress from "react-page-progress";
 import Menu from "../portfolio/ui/menu/sidebar";
 import SectionHeader from '../portfolio/ui/sectionheader/sectionheader';
+import Flip from 'react-reveal/Rotate';
 const Portfolio = () => {
   let pages = {};
   let navigate = useNavigate();
@@ -76,6 +77,7 @@ const Portfolio = () => {
           </RubberBand>
         </div>
         <div className={classes.menu}>
+          <Flip top right>
           <div className={classes.icontainer}>
             <div className={classes.icongit}>
               <RubberBand>
@@ -110,6 +112,7 @@ const Portfolio = () => {
               </RubberBand>
             </div>
           </div>
+          </Flip>
         </div>
         <AboutMe clickedabout={()=> scrollToComponentHandler(pages.aboutMe)}clickedprojects={()=> scrollToComponentHandler(pages.projects)} clickedwork={()=> scrollToComponentHandler(pages.workXp)} clickedcontact={()=> scrollToComponentHandler(pages.contact)} />
       </ReactScrollWheelHandler>

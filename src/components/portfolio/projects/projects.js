@@ -6,13 +6,15 @@ import ezsens from "./ezsens.JPG";
 import weathergrabbr from "./weathergrabbr.JPG";
 import todoz from "./todoz.JPG";
 import type from  "./type.JPG"
-import Zoom from "react-reveal/Zoom";
+import Zoom from "react-reveal/Bounce";
 
 const projects = () => {
   return (
     <div >
+      <Zoom bottom>
+      <div className={classes.paddingbox}></div>
       <Container maxWidth="sm" className={classes.Container}>
-        <Zoom>
+        
           <h3 className={classes.projectstitle}>Projects</h3>
           <Card
             ezsensimage={ezsens}
@@ -20,8 +22,9 @@ const projects = () => {
             todozimage={todoz}
             typeimage={type}
           />
-        </Zoom>
+       
       </Container>
+      </Zoom>
     </div>
   );
 };

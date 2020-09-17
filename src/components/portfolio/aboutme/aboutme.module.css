@@ -1,6 +1,8 @@
 .Container {
-  padding-top: 30%;
-  padding-bottom: 100%;
+  border: 2px solid darkslategray;
+  border-radius: 4vw 4vw 4vw 4vw;
+  box-shadow: 3px 4px 5px 10px rgba(0, 0, 0, 0.38);
+  background: gainsboro;
 }
 
 ul {
@@ -20,10 +22,16 @@ ul {
 @media (min-width: 1281px) {
   .Container {
     font-size: 25px;
-    padding-top: 6%;
-    padding-bottom: 40%;
+    margin-top: 3%;
+    margin-bottom: 40%;
   }
-  
+  .Container:hover{
+    box-shadow: 5px 6px 7px 11px rgba(0, 0, 0, 0.38);
+    background: #eaeaea;
+  }
+  .paddingbox{
+    padding-top: 6%;
+  }
   
 }
 
@@ -35,10 +43,16 @@ ul {
 @media (min-width: 1025px) and (max-width: 1280px) {
   .Container {
     font-size: 23px;
-    padding-top: 6%;
-    padding-bottom: 50%;
+    margin-top: 3%;
+    margin-bottom: 50%;
   }
-
+  .Container:hover{
+    box-shadow: 5px 6px 7px 11px rgba(0, 0, 0, 0.38);
+    background: #eaeaea;
+  }
+  .paddingbox{
+    padding-top: 6%;
+  }
   
 }
 
@@ -51,10 +65,12 @@ ul {
   
   .Container {
     font-size: 22px;
-    padding-top: 10%;
-    padding-bottom: 50%;
+    margin-top: 8%;
+    margin-bottom: 50%;
   }
-  
+  .paddingbox{
+    padding-top: 5%;
+  }
 }
 
 /* 
@@ -64,9 +80,12 @@ ul {
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .Container {
-    padding-top: 8%;
-    padding-bottom: 50%;
+    margin-top: 8%;
+    margin-bottom: 50%;
     font-size: 20px;
+  }
+  .paddingbox{
+    padding-top: 5%;
   }
 }
 
@@ -78,17 +97,22 @@ ul {
 @media (min-width: 481px) and (max-width: 767px) {
   .Container {
     font-size: 22px;
-    padding-top: 13%;
-    padding-bottom: 50%;
+    margin-top: 13%;
+    margin-bottom: 50%;
   }
-
+  .paddingbox{
+    padding-top: 5%;
+  }
   
 }
 @media (min-width: 320px) and (max-width: 480px) {
   .Container {
     font-size: 19px;
-    padding-top: 17%;
-    padding-bottom: 100%;
+    margin-top: 17%;
+    margin-bottom: 100%;
+  }
+  .paddingbox{
+    padding-top: 9%;
   }
   ul {
     -moz-column-count: 2;

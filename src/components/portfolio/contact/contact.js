@@ -4,12 +4,14 @@ import classes from "./contact.module.css";
 import { AwesomeButton } from "react-awesome-button";
 import "react-awesome-button/dist/themes/theme-c137.css";
 import ArrowDropDownOutlinedIcon from "@material-ui/icons/MailOutlined";
-import Zoom from "react-reveal/Zoom";
+import Zoom from "react-reveal/Bounce";
 const contact = () => {
   return (
     <div>
+      <Zoom bottom>
+      <div className={classes.paddingbox}></div>
       <Container maxWidth="sm" className={classes.Container}>
-        <Zoom>
+        
           <h3 className={classes.contacttitle}>Get In Touch</h3>
           <p>
             I'm currently looking for new opportunities, my inbox is always
@@ -27,8 +29,8 @@ const contact = () => {
               <ArrowDropDownOutlinedIcon fontSize="large" />
             </AwesomeButton>
           </div>
-        </Zoom>
       </Container>
+      </Zoom>
     </div>
   );
 };

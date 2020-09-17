@@ -2,12 +2,14 @@ import React from "react";
 import classes from "./aboutme.module.css";
 import "react-awesome-button/dist/styles.css";
 import Container from "@material-ui/core/Container";
-import Zoom from "react-reveal/Zoom";
+import Zoom from "react-reveal/Bounce";
 const aboutme = () => {
   return (
     <div>
+      <div className={classes.paddingbox}></div>
+      <Zoom bottom>
       <Container maxWidth="sm" className={classes.Container}>
-        <Zoom>
+        
           <h3 className={classes.about}>About me</h3>
           <div>
             <p>
@@ -31,8 +33,9 @@ const aboutme = () => {
               <li>Node.js</li>
             </ul>
           </div>
-        </Zoom>
+        
       </Container>
+      </Zoom>
     </div>
   );
 };
