@@ -64,7 +64,7 @@ const particles = () => {
               },
               outMode: "destroy",
               random: false,
-              speed: 5,
+              speed: 4,
               straight: false,
               trail: {
                 enable: false,
@@ -85,7 +85,7 @@ const particles = () => {
                 destroy: "max",
                 enable: true,
                 minimumValue: 0.1,
-                speed: 5,
+                speed: 4,
                 startValue: "min",
                 sync: true,
               },
@@ -97,7 +97,7 @@ const particles = () => {
           emitters: {
             direction: "top",
             life: {},
-            rate: { quantity: 1.0, delay: 0.5 },
+            rate: { quantity: 0.9, delay: 0.6 },
             size: { mode: "percent", height: 0, width: 100 },
             position: { x: 50, y: 100 },
           },

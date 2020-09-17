@@ -7,7 +7,7 @@
   font-size: 30px;
   border-radius: 4vw 4vw 4vw 4vw;
   box-shadow: 3px 4px 5px 10px rgba(0, 0, 0, 0.38);
-  background: gainsboro;
+
 }
 
 .greetingText {
@@ -97,9 +97,11 @@
     left: 22%;
     margin-top: -120px;
     font-size: 40px;
-    padding-left: 180px;
+    padding-left: 150px;
     padding-top: 10px;
     padding-bottom: 10px;
+    background: gainsboro;
+    border: 2px solid darkslategray;
   }
   .headerText:hover{
     box-shadow: 5px 6px 7px 11px rgba(0, 0, 0, 0.38);
@@ -153,6 +155,8 @@
     padding-left: 100px;
     padding-top: 10px;
     padding-bottom: 10px;
+    background: gainsboro;
+    border: 2px solid darkslategray;
   }
   .headerText:hover{
     box-shadow: 5px 6px 7px 11px rgba(0, 0, 0, 0.38);
@@ -213,6 +217,8 @@
     padding-left: 50px;
     padding-top: 10px;
     padding-bottom: 10px;
+    background: gainsboro;
+    border: 2px solid darkslategray;
   }
   .headerText:hover{
     box-shadow: 5px 6px 7px 11px rgba(0, 0, 0, 0.38);
@@ -266,6 +272,8 @@
     padding-left: 50px;
     padding-top: 10px;
     padding-bottom: 10px;
+    background: gainsboro;
+    border: 2px solid darkslategray;
   }
   .headerText:hover{
     box-shadow: 5px 6px 7px 11px rgba(0, 0, 0, 0.38);
@@ -318,6 +326,8 @@
     padding-left: 40px;
     padding-top: 10px;
     padding-bottom: 10px;
+    background: gainsboro;
+    border: 2px solid darkslategray;
   }
   .headerText:hover{
     box-shadow: 5px 6px 7px 11px rgba(0, 0, 0, 0.38);
@@ -359,19 +369,13 @@
   .headerText {
     position: absolute;
     top: 35%;
-    left: 4%;
+    left: 9%;
     width: 90%;
     margin-top: -90px;
     font-size: 30px;
     z-index: 100;
-    padding-left: 8px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    box-shadow:0px -1px 10px 13px rgba(0, 0, 0, 0.38);
-  }
-  .headerText:hover{
-    box-shadow: 5px 6px 7px 11px rgba(0, 0, 0, 0.38);
-    background: #eaeaea;
+border: none;
+box-shadow: none;
   }
   
 
@@ -400,12 +404,12 @@
   }
 
   .button {
-    padding-left: 115px;
+    padding-left: 125px;
     padding-top: 30px;
     animation: fadein 1s;
   }
 
   .icontainer {
-    padding-left: 76px;
+    padding-left: 85px;
   }
 }

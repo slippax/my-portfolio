@@ -2,7 +2,6 @@
   border: 2px solid darkslategray;
   border-radius: 4vw 4vw 4vw 4vw;
   box-shadow: 3px 4px 5px 10px rgba(0, 0, 0, 0.38);
-  background: gainsboro;
 }
 
 .workXP {
@@ -15,6 +14,7 @@
     font-size: 25px;
     margin-top: 5%;
     margin-bottom: 40%;
+    background: gainsboro;
   }
   .Container:hover{
     box-shadow: 5px 6px 7px 11px rgba(0, 0, 0, 0.38);
@@ -31,6 +31,7 @@
     font-size: 23px;
     margin-top: 6%;
     margin-bottom: 50%;
+    background: gainsboro;
   }
   .Container:hover{
     box-shadow: 5px 6px 7px 11px rgba(0, 0, 0, 0.38);
@@ -46,6 +47,7 @@
     font-size: 22px;
     margin-top: 4%;
     margin-bottom: 50%;
+    background: gainsboro;
   }
   .paddingbox{
     padding-top: 10%;
@@ -56,6 +58,7 @@
     font-size: 22px;
     margin-top: 4%;
     margin-bottom: 50%;
+    background: gainsboro;
   }
   .paddingbox{
     padding-top: 10%;
@@ -67,6 +70,7 @@
     margin-top: 20%;
     margin-bottom: 50%;
     font-size: 19px;
+    background: gainsboro;
   }
   .paddingbox{
     padding-top: 5%;
@@ -76,8 +80,10 @@
 @media (min-width: 320px) and (max-width: 480px) {
   .Container {
     font-size: 19px;
-    margin-top: 12%;
+    margin-top: 15%;
     margin-bottom: 100%;
+    border: none;
+    box-shadow: none;
   }
   .paddingbox{
     padding-top: 9%;

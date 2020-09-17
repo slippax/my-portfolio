@@ -48,7 +48,7 @@
     height: 150px;
     padding-top: 20px;
     padding-left: 30px;
-    padding-right: 50px;
+    padding-right: 70px;
     background: gainsboro;
     box-shadow: -3px 4px 6px 7px rgba(0, 0, 0, 0.38);
   }
@@ -80,14 +80,14 @@
     display: inline-block;
     position: fixed; /* Set the navbar to fixed position */
     top: 35%;
-    left: 89%;
+    right: -1%;
     z-index: 100;
     border: 3px solid darkslategray;
     border-radius: 4vw 0vw 0vw 4vw;
     height: 150px;
     padding-top: 20px;
     padding-left: 30px;
-    padding-right: 50px;
+    padding-right: 55px;
     background: gainsboro;
     box-shadow: -3px 4px 6px 7px rgba(0, 0, 0, 0.38);
   }
@@ -168,7 +168,7 @@
   }
   .icontainer {
     position: fixed; /* Set the navbar to fixed position */
-    top: 89%;
+    top: 88%;
     left: 42%;
     z-index: 100;
   }
@@ -178,7 +178,7 @@
   .button {
     position: fixed;
     left: 75%;
-    top: 0.5%;
+    top: 1%;
     z-index: 100;
   }
   .menu {
