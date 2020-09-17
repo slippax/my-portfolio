@@ -178,13 +178,16 @@
   .button {
     position: fixed;
     left: 75%;
-    top: 1.2%;
+    top: 0.5%;
     z-index: 100;
   }
   .menu {
     position: fixed; /* Set the navbar to fixed position */
-    top: 88%;
+    top: 89%;
     left: 34%;
     z-index: 100;
+  }
+  .mobilemenu {
+
   }
 }
