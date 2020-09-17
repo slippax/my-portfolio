@@ -21,7 +21,7 @@ function SplashPage() {
         downHandler={() => navigate("/portfolio", { replace: true })}
       >
         <div className={classes.headerText}>
-          <Flip cascade>
+          <Flip top cascade>
             <p className={classes.greetingText}>Hi, my name is</p>
             <p className={classes.nameText}>Stephen Lippa</p>
           </Flip>

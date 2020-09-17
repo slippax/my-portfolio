@@ -7,7 +7,7 @@ const aboutme = () => {
   return (
     <div>
       <div className={classes.paddingbox}></div>
-      <Zoom bottom>
+      <Zoom top>
       <Container maxWidth="sm" className={classes.Container}>
         
           <h3 className={classes.about}>About me</h3>
