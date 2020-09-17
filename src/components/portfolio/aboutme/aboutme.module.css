@@ -108,7 +108,7 @@ ul {
 @media (min-width: 320px) and (max-width: 480px) {
   .Container {
     font-size: 19px;
-    margin-top: 12%;
+    margin-top: 11%;
     margin-bottom: 100%;
   }
   .paddingbox{

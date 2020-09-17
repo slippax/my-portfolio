@@ -14,6 +14,7 @@ function SplashPage() {
   let navigate = useNavigate();
 
   return (
+    <div>
     <div className={classes.container}>
       <ReactScrollWheelHandler
         downHandler={() => navigate("/portfolio", { replace: true })}
@@ -75,6 +76,7 @@ function SplashPage() {
           </div>
         </div>
       </ReactScrollWheelHandler>
+    </div>
     </div>
   );
 }
