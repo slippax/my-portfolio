@@ -85,7 +85,7 @@ ul {
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .Container {
-    margin-top: 8%;
+    margin-top: 4%;
     margin-bottom: 50%;
     font-size: 20px;
     background: gainsboro;

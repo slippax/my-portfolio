@@ -57,7 +57,7 @@
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .Container {
     font-size: 22px;
-    margin-top: 4%;
+    margin-top: 2%;
     margin-bottom: 50%;
     background: gainsboro;
   }
