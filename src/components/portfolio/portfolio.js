@@ -16,6 +16,7 @@ import SectionHeader from '../portfolio/ui/sectionheader/sectionheader';
 import Flip from 'react-reveal/Rotate';
 const Portfolio = () => {
   let pages = {};
+  let index = 0;
   let navigate = useNavigate();
 
   const [pause, setPause] = useState(false);
@@ -30,13 +31,14 @@ const Portfolio = () => {
   }, [menuToggle]);
 
   const pauseHandler = () => {
+    
     setPause(true);
     setTimeout(() => {
       setPause(false);
     }, 800);
   };
 
-  const scrollToComponentHandler = (page) => {
+  const scrollToComponentHandler = (page, num) => {
     scrollToComponent(page, {
       offset: 0,
       align: "top",
@@ -46,8 +48,39 @@ const Portfolio = () => {
     if (!menuToggle) {
       setMenuToggle(true);
     }
+    currentHandler(num);
   };
 
+  const currentHandler = (num) => {
+    index = num;
+    if (index===0){
+      document.getElementById('about').style.textDecoration = 'underline';
+      document.getElementById('project').style.textDecoration = 'none';
+      document.getElementById('work').style.textDecoration = 'none';
+      document.getElementById('contact').style.textDecoration = 'none';
+    }
+    if (index===1) {
+      document.getElementById('project').style.textDecoration = 'underline';
+      document.getElementById('about').style.textDecoration = 'none';
+      document.getElementById('work').style.textDecoration = 'none';
+      document.getElementById('contact').style.textDecoration = 'none';
+    }
+    if (index===2) {
+      document.getElementById('work').style.textDecoration = 'underline';
+      document.getElementById('about').style.textDecoration = 'none';
+      document.getElementById('project').style.textDecoration = 'none';
+      document.getElementById('contact').style.textDecoration = 'none';
+    }
+    if (index===3) {
+      document.getElementById('contact').style.textDecoration = 'underline';
+      document.getElementById('about').style.textDecoration = 'none';
+      document.getElementById('project').style.textDecoration = 'none';
+      document.getElementById('work').style.textDecoration = 'none';
+    }
+  }
+
+  
+  
   return (
     <div>
       <div className={classes.mobilemenu}>
@@ -60,7 +93,7 @@ const Portfolio = () => {
       />
       </div>
       <PageProgress color={"gray"} height={5} />
-      <SectionHeader clickedabout={()=> scrollToComponentHandler(pages.aboutMe)}clickedprojects={()=> scrollToComponentHandler(pages.projects)} clickedwork={()=> scrollToComponentHandler(pages.workXp)} clickedcontact={()=> scrollToComponentHandler(pages.contact)} clickedhome={()=> navigate("/", { replace: true }) } />
+      <SectionHeader clickedabout={()=> scrollToComponentHandler(pages.aboutMe, 0)}clickedprojects={()=> scrollToComponentHandler(pages.projects, 1)} clickedwork={()=> scrollToComponentHandler(pages.workXp,2)} clickedcontact={()=> scrollToComponentHandler(pages.contact,3)} clickedhome={()=> navigate("/", { replace: true }) } />
       <section
         ref={(section) => {
           pages.aboutMe = section;
@@ -69,7 +102,7 @@ const Portfolio = () => {
       <ReactScrollWheelHandler
         pauseListeners={pause}
         upHandler={() => navigate("/", { replace: true })}
-        downHandler={() => scrollToComponentHandler(pages.projects)}
+        downHandler={() => scrollToComponentHandler(pages.projects, 1)}
       >
         <div className={classes.button}>
           <RubberBand>
@@ -123,8 +156,8 @@ const Portfolio = () => {
       ></section>
       <ReactScrollWheelHandler
         pauseListeners={pause}
-        upHandler={() => scrollToComponentHandler(pages.aboutMe)}
-        downHandler={() => scrollToComponentHandler(pages.workXp)}
+        upHandler={() => scrollToComponentHandler(pages.aboutMe, 0)}
+        downHandler={() => scrollToComponentHandler(pages.workXp, 2)}
       >
         <Projects clickedabout={()=> scrollToComponentHandler(pages.aboutMe)}clickedprojects={()=> scrollToComponentHandler(pages.projects)} clickedwork={()=> scrollToComponentHandler(pages.workXp)} clickedcontact={()=> scrollToComponentHandler(pages.contact)} />
       </ReactScrollWheelHandler>
@@ -135,8 +168,8 @@ const Portfolio = () => {
       ></section>
       <ReactScrollWheelHandler
         pauseListeners={pause}
-        upHandler={() => scrollToComponentHandler(pages.projects)}
-        downHandler={() => scrollToComponentHandler(pages.contact)}
+        upHandler={() => scrollToComponentHandler(pages.projects, 1)}
+        downHandler={() => scrollToComponentHandler(pages.contact, 3)}
       >
         <WorkXp clickedabout={()=> scrollToComponentHandler(pages.aboutMe)}clickedprojects={()=> scrollToComponentHandler(pages.projects)} clickedwork={()=> scrollToComponentHandler(pages.workXp)} clickedcontact={()=> scrollToComponentHandler(pages.contact)} />
       </ReactScrollWheelHandler>
@@ -147,7 +180,7 @@ const Portfolio = () => {
       ></section>
       <ReactScrollWheelHandler
         pauseListeners={pause}
-        upHandler={() => scrollToComponentHandler(pages.workXp)}
+        upHandler={() => scrollToComponentHandler(pages.workXp,2)}
       >
         <Contact clickedabout={()=> scrollToComponentHandler(pages.aboutMe)}clickedprojects={()=> scrollToComponentHandler(pages.projects)} clickedwork={()=> scrollToComponentHandler(pages.workXp)} clickedcontact={()=> scrollToComponentHandler(pages.contact)} />
       </ReactScrollWheelHandler>

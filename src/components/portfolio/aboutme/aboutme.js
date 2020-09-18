@@ -4,6 +4,7 @@ import "react-awesome-button/dist/styles.css";
 import Container from "@material-ui/core/Container";
 import Zoom from "react-reveal/Zoom";
 const aboutme = () => {
+ 
   return (
     <div>
       <div className={classes.paddingbox}></div>
