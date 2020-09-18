@@ -39,7 +39,7 @@
   .sectionbox {
     text-align: center;
     position: fixed; /* Set the navbar to fixed position */
-    top: 255px;
+    top: 305px;
     left: -3%;
     z-index: 100;
     outline: none;

@@ -25,6 +25,8 @@ ul {
     margin-top: 3%;
     margin-bottom: 40%;
     background: gainsboro;
+    padding: 5px;
+    outline: none;
   }
   .Container:hover{
     box-shadow: 5px 6px 7px 11px rgba(0, 0, 0, 0.38);
@@ -44,7 +46,7 @@ ul {
 @media (min-width: 1025px) and (max-width: 1280px) {
   .Container {
     font-size: 23px;
-    margin-top: 3%;
+    margin-top: 3.5%;
     margin-bottom: 50%;
     background: gainsboro;
   }
@@ -117,6 +119,7 @@ ul {
     margin-bottom: 100%;
     border: none;
     box-shadow: none;
+    background: #c6c6c6;
   }
   .paddingbox{
     padding-top: 8%;

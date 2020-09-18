@@ -15,6 +15,7 @@
     margin-top: 5%;
     margin-bottom: 40%;
     background: gainsboro;
+    padding: 10px;
   }
   .Container:hover{
     box-shadow: 5px 6px 7px 11px rgba(0, 0, 0, 0.38);
@@ -84,6 +85,7 @@
     margin-bottom: 100%;
     border: none;
     box-shadow: none;
+    background: #c6c6c6;
   }
   .paddingbox{
     padding-top: 9%;

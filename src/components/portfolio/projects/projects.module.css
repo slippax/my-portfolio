@@ -15,10 +15,11 @@ img {
 @media (min-width: 1281px) {
   .Container {
     font-size: 25px;
-    margin-top: 6%;
+    margin-top: 5.5%;
     margin-bottom: 40%;
     padding-bottom: 40px;
     background: gainsboro;
+    padding-top: 10px;
   }
   .Container:hover{
     box-shadow: 5px 6px 7px 11px rgba(0, 0, 0, 0.38);
@@ -128,6 +129,7 @@ img {
     margin-bottom: 100%;
     border:none;
     box-shadow: none;
+    background: #c6c6c6;
   }
   .paddingbox{
     padding-top: 9%;
