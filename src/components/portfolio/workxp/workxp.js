@@ -3,7 +3,7 @@ import Container from "@material-ui/core/Container";
 import classes from "./workxp.module.css";
 import Zoom from "react-reveal/Zoom";
 
-const workxp = (props) => {
+const workxp = () => {
   return (
     <div>
       <Zoom >

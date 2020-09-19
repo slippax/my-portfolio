@@ -85,13 +85,13 @@ ul {
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .Container {
-    margin-top: 4%;
+    margin-top: 2%;
     margin-bottom: 50%;
     font-size: 20px;
     background: gainsboro;
   }
   .paddingbox{
-    padding-top: 5%;
+    padding-top: 4%;
   }
 }
 

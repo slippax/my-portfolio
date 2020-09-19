@@ -67,12 +67,12 @@ img {
 @media (min-width: 768px) and (max-width: 1024px) {
   .Container {
     font-size: 23px;
-    margin-top: 3%;
+    margin-top: 6%;
     margin-bottom: 50%;
     background: gainsboro;
   }
   .paddingbox{
-    padding-top: 5%;
+    padding-top: 7%;
   }
   img {
     max-width: 90%;
@@ -93,7 +93,7 @@ img {
     background: gainsboro;
   }
   .paddingbox{
-    padding-top: 5%;
+    padding-top: 3%;
   }
   img {
     max-width: 90%;
