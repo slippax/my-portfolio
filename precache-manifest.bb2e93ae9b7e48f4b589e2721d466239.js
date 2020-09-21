@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f5f045f267c9d3c6ffdb4acc8bb00970",
+    "revision": "cd2e26de021fef387e4f96dfc273e006",
     "url": "/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/2.ab54e29e.chunk.css"
   },
   {
-    "revision": "634316f05b193e885937",
+    "revision": "63e45f8226f70879f61a",
     "url": "/static/css/main.2d021215.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.06ef7445.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "634316f05b193e885937",
-    "url": "/static/js/main.a1855ee7.chunk.js"
+    "revision": "63e45f8226f70879f61a",
+    "url": "/static/js/main.355e6d44.chunk.js"
   },
   {
     "revision": "efe25b4b8d1f7af9da4b",
@@ -32,15 +32,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/ezsens.67fedf29.JPG"
   },
   {
-    "revision": "e3223e790113731762ed79af9e1830bb",
-    "url": "/static/media/todoz.e3223e79.JPG"
+    "revision": "6042c82d758bb64c2f2e8df93a58c402",
+    "url": "/static/media/todoz.6042c82d.JPG"
   },
   {
     "revision": "150c9a6ba9def94c53c3154a6d93da2b",
     "url": "/static/media/type.150c9a6b.JPG"
   },
   {
-    "revision": "2bfe2e694d4137f4692bbf7be4c8169f",
-    "url": "/static/media/weathergrabbr.2bfe2e69.JPG"
+    "revision": "ff11c29287266e0b085738f513c4a684",
+    "url": "/static/media/weathergrabbr.ff11c292.JPG"
   }
 ]);
