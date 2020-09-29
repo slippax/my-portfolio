@@ -17,6 +17,7 @@
   padding-bottom: 0px;
   padding-top: 5px;
   animation: fadein 2s;
+  color: darkslategray;
 }
 
 .nameText {
@@ -25,13 +26,14 @@
   margin: 0;
   padding-bottom: 3px;
   animation: fadein 2s;
-  color: darkslategray;
+  color: rgba(0, 0, 0, 0.746);
 }
 
 .taglineText {
   font-size: 30px;
   font-weight: 300;
   margin: 0;
+  color: darkslategray;
 }
 
 .button {
@@ -93,8 +95,8 @@
   .headerText {
     position: absolute;
     margin-top: 0px;
-    top: 25%;
-    left: 30%;
+    top: 23%;
+    left: 28%;
     font-size: 40px;
     padding-left: 60px;
     padding-right: 40px;
@@ -124,13 +126,18 @@
     margin: 0;
     padding-bottom: 3px;
     animation: fadein 2s;
-    color: darkslategray;
   }
 
   .taglineText {
     font-size: 45px;
     font-weight: 300;
     margin: 0;
+  }
+  .taglineText2 {
+    font-size: 44px;
+    font-weight: 300;
+    margin: 0;
+    color: darkslategray;
   }
 
   .button {
@@ -185,13 +192,18 @@
     margin: 0;
     padding-bottom: 3px;
     animation: fadein 1s;
-    color: darkslategray;
   }
 
   .taglineText {
     font-size: 45px;
     font-weight: 300;
     margin: 0;
+  }
+  .taglineText2 {
+    font-size: 44px;
+    font-weight: 300;
+    margin: 0;
+    color: darkslategray;
   }
   .button {
     padding-left: 220px;
@@ -212,7 +224,7 @@
   }
   .headerText {
     position: absolute;
-    top: 32%;
+    top: 27%;
     left: 15%;
     right: 20%;
     margin-top: -90px;
@@ -249,6 +261,13 @@
     font-size: 40px;
     font-weight: 300;
     margin: 0;
+    color: darkslategray;
+  }
+  .taglineText2 {
+    font-size: 39px;
+    font-weight: 300;
+    margin: 0;
+    color: darkslategray;
   }
   .button {
     padding-top: 40px;
@@ -306,6 +325,12 @@
     font-weight: 300;
     margin: 0;
   }
+  .taglineText2 {
+    font-size: 39px;
+    font-weight: 300;
+    margin: 0;
+    color: darkslategray;
+  }
   .button {
     padding-top: 40px;
     padding-left: 196px;
@@ -361,6 +386,12 @@
     font-weight: 300;
     margin: 0;
   }
+  .taglineText2 {
+    font-size: 34px;
+    font-weight: 300;
+    margin: 0;
+    color: darkslategray;
+  }
   .button {
     padding-top: 25px;
     padding-left: 154px;
@@ -407,7 +438,12 @@
     font-weight: 300;
     margin: 0;
   }
-
+  .taglineText2 {
+    font-size: 26px;
+    font-weight: 300;
+    margin: 0;
+    color: darkslategray;
+  }
   .button {
     padding-left: 110px;
     padding-top: 30px;

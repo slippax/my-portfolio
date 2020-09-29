@@ -26,8 +26,9 @@ function SplashPage() {
           </Flip>
           <Typist>
             <Typist.Delay ms={2000} />
-            <span className={classes.taglineText}>I am a front end developer.</span>
-            <Typist.Backspace count={25} delay={200} />
+            <span className={classes.taglineText2}>I am a front end developer.</span>
+            <Typist.Delay ms={1000} />
+            <Typist.Backspace count = {25}/>
             <span className={classes.taglineText}>build things for the web.</span>
           </Typist>
           <Fade bottom>

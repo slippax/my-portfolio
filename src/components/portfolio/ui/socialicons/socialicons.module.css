@@ -28,7 +28,7 @@
       display: inline-block;
       position: fixed; 
       top: 370px;
-      right: -1%;
+      right: -1px;
       z-index: 100;
       border: 2px solid darkslategray;
       border-radius: 3vw 0vw 0vw 3vw;
@@ -61,7 +61,7 @@
       display: inline-block;
       position: fixed; /* Set the navbar to fixed position */
       top: 300px;
-      right: -1%;
+      right: -15px;
       z-index: 100;
       border: 2px solid darkslategray;
       border-radius: 3vw 0vw 0vw 3vw;
