@@ -17,7 +17,6 @@
   padding-bottom: 0px;
   padding-top: 5px;
   animation: fadein 2s;
-  color: darkslategray;
 }
 
 .nameText {
@@ -26,14 +25,13 @@
   margin: 0;
   padding-bottom: 3px;
   animation: fadein 2s;
-  color: rgba(0, 0, 0, 0.746);
+  color: darkslategray;
 }
 
 .taglineText {
   font-size: 30px;
   font-weight: 300;
   margin: 0;
-  color: darkslategray;
 }
 
 .button {
@@ -65,24 +63,6 @@
   z-index: -1;
 }
 
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 /* 
   ##Device = Desktops
   ##Screen = 1281px to higher resolution desktops
@@ -102,13 +82,15 @@
     padding-right: 40px;
     padding-top: 20px;
     padding-bottom: 10px;
-    background: gainsboro;
+    background-color: #d2d8d6;
+    background-image: linear-gradient(360deg, #b6b6b6 1%, #eaeaea 50%);
     border: 2px solid darkslategray;
     width: 550px;
   }
   .headerText:hover {
     box-shadow: 5px 6px 7px 11px rgba(0, 0, 0, 0.38);
-    background: #eaeaea;
+    background-color: #d2d8d6;
+    background-image: linear-gradient(360deg, #b6b6b6 1%, #ffffff 50%);
   }
   .greetingText {
     font-size: 60px;
@@ -117,7 +99,6 @@
     margin: 0;
     padding-bottom: 0px;
     padding-top: 5px;
-    animation: fadein 2s;
   }
 
   .nameText {
@@ -125,7 +106,6 @@
     font-weight: 300;
     margin: 0;
     padding-bottom: 3px;
-    animation: fadein 2s;
   }
 
   .taglineText {
@@ -137,13 +117,11 @@
     font-size: 44px;
     font-weight: 300;
     margin: 0;
-    color: darkslategray;
   }
 
   .button {
     padding-left: 220px;
     padding-top: 30px;
-    animation: fadein 2s;
   }
 }
 
@@ -203,7 +181,6 @@
     font-size: 44px;
     font-weight: 300;
     margin: 0;
-    color: darkslategray;
   }
   .button {
     padding-left: 220px;
@@ -261,13 +238,11 @@
     font-size: 40px;
     font-weight: 300;
     margin: 0;
-    color: darkslategray;
   }
   .taglineText2 {
     font-size: 39px;
     font-weight: 300;
     margin: 0;
-    color: darkslategray;
   }
   .button {
     padding-top: 40px;
@@ -329,7 +304,6 @@
     font-size: 39px;
     font-weight: 300;
     margin: 0;
-    color: darkslategray;
   }
   .button {
     padding-top: 40px;
@@ -390,7 +364,6 @@
     font-size: 34px;
     font-weight: 300;
     margin: 0;
-    color: darkslategray;
   }
   .button {
     padding-top: 25px;
@@ -406,7 +379,7 @@
   .headerText {
     position: absolute;
     top: 35%;
-    left: 9%;
+    left: 7%;
     width: 90%;
     margin-top: -90px;
     font-size: 30px;
@@ -416,7 +389,7 @@
   }
 
   .greetingText {
-    font-size: 40px;
+    font-size: 42px;
     font-weight: 300;
     padding-right: 0px;
     margin: 0;
@@ -426,7 +399,7 @@
   }
 
   .nameText {
-    font-size: 38px;
+    font-size: 40px;
     font-weight: 300;
     margin: 0;
     padding-bottom: 10px;
@@ -434,7 +407,7 @@
   }
 
   .taglineText {
-    font-size: 27px;
+    font-size: 29px;
     font-weight: 300;
     margin: 0;
   }
@@ -442,15 +415,14 @@
     font-size: 26px;
     font-weight: 300;
     margin: 0;
-    color: darkslategray;
   }
   .button {
-    padding-left: 110px;
+    padding-left: 121px;
     padding-top: 30px;
     animation: fadein 1s;
   }
 
   .icontainer {
-    padding-left: 75px;
+    padding-left: 85px;
   }
 }

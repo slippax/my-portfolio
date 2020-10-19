@@ -17,8 +17,8 @@
   padding-top:1px;
   padding-bottom: 60px;
   text-align: center;
-  background: #7a8e8e;
-  color: wheat;
+  background: #999999f5;
+  color: black;
   font-weight: 500;
   font-size: 17px;
   border-radius: 10px;
@@ -27,7 +27,7 @@
 
 .title {
   font-size: 18px;
-  color: wheat;
+  color: black;
 }
 
 @media (min-width: 1281px) {

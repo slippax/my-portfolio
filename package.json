@@ -9,7 +9,6 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
-    "framer-motion": "^1.11.1",
     "history": "^5.0.0",
     "material-ui-popup-state": "^1.6.1",
     "node-sass": "^4.14.1",
@@ -22,12 +21,13 @@
     "react-reveal": "^1.2.2",
     "react-router": "^6.0.0-beta.0",
     "react-router-dom": "^6.0.0-beta.0",
-    "react-scripts": "3.4.1",
+    "react-scripts": "^3.4.3",
     "react-scroll-to-component": "^1.0.2",
     "react-scroll-wheel-handler": "^1.1.5",
     "react-tsparticles": "^1.17.1",
     "react-typist": "^2.0.5",
-    "social-media-icons-react": "^1.0.10"
+    "social-media-icons-react": "^1.0.10",
+    "typescript": "^4.0.3"
   },
   "scripts": {
     "predeploy": "npm run build",

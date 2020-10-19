@@ -14,12 +14,14 @@
     font-size: 25px;
     margin-top: 5%;
     margin-bottom: 40%;
-    background: gainsboro;
+    background-color: #d2d8d6;
+    background-image: linear-gradient(360deg, #b6b6b6 1%, #eaeaea 50%);
     padding: 10px;
   }
   .Container:hover{
     box-shadow: 5px 6px 7px 11px rgba(0, 0, 0, 0.38);
-    background: #eaeaea;
+    background-color: #d2d8d6;
+    background-image: linear-gradient(360deg, #b6b6b6 1%, #ffffff 50%);
   }
   .paddingbox{
     padding-top: 6%;
@@ -32,11 +34,13 @@
     font-size: 23px;
     margin-top: 6%;
     margin-bottom: 50%;
-    background: gainsboro;
+    background-color: #d2d8d6;
+    background-image: linear-gradient(360deg, #b6b6b6 1%, #eaeaea 50%);
   }
   .Container:hover{
     box-shadow: 5px 6px 7px 11px rgba(0, 0, 0, 0.38);
-    background: #eaeaea;
+    background-color: #d2d8d6;
+    background-image: linear-gradient(360deg, #b6b6b6 1%, #ffffff 50%);
   }
   .paddingbox{
     padding-top: 6%;
@@ -48,7 +52,8 @@
     font-size: 22px;
     margin-top: 4%;
     margin-bottom: 50%;
-    background: gainsboro;
+    background-color: #d2d8d6;
+    background-image: linear-gradient(360deg, #b6b6b6 1%, #eaeaea 50%);
   }
   .paddingbox{
     padding-top: 10%;
@@ -59,7 +64,8 @@
     font-size: 22px;
     margin-top: 1%;
     margin-bottom: 50%;
-    background: gainsboro;
+    background-color: #d2d8d6;
+    background-image: linear-gradient(360deg, #b6b6b6 1%, #eaeaea 50%);
   }
   .paddingbox{
     padding-top: 4%;
@@ -71,7 +77,8 @@
     margin-top: 20%;
     margin-bottom: 50%;
     font-size: 19px;
-    background: gainsboro;
+    background-color: #d2d8d6;
+    background-image: linear-gradient(360deg, #b6b6b6 1%, #eaeaea 50%);
   }
   .paddingbox{
     padding-top: 5%;
@@ -85,7 +92,7 @@
     margin-bottom: 100%;
     border: none;
     box-shadow: none;
-    background: #c6c6c6;
+    background: #b5b5b9;
   }
   .paddingbox{
     padding-top: 9%;
