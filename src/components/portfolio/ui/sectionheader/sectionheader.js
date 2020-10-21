@@ -1,11 +1,14 @@
-import React from "react";
+import React, {useState} from "react";
 import classes from "./sections.module.css";
 import Flip from "react-reveal/Rotate";
 import Zoom from "react-reveal/Zoom";
-const sectionheader = (props) => {
+import Tada from 'react-reveal/Pulse';
+const Sectionheader = (props) => {
+  const [box, wiggleBox] = useState(false);
   return (
     <Flip top left>
-      <div className={classes.sectionbox}>
+      <div className={classes.sectionbox} onMouseEnter={()=> wiggleBox(!box)}>
+        <Tada spy={box}>
         <div className={classes.section}>
           <Zoom>
             <h3
@@ -54,9 +57,10 @@ const sectionheader = (props) => {
             <div></div>
           </Zoom>
         </div>
+        </Tada>
       </div>
     </Flip>
   );
 };
 
-export default sectionheader;
+export default Sectionheader;

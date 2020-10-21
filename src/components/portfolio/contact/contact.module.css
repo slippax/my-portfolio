@@ -18,7 +18,7 @@
 @media (min-width: 1281px) {
   .Container {
     font-size: 25px;
-    margin-top: 13%;
+    margin-top: 10%;
     margin-bottom: 40%;
     padding-bottom: 20px;
     background-color: #d2d8d6;
@@ -101,6 +101,7 @@
     margin-bottom: 100%;
     box-shadow: none;
     border:none;
+    background: #b5b5b9;
   }
   .paddingbox{
     padding-top: 9%;

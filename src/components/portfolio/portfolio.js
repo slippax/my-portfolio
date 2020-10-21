@@ -9,6 +9,7 @@ import scrollToComponent from "react-scroll-to-component";
 import { useNavigate } from "react-router-dom";
 import classes from "./portfolio.module.css";
 import RubberBand from "react-reveal/Zoom";
+import Tada from 'react-reveal/Pulse';
 import PageProgress from "react-page-progress";
 import Menu from "../portfolio/ui/menu/sidebar";
 import SocialIcons from './ui/socialicons/socialicons';
@@ -20,6 +21,7 @@ const Portfolio = () => {
 
   const [pause, setPause] = useState(false);
   const [menuToggle, setMenuToggle] = useState(false);
+  const [box, wiggleBox] = useState(false);
 
   useEffect(() => {
     pauseHandler();
@@ -113,12 +115,16 @@ const Portfolio = () => {
             <ButtonComponent />
           </RubberBand>
         </div>
+        <div onMouseEnter={()=> wiggleBox(!box)}>
+        <Tada spy={box}>
         <AboutMe
           clickedabout={() => scrollToComponentHandler(pages.aboutMe)}
           clickedprojects={() => scrollToComponentHandler(pages.projects)}
           clickedwork={() => scrollToComponentHandler(pages.workXp)}
           clickedcontact={() => scrollToComponentHandler(pages.contact)}
         />
+        </Tada>
+        </div>
       </ReactScrollWheelHandler>
       <section
         ref={(section) => {
@@ -130,12 +136,16 @@ const Portfolio = () => {
         upHandler={() => scrollToComponentHandler(pages.aboutMe, 0)}
         downHandler={() => scrollToComponentHandler(pages.workXp, 2)}
       >
+        <div onMouseEnter={()=> wiggleBox(!box)}>
+          <Tada spy={box}>
         <Projects
           clickedabout={() => scrollToComponentHandler(pages.aboutMe)}
           clickedprojects={() => scrollToComponentHandler(pages.projects)}
           clickedwork={() => scrollToComponentHandler(pages.workXp)}
           clickedcontact={() => scrollToComponentHandler(pages.contact)}
         />
+        </Tada>
+        </div>
       </ReactScrollWheelHandler>
       <section
         ref={(section) => {
@@ -147,12 +157,16 @@ const Portfolio = () => {
         upHandler={() => scrollToComponentHandler(pages.projects, 1)}
         downHandler={() => scrollToComponentHandler(pages.contact, 3)}
       >
+        <div onMouseEnter={()=> wiggleBox(!box)}>
+          <Tada spy={box}>
         <WorkXp
           clickedabout={() => scrollToComponentHandler(pages.aboutMe)}
           clickedprojects={() => scrollToComponentHandler(pages.projects)}
           clickedwork={() => scrollToComponentHandler(pages.workXp)}
           clickedcontact={() => scrollToComponentHandler(pages.contact)}
         />
+        </Tada>
+        </div>
       </ReactScrollWheelHandler>
       <section
         ref={(section) => {
@@ -163,12 +177,16 @@ const Portfolio = () => {
         pauseListeners={pause}
         upHandler={() => scrollToComponentHandler(pages.workXp, 2)}
       >
+        <div onMouseEnter={()=> wiggleBox(!box)}>
+          <Tada spy={box}>
         <Contact
           clickedabout={() => scrollToComponentHandler(pages.aboutMe)}
           clickedprojects={() => scrollToComponentHandler(pages.projects)}
           clickedwork={() => scrollToComponentHandler(pages.workXp)}
           clickedcontact={() => scrollToComponentHandler(pages.contact)}
         />
+        </Tada>
+        </div>
       </ReactScrollWheelHandler>
     </div>
   );

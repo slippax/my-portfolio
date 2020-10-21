@@ -1,13 +1,17 @@
-import React from 'react'
+import React, {useState} from 'react'
 import classes from './socialicons.module.css';
 import { SocialMediaIconsReact } from "social-media-icons-react";
 import Flip from 'react-reveal/Rotate';
 import RubberBand from "react-reveal/Zoom";
-const socialicons = () => {
+import Tada from 'react-reveal/Pulse';
+const Socialicons = () => {
+  const [box, wiggleBox] = useState(false);
     return (
-            <div className={classes.menu}>
+            <div className={classes.menu} onMouseEnter={()=> wiggleBox(!box)}>
           <Flip top right>
+            
           <div className={classes.icontainer}>
+          <Tada spy ={box}>
             <div className={classes.icongit}>
               <RubberBand>
                 <SocialMediaIconsReact
@@ -40,10 +44,12 @@ const socialicons = () => {
                 />
               </RubberBand>
             </div>
+            </Tada>
           </div>
+          
           </Flip>
         </div>
     )
 }
 
-export default socialicons
+export default Socialicons

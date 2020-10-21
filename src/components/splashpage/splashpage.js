@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { useNavigate } from "react-router-dom";
 import classes from "./splashpage.module.css";
 import Typist from "react-typist";
@@ -10,16 +10,23 @@ import ReactScrollWheelHandler from "react-scroll-wheel-handler";
 import Roll from "react-reveal/Roll";
 import Flip from "react-reveal/Zoom";
 import Fade from "react-reveal/Fade";
+import Tada from 'react-reveal/Jello';
 import { SocialMediaIconsReact } from "social-media-icons-react";
 function SplashPage() {
   let navigate = useNavigate();
-
+const [linked, wiggleLinked] = useState(false);
+const [git, wiggleGit] = useState(false);
+const [next, wiggleNext] = useState(false);
+const [box, wiggleBox] = useState(false);
   return (
-    <div>
+    <div onMouseEnter={()=>wiggleBox(!box)}>
+      
       <div className={classes.container}>
+      
         <ReactScrollWheelHandler
           downHandler={() => navigate("/portfolio", { replace: true })}
         >
+          <Tada spy={box}>
           <div className={classes.headerText}>
             <Roll bottom cascade>
               <p className={classes.greetingText}>Hi, my name is</p>
@@ -41,16 +48,19 @@ function SplashPage() {
             </Typist>
 
             <Fade bottom>
-              <div className={classes.button}>
+              <div className={classes.button} onMouseEnter={()=> wiggleNext(!next)}>
                 <Link to="/portfolio">
+                  <Tada spy={next}>
                   <AwesomeButton type="primary" size="medium">
                     <ArrowDropDownOutlinedIcon fontSize="large" />
                   </AwesomeButton>
+                  </Tada>
                 </Link>
               </div>
             </Fade>
             <div className={classes.icontainer}>
-              <div className={classes.icongit}>
+              <Tada spy={git}>
+              <div className={classes.icongit} onMouseEnter= {()=> wiggleGit(!git)}>
                 <Flip>
                   <SocialMediaIconsReact
                     borderColor="rgba(0,0,0,0.25)"
@@ -66,7 +76,9 @@ function SplashPage() {
                   />
                 </Flip>
               </div>
-              <div className={classes.iconlinked}>
+              </Tada>
+              <div className={classes.iconlinked} onMouseEnter= {()=> wiggleLinked(!linked)}>
+                <Tada spy = {linked}>
                 <Flip>
                   <SocialMediaIconsReact
                     borderColor="rgba(0,0,0,0.25)"
@@ -81,11 +93,15 @@ function SplashPage() {
                     size="60"
                   />
                 </Flip>
+                </Tada>
               </div>
             </div>
           </div>
+          </Tada>
         </ReactScrollWheelHandler>
+        
       </div>
+      
     </div>
   );
 }

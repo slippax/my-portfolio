@@ -1,9 +1,4 @@
 .headerText {
-  position: absolute;
-  top: 50%;
-  left: 30%;
-  right: 20%;
-  margin-top: -90px;
   font-size: 30px;
   border-radius: 4vw 4vw 4vw 4vw;
   box-shadow: 3px 4px 5px 10px rgba(0, 0, 0, 0.38);
@@ -35,7 +30,6 @@
 }
 
 .button {
-  padding-left: 130px;
   padding-top: 10px;
   animation: fadein 2s;
 }
@@ -43,7 +37,9 @@
 .icontainer {
   padding-top: 50px;
   display: flex;
-  padding-left: 70px;
+  align-items: center;
+    justify-content: center;
+    margin-right: 9px;
 }
 
 .icongit {
@@ -70,13 +66,15 @@
 
 @media (min-width: 1281px) {
   .icontainer {
-    padding-left: 183px;
+    
   }
   .headerText {
     position: absolute;
-    margin-top: 0px;
-    top: 23%;
-    left: 28%;
+    z-index: 15;
+    top: 50%;
+    left: 50%;
+    margin: -230px 0 0 -350px;
+    background: red;
     font-size: 40px;
     padding-left: 60px;
     padding-right: 40px;
@@ -86,6 +84,7 @@
     background-image: linear-gradient(360deg, #b6b6b6 1%, #eaeaea 50%);
     border: 2px solid darkslategray;
     width: 550px;
+    height: 430px;
   }
   .headerText:hover {
     box-shadow: 5px 6px 7px 11px rgba(0, 0, 0, 0.38);
@@ -120,7 +119,8 @@
   }
 
   .button {
-    padding-left: 220px;
+    width: 90px;
+    margin: auto;
     padding-top: 30px;
   }
 }
@@ -151,7 +151,7 @@
     background: #eaeaea;
   }
   .icontainer {
-    padding-left: 185px;
+   
   }
 
   .greetingText {
@@ -183,9 +183,9 @@
     margin: 0;
   }
   .button {
-    padding-left: 220px;
+    width: 90px;
+    margin: auto;
     padding-top: 30px;
-    animation: fadein 1s;
   }
 }
 
@@ -197,7 +197,7 @@
 @media (min-width: 768px) and (max-width: 1024px) {
   .icontainer {
     padding-top: 49px;
-    padding-left: 145px;
+
   }
   .headerText {
     position: absolute;
@@ -245,8 +245,9 @@
     margin: 0;
   }
   .button {
+    width: 90px;
     padding-top: 40px;
-    padding-left: 184px;
+    margin: auto;
   }
 }
 
@@ -258,7 +259,7 @@
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .icontainer {
     padding-top: 49px;
-    padding-left: 160px;
+
   }
   .headerText {
     position: absolute;
@@ -306,8 +307,9 @@
     margin: 0;
   }
   .button {
+    width: 90px;
     padding-top: 40px;
-    padding-left: 196px;
+    margin: auto;
   }
 }
 /* 
@@ -318,7 +320,7 @@
 @media (min-width: 481px) and (max-width: 767px) {
   .icontainer {
     padding-top: 50px;
-    padding-left: 120px;
+
   }
   .headerText {
     position: absolute;
@@ -366,8 +368,9 @@
     margin: 0;
   }
   .button {
+    width: 90px;
     padding-top: 25px;
-    padding-left: 154px;
+    margin: auto;
   }
 }
 /* 
@@ -417,12 +420,12 @@
     margin: 0;
   }
   .button {
-    padding-left: 121px;
+    width: 90px;
+    margin: auto;
     padding-top: 30px;
-    animation: fadein 1s;
   }
 
   .icontainer {
-    padding-left: 85px;
+
   }
 }
