@@ -65,9 +65,7 @@
 */
 
 @media (min-width: 1281px) {
-  .icontainer {
-    
-  }
+
   .headerText {
     position: absolute;
     z-index: 15;
@@ -150,9 +148,7 @@
     box-shadow: 5px 6px 7px 11px rgba(0, 0, 0, 0.38);
     background: #eaeaea;
   }
-  .icontainer {
-   
-  }
+
 
   .greetingText {
     font-size: 60px;
@@ -425,7 +421,4 @@
     padding-top: 30px;
   }
 
-  .icontainer {
-
-  }
 }
