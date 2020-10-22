@@ -1,14 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import Container from "@material-ui/core/Container";
 import classes from "./workxp.module.css";
 import Zoom from "react-reveal/Zoom";
-
-const workxp = () => {
+import Pulse from "react-reveal/Pulse";
+const Workxp = () => {
+  const [box, wiggleBox] = useState(false);
   return (
     <div>
-      <Zoom >
+      <Zoom>
         <div className={classes.paddingbox}></div>
         <Container maxWidth="sm" className={classes.Container}>
+          <Pulse spy={box}>
+            <div onMouseEnter={()=>wiggleBox(!box)}>
           <h3 className={classes.workXP}>Work Experience</h3>
           <h3>
             <strong>Apple</strong>
@@ -28,10 +31,12 @@ const workxp = () => {
             issues. Discovering needs for customers and repairing customer
             relationships.
           </p>
+          </div>
+          </Pulse>
         </Container>
       </Zoom>
     </div>
   );
 };
 
-export default workxp;
+export default Workxp;

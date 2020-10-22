@@ -11,6 +11,7 @@
 
 @media (min-width: 1281px) {
   .Container {
+    border-radius: 2.5vw 2.5vw 2.5vw 2.5vw;
     font-size: 25px;
     margin-top: 5%;
     margin-bottom: 40%;

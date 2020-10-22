@@ -11,6 +11,7 @@ import Roll from "react-reveal/Roll";
 import Flip from "react-reveal/Zoom";
 import Fade from "react-reveal/Fade";
 import Tada from 'react-reveal/Jello';
+import Pulse from 'react-reveal/Pulse';
 import { SocialMediaIconsReact } from "social-media-icons-react";
 function SplashPage() {
   let navigate = useNavigate();
@@ -26,8 +27,9 @@ const [box, wiggleBox] = useState(false);
         <ReactScrollWheelHandler
           downHandler={() => navigate("/portfolio", { replace: true })}
         >
-          <Tada spy={box}>
+        
           <div className={classes.headerText}>
+          <Pulse spy={box}>
             <Roll bottom cascade>
               <p className={classes.greetingText}>Hi, my name is</p>
               <p className={classes.nameText}>Stephen Lippa</p>
@@ -46,7 +48,7 @@ const [box, wiggleBox] = useState(false);
                 I build things for the web.
               </span>
             </Typist>
-
+         
             <Fade bottom>
               <div className={classes.button} onMouseEnter={()=> wiggleNext(!next)}>
                 <Link to="/portfolio">
@@ -96,12 +98,13 @@ const [box, wiggleBox] = useState(false);
                 </Tada>
               </div>
             </div>
+          </Pulse>
+
           </div>
-          </Tada>
         </ReactScrollWheelHandler>
         
       </div>
-      
+         
     </div>
   );
 }

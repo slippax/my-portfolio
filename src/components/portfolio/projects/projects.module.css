@@ -2,6 +2,8 @@
   border: 2px solid darkslategray;
   border-radius: 4vw 4vw 4vw 4vw;
   box-shadow: 3px 4px 5px 10px rgba(0, 0, 0, 0.38);
+     background-color: #d2d8d6;
+    background-image: linear-gradient(360deg, #b6b6b6 1%, #eaeaea 50%);
 }
 
 img {
@@ -14,6 +16,7 @@ img {
 }
 @media (min-width: 1281px) {
   .Container {
+    border-radius: 2.5vw 2.5vw 2.5vw 2.5vw;
     font-size: 25px;
     margin-top: 5.5%;
     margin-bottom: 40%;

@@ -2,6 +2,8 @@
   font-size: 30px;
   border-radius: 4vw 4vw 4vw 4vw;
   box-shadow: 3px 4px 5px 10px rgba(0, 0, 0, 0.38);
+  background-color: #d2d8d6;
+  background-image: linear-gradient(360deg, #b6b6b6 1%, #eaeaea 50%);
 }
 
 .greetingText {
@@ -67,6 +69,7 @@
 @media (min-width: 1281px) {
 
   .headerText {
+    border-radius: 2.5vw 2.5vw 2.5vw 2.5vw;
     position: absolute;
     z-index: 15;
     top: 50%;
@@ -140,13 +143,14 @@
     padding-right: 0px;
     padding-top: 20px;
     padding-bottom: 10px;
-    background: gainsboro;
+
     border: 2px solid darkslategray;
     width: 550px;
   }
   .headerText:hover {
     box-shadow: 5px 6px 7px 11px rgba(0, 0, 0, 0.38);
-    background: #eaeaea;
+    background-color: #d2d8d6;
+    background-image: linear-gradient(360deg, #b6b6b6 1%, #ffffff 50%);
   }
 
 
@@ -205,13 +209,14 @@
     padding-left: 50px;
     padding-top: 20px;
     padding-bottom: 10px;
-    background: gainsboro;
+  
     border: 2px solid darkslategray;
     width: 490px;
   }
   .headerText:hover {
     box-shadow: 5px 6px 7px 11px rgba(0, 0, 0, 0.38);
-    background: #eaeaea;
+    background-color: #d2d8d6;
+    background-image: linear-gradient(360deg, #b6b6b6 1%, #ffffff 50%);
   }
 
   .greetingText {
@@ -267,13 +272,14 @@
     padding-left: 50px;
     padding-top: 20px;
     padding-bottom: 10px;
-    background: gainsboro;
+
     border: 2px solid darkslategray;
     width: 490px;
   }
   .headerText:hover {
     box-shadow: 5px 6px 7px 11px rgba(0, 0, 0, 0.38);
-    background: #eaeaea;
+    background-color: #d2d8d6;
+    background-image: linear-gradient(360deg, #b6b6b6 1%, #ffffff 50%);
   }
 
   .greetingText {
@@ -328,13 +334,14 @@
     padding-left: 40px;
     padding-top: 20px;
     padding-bottom: 10px;
-    background: gainsboro;
+  
     border: 2px solid darkslategray;
     width: 430px;
   }
   .headerText:hover {
     box-shadow: 5px 6px 7px 11px rgba(0, 0, 0, 0.38);
-    background: #eaeaea;
+    background-color: #d2d8d6;
+    background-image: linear-gradient(360deg, #b6b6b6 1%, #ffffff 50%);
   }
 
   .greetingText {
@@ -385,6 +392,7 @@
     z-index: 100;
     border: none;
     box-shadow: none;
+    background: none;
   }
 
   .greetingText {

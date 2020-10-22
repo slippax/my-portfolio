@@ -3,7 +3,7 @@ import classes from './socialicons.module.css';
 import { SocialMediaIconsReact } from "social-media-icons-react";
 import Flip from 'react-reveal/Rotate';
 import RubberBand from "react-reveal/Zoom";
-import Tada from 'react-reveal/Pulse';
+import Tada from 'react-reveal/HeadShake';
 const Socialicons = () => {
   const [box, wiggleBox] = useState(false);
     return (
@@ -11,9 +11,10 @@ const Socialicons = () => {
           <Flip top right>
             
           <div className={classes.icontainer}>
-          <Tada spy ={box}>
+         
             <div className={classes.icongit}>
               <RubberBand>
+              <Tada spy ={box}>
                 <SocialMediaIconsReact
                   borderColor="rgba(0,0,0,0.25)"
                   borderWidth="3"
@@ -26,10 +27,12 @@ const Socialicons = () => {
                   roundness="50%"
                   size="50"
                 />
+                </Tada>
               </RubberBand>
             </div>
             <div className={classes.iconlinked}>
-              <RubberBand>
+            <RubberBand>
+            <Tada spy ={box}>
                 <SocialMediaIconsReact
                   borderColor="rgba(0,0,0,0.25)"
                   borderWidth="3"
@@ -42,9 +45,10 @@ const Socialicons = () => {
                   roundness="50%"
                   size="50"
                 />
+                </Tada>
               </RubberBand>
             </div>
-            </Tada>
+            
           </div>
           
           </Flip>

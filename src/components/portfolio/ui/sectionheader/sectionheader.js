@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import classes from "./sections.module.css";
 import Flip from "react-reveal/Rotate";
 import Zoom from "react-reveal/Zoom";
-import Tada from 'react-reveal/Pulse';
+import Tada from 'react-reveal/HeadShake';
 const Sectionheader = (props) => {
   const [box, wiggleBox] = useState(false);
   return (
