@@ -1,3 +1,4 @@
 My development portfolio. Created using react.
 
-https://slippa.dev
+Live - https://slippa.dev
+
