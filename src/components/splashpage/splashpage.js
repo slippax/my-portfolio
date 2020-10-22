@@ -48,7 +48,7 @@ const [box, wiggleBox] = useState(false);
                 I build things for the web.
               </span>
             </Typist>
-         
+            </Pulse>
             <Fade bottom>
               <div className={classes.button} onMouseEnter={()=> wiggleNext(!next)}>
                 <Link to="/portfolio">
@@ -98,7 +98,7 @@ const [box, wiggleBox] = useState(false);
                 </Tada>
               </div>
             </div>
-          </Pulse>
+          
 
           </div>
         </ReactScrollWheelHandler>

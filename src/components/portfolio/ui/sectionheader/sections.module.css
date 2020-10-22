@@ -52,13 +52,13 @@
     border: 2px solid darkslategray;
     border-radius: 0vw 2.5vw 2.5vw 0vw;
     background-color: #d2d8d6;
-    background-image: linear-gradient(90deg, #b6b6b6 10%, #eaeaea 70%);
+    background-image: linear-gradient(90deg, #b6b6b6 25%, #eaeaea 60%);
     padding-left: 100px;
     box-shadow: 3px 4px 6px 7px rgba(0, 0, 0, 0.38);
   }
   .sectionbox:hover{
     background-color: #d2d8d6;
-    background-image: linear-gradient(90deg, #b6b6b6 10%, #ffffff 70%);
+    background-image: linear-gradient(90deg, #b6b6b6 25%, #ffffff 70%);
     box-shadow: 4px 5px 10px 10px rgba(0, 0, 0, 0.38);
   }
 }
@@ -86,13 +86,13 @@
     border:2px solid darkslategray;
     border-radius: 0vw 4vw 4vw 0vw;
     background-color: #d2d8d6;
-    background-image: linear-gradient(90deg, #b6b6b6 10%, #eaeaea 70%);
+    background-image: linear-gradient(90deg, #b6b6b6 35%, #eaeaea 70%);
     padding-left: 100px;
     box-shadow: 3px 4px 6px 7px rgba(0, 0, 0, 0.38);
   }
   .sectionbox:hover{
     background-color: #d2d8d6;
-    background-image: linear-gradient(90deg, #b6b6b6 10%, #ffffff 70%);
+    background-image: linear-gradient(90deg, #b6b6b6 35%, #ffffff 80%);
     box-shadow: 4px 5px 10px 10px rgba(0, 0, 0, 0.38);
   }
 }

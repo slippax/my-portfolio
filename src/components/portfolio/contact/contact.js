@@ -6,8 +6,10 @@ import "react-awesome-button/dist/themes/theme-c137.css";
 import ArrowDropDownOutlinedIcon from "@material-ui/icons/MailOutlined";
 import Zoom from "react-reveal/Zoom";
 import Pulse from "react-reveal/Pulse";
+import Jello from 'react-reveal/Jello';
 const Contact = () => {
   const [box, wiggleBox] = useState(false);
+  const [button, wiggleButton] = useState(false);
   return (
     <div>
       <Zoom>
@@ -21,7 +23,8 @@ const Contact = () => {
                 open. Whether you have a question or just want to say hi, I'll
                 try my best to get back to you!
               </p>
-              <div className={classes.button}>
+              <div className={classes.button} onMouseEnter={()=> wiggleButton(!button)}>
+                <Jello spy={button}>
                 <AwesomeButton
                   type="primary"
                   size="medium"
@@ -31,6 +34,8 @@ const Contact = () => {
                 >
                   <ArrowDropDownOutlinedIcon fontSize="large" />
                 </AwesomeButton>
+                </Jello>
+
               </div>
             </div>
           </Pulse>

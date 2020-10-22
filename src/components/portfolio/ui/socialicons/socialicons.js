@@ -3,18 +3,23 @@ import classes from './socialicons.module.css';
 import { SocialMediaIconsReact } from "social-media-icons-react";
 import Flip from 'react-reveal/Rotate';
 import RubberBand from "react-reveal/Zoom";
-import Tada from 'react-reveal/HeadShake';
+import Tada from 'react-reveal/Pulse';
+import Spin from 'react-reveal/Jello';
 const Socialicons = () => {
   const [box, wiggleBox] = useState(false);
+  const [linked, wiggleLinked] = useState(false);
+  const [git, wiggleGit] = useState(false);
     return (
+     
             <div className={classes.menu} onMouseEnter={()=> wiggleBox(!box)}>
-          <Flip top right>
             
-          <div className={classes.icontainer}>
+          <Flip top right>
          
-            <div className={classes.icongit}>
+          <div className={classes.icontainer}>
+          <Tada spy = {box}>
+            <div className={classes.icongit} onMouseEnter={()=>wiggleGit(!git)}>
               <RubberBand>
-              <Tada spy ={box}>
+              <Spin spy ={git}>
                 <SocialMediaIconsReact
                   borderColor="rgba(0,0,0,0.25)"
                   borderWidth="3"
@@ -27,12 +32,13 @@ const Socialicons = () => {
                   roundness="50%"
                   size="50"
                 />
-                </Tada>
+                </Spin>
               </RubberBand>
             </div>
-            <div className={classes.iconlinked}>
+            
+            <div className={classes.iconlinked} onMouseEnter={()=>wiggleLinked(!linked)}>
             <RubberBand>
-            <Tada spy ={box}>
+            <Spin spy ={linked}>
                 <SocialMediaIconsReact
                   borderColor="rgba(0,0,0,0.25)"
                   borderWidth="3"
@@ -45,13 +51,14 @@ const Socialicons = () => {
                   roundness="50%"
                   size="50"
                 />
-                </Tada>
+                </Spin>
               </RubberBand>
             </div>
-            
+            </Tada>
           </div>
-          
+         
           </Flip>
+         
         </div>
     )
 }
