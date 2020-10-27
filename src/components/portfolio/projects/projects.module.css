@@ -39,7 +39,7 @@ img {
   }
   img {
     max-width: 90%;
-    max-height: 90%;
+    max-height: 91%;
   }
 }
 
@@ -93,6 +93,9 @@ img {
     max-width: 90%;
     max-height: 80%;
   }
+  .projectstitle{
+    margin-bottom: 0px;
+  }
 }
 
 /* 
@@ -115,6 +118,9 @@ img {
     max-width: 90%;
     max-height:80%;
   }
+  .projectstitle{
+    margin-bottom: 0px;
+  }
 }
 
 /* 
@@ -125,7 +131,7 @@ img {
 @media (min-width: 481px) and (max-width: 767px) {
   img {
     max-width: 90%;
-    max-height: 70%;
+    max-height: 83%;
   }
   .Container {
     font-size: 22px;
@@ -136,6 +142,9 @@ img {
   }
   .paddingbox{
     padding-top: 5%;
+  }
+  .projectstitle{
+    margin-bottom: 0px;
   }
 }
 
@@ -152,7 +161,7 @@ img {
     padding-top: 9%;
   }
   img {
-    max-width: 90%;
-    max-height: 70%;
+    max-width: 99%;
+    max-height: 83%;
   }
 }
