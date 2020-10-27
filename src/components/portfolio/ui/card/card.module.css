@@ -1,21 +1,42 @@
 .root {
   position: relative;
-  height: 40vh;
+  height: 400px;
   width: 100%;
   display: flex;
   flex: 1;
   justify-content: center;
-  align-items: middle;
   padding-top: 45px;
 }
+.demoicon {
+  cursor: pointer;
+  margin-right: 10px;
+  margin-left: 10px;
+  color: black;
+  margin-top: 3px;
+}
 
+.demoicon:hover{
+  color:darkslategray;
+}
+
+.iconbox{
+  border: 2px solid darkgrey;
+  width: 150px;
+  margin: auto;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.iconbox:hover{
+  border: 2px solid slategrey;
+  background: darkgray;
+}
 .media {
   height: 300px;
   width: 220px;
   padding-left: 5px;
   padding-right: 5px;
-  padding-top:1px;
-  padding-bottom: 60px;
+  padding-top:20px;
+  padding-bottom:0px;
   text-align: center;
   background: #8f8f95f1;
   color: black;
@@ -30,26 +51,61 @@
   color: black;
 }
 
+.menubox{
+  border-top: 2px solid rgba(112, 128, 144, 0.671);
+  border-radius: 90px;
+  margin-top: 20px;
+}
 @media (min-width: 1281px) {
     .media {
-        height: 450px;
+        height: 470px;
         width: 380px;
-        padding-top:1px;
-        padding-bottom: 100px;
+        padding-top:20px;
+        padding-bottom: 30px;
       }
       .root {
-        padding-bottom: 50px;
+        padding-bottom: 0px;
+    }
+    .menubox{
+      margin-bottom: 0px;
+      margin-top: 40px;
+    }
+    .iconbox{
+      border: 2px solid darkgrey;
+      width: 150px;
+      margin: auto;
+      border-radius: 10px;
+      margin-top: 0px;
+      position: absolute;
+      bottom: 1.5%;
+      left: 30%;
     }
       }
 
 
 @media (min-width: 1025px) and (max-width: 1280px) {
     .media {
-        height: 400px;
+        height: 420px;
         width: 350px;
       }
       .root {
-        padding-top: 50px;
+        padding-bottom: 0px;
+        height: 380px;
+        padding-top: 20px;
+    }
+    .menubox{
+      margin-bottom: 0px;
+      margin-top: 20px;
+    }
+    .iconbox{
+      border: 2px solid darkgrey;
+      width: 150px;
+      margin: auto;
+      border-radius: 10px;
+      margin-top: 0px;
+      position: absolute;
+      bottom: 1.5%;
+      left: 28%;
     }
 }
 
@@ -59,8 +115,21 @@
         width: 350px;
       }
       .root {
-        padding-top: 200px;
-        
+        padding-bottom: 0px;
+    }
+    .menubox{
+      margin-bottom: 15px;
+      margin-top: 0px;
+    }
+    .iconbox{
+      border: 2px solid darkgrey;
+      width: 150px;
+      margin: auto;
+      border-radius: 10px;
+      margin-top: 0px;
+      position: absolute;
+      bottom: 1.5%;
+      left: 28%;
     }
 }
 
@@ -70,17 +139,45 @@
     width: 350px;
   }
   .root {
-    padding-top: 150px;
+    padding-bottom: 0px;
+}
+.menubox{
+  margin-bottom: 12px;
+  margin-top: 1px;
+}
+.iconbox{
+  border: 2px solid darkgrey;
+  width: 150px;
+  margin: auto;
+  border-radius: 10px;
+  margin-top: 0px;
+  position: absolute;
+  bottom: 1.5%;
+  left: 30%;
 }
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
     .media {
-      height: 350px;
-      width: 280px;
+      height: 400px;
+      width: 350px;
     }
     .root {
-      padding-top: 100px;
+      padding-bottom: 0px;
+  }
+  .menubox{
+    margin-bottom: 12px;
+    margin-top: 1px;
+  }
+  .iconbox{
+    border: 2px solid darkgrey;
+    width: 150px;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 0px;
+    position: absolute;
+    bottom: 1.5%;
+    left: 30%;
   }
 }
 @media (min-width: 320px) and (max-width: 480px) {
@@ -90,7 +187,11 @@
     border: 2px solid darkslategray;
   }
   .root {
-    padding-top: 100px;
+    padding-top: 150px;
 }
-  
+.menubox{
+  margin-bottom: 25px;
+  margin-top: 1px;
+  display: none;
+}
 }

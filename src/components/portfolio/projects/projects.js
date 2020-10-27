@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Container from "@material-ui/core/Container";
 import classes from "./projects.module.css";
 import Card from "../ui/card/card";
@@ -7,17 +7,13 @@ import weathergrabbr from "./weathergrabbr.JPG";
 import todoz from "./todoz.JPG";
 import type from "./type.JPG";
 import Zoom from "react-reveal/Zoom";
-import Pulse from "react-reveal/Pulse";
-
 const Projects = () => {
-  const [box, wiggleBox] = useState(false);
   return (
-    <div>
+    <div className={classes.projectbox}>
       <Zoom>
         <div className={classes.paddingbox}></div>
         <Container maxWidth="sm" className={classes.Container}>
-          <Pulse spy={box}>
-            <div onMouseEnter={() => wiggleBox(!box)}>
+            <div>
               <h3 className={classes.projectstitle}>Projects</h3>
               <Card
                 ezsensimage={ezsens}
@@ -26,7 +22,6 @@ const Projects = () => {
                 typeimage={type}
               />
             </div>
-          </Pulse>
         </Container>
       </Zoom>
     </div>

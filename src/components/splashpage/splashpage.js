@@ -24,7 +24,7 @@ const [box, wiggleBox] = useState(false);
       
       <div className={classes.container}>
       
-        <ReactScrollWheelHandler
+        <ReactScrollWheelHandler className={classes.handlerbox}
           downHandler={() => navigate("/portfolio", { replace: true })}
         >
         

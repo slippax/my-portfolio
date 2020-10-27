@@ -61,6 +61,9 @@
   z-index: -1;
 }
 
+.handlerbox{
+  outline: none;
+}
 /* 
   ##Device = Desktops
   ##Screen = 1281px to higher resolution desktops
@@ -73,7 +76,7 @@
     position: absolute;
     z-index: 15;
     top: 50%;
-    left: 50%;
+    left: 48%;
     margin: -230px 0 0 -350px;
     background: red;
     font-size: 40px;
@@ -265,7 +268,7 @@
   .headerText {
     position: absolute;
     top: 28%;
-    left: 24%;
+    left: 20%;
     right: 20%;
     margin-top: -90px;
     font-size: 30px;
@@ -327,7 +330,7 @@
   .headerText {
     position: absolute;
     top: 33%;
-    left: 18%;
+    left: 13%;
     right: 20%;
     margin-top: -90px;
     font-size: 30px;

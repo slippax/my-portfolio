@@ -103,7 +103,7 @@ const Portfolio = () => {
           pages.aboutMe = section;
         }}
       ></section>
-      <ReactScrollWheelHandler
+      <ReactScrollWheelHandler className={classes.handlerbox}
         pauseListeners={pause}
         upHandler={() => navigate("/", { replace: true })}
         downHandler={() => scrollToComponentHandler(pages.projects, 1)}
@@ -126,7 +126,7 @@ const Portfolio = () => {
           pages.projects = section;
         }}
       ></section>
-      <ReactScrollWheelHandler
+      <ReactScrollWheelHandler className={classes.handlerbox}
         pauseListeners={pause}
         upHandler={() => scrollToComponentHandler(pages.aboutMe, 0)}
         downHandler={() => scrollToComponentHandler(pages.workXp, 2)}
@@ -144,6 +144,7 @@ const Portfolio = () => {
         }}
       ></section>
       <ReactScrollWheelHandler
+      className={classes.handlerbox}
         pauseListeners={pause}
         upHandler={() => scrollToComponentHandler(pages.projects, 1)}
         downHandler={() => scrollToComponentHandler(pages.contact, 3)}
@@ -161,6 +162,7 @@ const Portfolio = () => {
         }}
       ></section>
       <ReactScrollWheelHandler
+      className={classes.handlerbox}
         pauseListeners={pause}
         upHandler={() => scrollToComponentHandler(pages.workXp, 2)}
       >

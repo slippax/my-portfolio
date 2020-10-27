@@ -1,20 +1,17 @@
-import React, {useState} from "react";
+import React from "react";
 import classes from "./aboutme.module.css";
 import "react-awesome-button/dist/styles.css";
 import Container from "@material-ui/core/Container";
 import Zoom from "react-reveal/Zoom";
-import Pulse from "react-reveal/Pulse";
 const Aboutme = () => {
-  const [box, wiggleBox] = useState(false);
   return (
     <div>
       <div className={classes.paddingbox}></div>
       <Zoom className={classes.animation}>
         <Container maxWidth="sm" className={classes.Container}>
-        <Pulse spy={box}>
           <h3 className={classes.about}>About me</h3>
          
-            <div onMouseEnter={()=>wiggleBox(!box)}>
+            <div>
               <p>
                 Hello! I'm Stephen, a front end developer based in Toronto,
                 Canada.
@@ -38,7 +35,6 @@ const Aboutme = () => {
                 <li>Node.js</li>
               </ul>
             </div>
-            </Pulse>
         </Container>
       </Zoom>
     </div>

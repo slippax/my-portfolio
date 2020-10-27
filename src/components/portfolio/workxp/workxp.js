@@ -1,17 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import Container from "@material-ui/core/Container";
 import classes from "./workxp.module.css";
 import Zoom from "react-reveal/Zoom";
-import Pulse from "react-reveal/Pulse";
 const Workxp = () => {
-  const [box, wiggleBox] = useState(false);
   return (
     <div>
       <Zoom>
         <div className={classes.paddingbox}></div>
         <Container maxWidth="sm" className={classes.Container}>
-          <Pulse spy={box}>
-            <div onMouseEnter={()=>wiggleBox(!box)}>
+            <div>
           <h3 className={classes.workXP}>Work Experience</h3>
           <h3>
             <strong>Apple</strong>
@@ -32,7 +29,6 @@ const Workxp = () => {
             relationships.
           </p>
           </div>
-          </Pulse>
         </Container>
       </Zoom>
     </div>

@@ -24,6 +24,10 @@
   padding: 5px;
 }
 
+.handlerbox{
+ outline: none;
+}
+
 @media (min-width: 1281px) {
   .mobilemenu {
     display: none;
