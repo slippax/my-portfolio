@@ -15,7 +15,6 @@
   padding-top: 5px;
   animation: fadein 2s;
 }
-
 .nameText {
   font-size: 30px;
   font-weight: 300;
@@ -76,7 +75,7 @@
     position: absolute;
     z-index: 15;
     top: 50%;
-    left: 48%;
+    left: 50%;
     margin: -230px 0 0 -350px;
     background: red;
     font-size: 40px;
@@ -184,6 +183,7 @@
     font-size: 44px;
     font-weight: 300;
     margin: 0;
+    
   }
   .button {
     width: 90px;
@@ -200,7 +200,7 @@
 @media (min-width: 768px) and (max-width: 1024px) {
   .icontainer {
     padding-top: 49px;
-
+width: 450px;
   }
   .headerText {
     position: absolute;
@@ -249,7 +249,7 @@
     margin: 0;
   }
   .button {
-    width: 90px;
+    width: 120px;
     padding-top: 40px;
     margin: auto;
   }
@@ -263,7 +263,7 @@
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .icontainer {
     padding-top: 49px;
-
+width: 450px;
   }
   .headerText {
     position: absolute;
@@ -312,7 +312,7 @@
     margin: 0;
   }
   .button {
-    width: 90px;
+    width: 120px;
     padding-top: 40px;
     margin: auto;
   }

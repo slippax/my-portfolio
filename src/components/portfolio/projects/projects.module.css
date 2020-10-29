@@ -81,7 +81,7 @@ img {
 @media (min-width: 768px) and (max-width: 1024px) {
   .Container {
     font-size: 23px;
-    margin-top: 6%;
+    margin-top: 15%;
     margin-bottom: 50%;
     background-color: #d2d8d6;
     background-image: linear-gradient(360deg, #b6b6b6 1%, #eaeaea 50%);
@@ -106,7 +106,7 @@ img {
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .Container {
     font-size: 23px;
-    margin-top: 1%;
+    margin-top: 2%;
     margin-bottom: 50%;
     background-color: #d2d8d6;
     background-image: linear-gradient(360deg, #b6b6b6 1%, #eaeaea 50%);

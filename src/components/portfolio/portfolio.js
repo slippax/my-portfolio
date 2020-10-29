@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
 import AboutMe from "./aboutme/aboutme";
 import WorkXp from "./workxp/workxp";
 import Projects from "./projects/projects";
@@ -14,163 +14,104 @@ import Menu from "../portfolio/ui/menu/sidebar";
 import SocialIcons from "./ui/socialicons/socialicons";
 import SectionHeader from "../portfolio/ui/sectionheader/sectionheader";
 const Portfolio = () => {
-  let pages = [];
-  let index = 0;
   let navigate = useNavigate();
 
+  const pages = [];
+
+  const [index, setIndex] = useState(0);
   const [pause, setPause] = useState(false);
-  const [menuToggle, setMenuToggle] = useState(false);
 
   useEffect(() => {
-    pauseHandler();
-  }, []);
-
-  useEffect(() => {
-    setMenuToggle(false);
-  }, [menuToggle]);
-
-  const pauseHandler = () => {
     setPause(true);
     setTimeout(() => {
       setPause(false);
     }, 800);
+  }, [])
+
+  const scrollToComponentHandler = (down) => {
+    let num = index;
+    if (down) {
+      if (num === 3) {
+        return;
+      }
+      num++;
+    }
+    if (!down) {
+      if (num === 0) {
+        navigate("/", { replace: true })
+      }
+      num--;
+    };
+    scrollToComponentMenuHandler(num);
+    console.log(pages);
   };
 
-  const scrollToComponentHandler = (page, num) => {
-    scrollToComponent(page, {
+  const scrollToComponentMenuHandler = (num) => {
+    scrollToComponent(pages[num], {
       offset: 0,
       align: "top",
       duration: 700,
     });
-    pauseHandler();
-    if (!menuToggle) {
-      setMenuToggle(true);
-    }
-    currentHandler(num);
-    console.log(pages);
+    setIndex(num);
   };
-
-  const currentHandler = (num) => {
-    index = num;
-    if (index === 0) {
-      document.getElementById("about").style.textDecoration = "underline";
-      document.getElementById("project").style.textDecoration = "none";
-      document.getElementById("work").style.textDecoration = "none";
-      document.getElementById("contact").style.textDecoration = "none";
-    }
-    if (index === 1) {
-      document.getElementById("project").style.textDecoration = "underline";
-      document.getElementById("about").style.textDecoration = "none";
-      document.getElementById("work").style.textDecoration = "none";
-      document.getElementById("contact").style.textDecoration = "none";
-    }
-    if (index === 2) {
-      document.getElementById("work").style.textDecoration = "underline";
-      document.getElementById("about").style.textDecoration = "none";
-      document.getElementById("project").style.textDecoration = "none";
-      document.getElementById("contact").style.textDecoration = "none";
-    }
-    if (index === 3) {
-      document.getElementById("contact").style.textDecoration = "underline";
-      document.getElementById("about").style.textDecoration = "none";
-      document.getElementById("project").style.textDecoration = "none";
-      document.getElementById("work").style.textDecoration = "none";
-    }
-  };
-
   return (
     <div>
-      <div className={classes.mobilemenu}>
-        <Menu
-          open={menuToggle}
-          aboutClick={() => scrollToComponentHandler(pages.aboutMe)}
-          projectClick={() => scrollToComponentHandler(pages.projects)}
-          workClick={() => scrollToComponentHandler(pages.workXp)}
-          contactClick={() => scrollToComponentHandler(pages.contact)}
-        />
-      </div>
-      <SocialIcons />
-      <PageProgress color={"gray"} height={5} />
-      <SectionHeader
-        clickedabout={() => scrollToComponentHandler(pages.aboutMe, 0)}
-        clickedprojects={() => scrollToComponentHandler(pages.projects, 1)}
-        clickedwork={() => scrollToComponentHandler(pages.workXp, 2)}
-        clickedcontact={() => scrollToComponentHandler(pages.contact, 3)}
-        clickedhome={() => navigate("/", { replace: true })}
-      />
-      <section
-        ref={(section) => {
-          pages.aboutMe = section;
-        }}
-      ></section>
       <ReactScrollWheelHandler className={classes.handlerbox}
         pauseListeners={pause}
-        upHandler={() => navigate("/", { replace: true })}
-        downHandler={() => scrollToComponentHandler(pages.projects, 1)}
+        upHandler={() => scrollToComponentHandler(false)}
+        downHandler={() => scrollToComponentHandler(true)}
       >
+        <div className={classes.mobilemenu}>
+          <Menu
+            open={false}
+            aboutClick={() => scrollToComponentMenuHandler(0)}
+            projectClick={() => scrollToComponentMenuHandler(1)}
+            workClick={() => scrollToComponentMenuHandler(2)}
+            contactClick={() => scrollToComponentMenuHandler(3)}
+          />
+        </div>
+        <SocialIcons />
+        <PageProgress color={"gray"} height={5} />
+        <SectionHeader
+          clickedabout={() => scrollToComponentMenuHandler(0)}
+          clickedprojects={() => scrollToComponentMenuHandler(1)}
+          clickedwork={() => scrollToComponentMenuHandler(2)}
+          clickedcontact={() => scrollToComponentMenuHandler(3)}
+          clickedhome={() => navigate("/", { replace: true })}
+        />
+        <section
+          ref={(section) => {
+            pages[0] = section;
+          }}
+        ></section>
+
         <div className={classes.button}>
           <RubberBand>
             <ButtonComponent />
           </RubberBand>
         </div>
-
         <AboutMe
-          clickedabout={() => scrollToComponentHandler(pages.aboutMe)}
-          clickedprojects={() => scrollToComponentHandler(pages.projects)}
-          clickedwork={() => scrollToComponentHandler(pages.workXp)}
-          clickedcontact={() => scrollToComponentHandler(pages.contact)}
         />
-      </ReactScrollWheelHandler>
-      <section
-        ref={(section) => {
-          pages.projects = section;
-        }}
-      ></section>
-      <ReactScrollWheelHandler className={classes.handlerbox}
-        pauseListeners={pause}
-        upHandler={() => scrollToComponentHandler(pages.aboutMe, 0)}
-        downHandler={() => scrollToComponentHandler(pages.workXp, 2)}
-      >
+        <section
+          ref={(section) => {
+            pages[1] = section;
+          }}
+        ></section>
         <Projects
-          clickedabout={() => scrollToComponentHandler(pages.aboutMe)}
-          clickedprojects={() => scrollToComponentHandler(pages.projects)}
-          clickedwork={() => scrollToComponentHandler(pages.workXp)}
-          clickedcontact={() => scrollToComponentHandler(pages.contact)}
         />
-      </ReactScrollWheelHandler>
-      <section
-        ref={(section) => {
-          pages.workXp = section;
-        }}
-      ></section>
-      <ReactScrollWheelHandler
-      className={classes.handlerbox}
-        pauseListeners={pause}
-        upHandler={() => scrollToComponentHandler(pages.projects, 1)}
-        downHandler={() => scrollToComponentHandler(pages.contact, 3)}
-      >
+        <section
+          ref={(section) => {
+            pages[2] = section;
+          }}
+        ></section>
         <WorkXp
-          clickedabout={() => scrollToComponentHandler(pages.aboutMe)}
-          clickedprojects={() => scrollToComponentHandler(pages.projects)}
-          clickedwork={() => scrollToComponentHandler(pages.workXp)}
-          clickedcontact={() => scrollToComponentHandler(pages.contact)}
         />
-      </ReactScrollWheelHandler>
-      <section
-        ref={(section) => {
-          pages.contact = section;
-        }}
-      ></section>
-      <ReactScrollWheelHandler
-      className={classes.handlerbox}
-        pauseListeners={pause}
-        upHandler={() => scrollToComponentHandler(pages.workXp, 2)}
-      >
+        <section
+          ref={(section) => {
+            pages[3] = section;
+          }}
+        ></section>
         <Contact
-          clickedabout={() => scrollToComponentHandler(pages.aboutMe)}
-          clickedprojects={() => scrollToComponentHandler(pages.projects)}
-          clickedwork={() => scrollToComponentHandler(pages.workXp)}
-          clickedcontact={() => scrollToComponentHandler(pages.contact)}
         />
       </ReactScrollWheelHandler>
     </div>

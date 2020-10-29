@@ -35,7 +35,7 @@ const [box, wiggleBox] = useState(false);
               <p className={classes.nameText}>Stephen Lippa</p>
             </Roll>
 
-            <Typist>
+            <Typist avgTypingDelay={60}>
               <Typist.Delay ms={2600} />
 
               <span className={classes.taglineText2}>
