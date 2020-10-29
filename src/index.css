@@ -11,10 +11,6 @@ body {
   user-select: none;
 }
 
-code {
-  font-family: "Oxygen", sans-serif;
-}
-
 .Menu {
   position: fixed;
 }
