@@ -20,6 +20,11 @@ const Portfolio = () => {
 
   const [index, setIndex] = useState(0);
   const [pause, setPause] = useState(false);
+  const [menuToggle, setMenuToggle] = useState(false);
+
+  useEffect(() => {
+    setMenuToggle(false);
+  }, [menuToggle]);
 
   useEffect(() => {
     setPause(true);
@@ -53,6 +58,37 @@ const Portfolio = () => {
       duration: 700,
     });
     setIndex(num);
+    if (!menuToggle) {
+      setMenuToggle(true);
+    }
+    currentHandler(num);
+  };
+
+  const currentHandler = (num) => {
+    if (num === 0) {
+      document.getElementById("about").style.textDecoration = "underline";
+      document.getElementById("project").style.textDecoration = "none";
+      document.getElementById("work").style.textDecoration = "none";
+      document.getElementById("contact").style.textDecoration = "none";
+    }
+    if (num === 1) {
+      document.getElementById("project").style.textDecoration = "underline";
+      document.getElementById("about").style.textDecoration = "none";
+      document.getElementById("work").style.textDecoration = "none";
+      document.getElementById("contact").style.textDecoration = "none";
+    }
+    if (num === 2) {
+      document.getElementById("work").style.textDecoration = "underline";
+      document.getElementById("about").style.textDecoration = "none";
+      document.getElementById("project").style.textDecoration = "none";
+      document.getElementById("contact").style.textDecoration = "none";
+    }
+    if (num === 3) {
+      document.getElementById("contact").style.textDecoration = "underline";
+      document.getElementById("about").style.textDecoration = "none";
+      document.getElementById("project").style.textDecoration = "none";
+      document.getElementById("work").style.textDecoration = "none";
+    }
   };
   return (
     <div>
@@ -63,7 +99,7 @@ const Portfolio = () => {
       >
         <div className={classes.mobilemenu}>
           <Menu
-            open={false}
+            open={menuToggle}
             aboutClick={() => scrollToComponentMenuHandler(0)}
             projectClick={() => scrollToComponentMenuHandler(1)}
             workClick={() => scrollToComponentMenuHandler(2)}
