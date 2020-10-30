@@ -12,7 +12,7 @@ const particles = () => {
             position: "50% 50%",
             repeat: "no-repeat",
             size: "cover",
-            opacity: 1,
+            opacity: 0.5,
           },
           detectRetina: true,
           fpsLimit: 60,
@@ -64,7 +64,7 @@ const particles = () => {
               },
               outMode: "destroy",
               random: false,
-              speed: 3,
+              speed: 2,
               straight: false,
               trail: {
                 enable: false,

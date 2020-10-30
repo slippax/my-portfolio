@@ -1,23 +1,25 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import ArrowDropUpOutlinedIcon from "@material-ui/icons/Home";
+import HomeIcon from "@material-ui/icons/Home";
+import ArrowDropDownOutlinedIcon from "@material-ui/icons/ArrowDropDownOutlined";
 import { AwesomeButton } from "react-awesome-button";
-import Wobble from "react-reveal/Fade";
-import classes from "./button.module.css";
 
-
-const button = () => {
+export const HomeButton = () => {
   return (
-    <div className={classes.button}>
-      <Wobble left>
         <Link to="/">
           <AwesomeButton type="primary" size="medium">
-            <ArrowDropUpOutlinedIcon fontSize="default" />
+            <HomeIcon fontSize="default" />
           </AwesomeButton>
         </Link>
-      </Wobble>
-    </div>
   );
 };
 
-export default button;
+export const NextButton = () => {
+  return (
+        <Link to="/portfolio">
+          <AwesomeButton type="primary" size="medium">
+            <ArrowDropDownOutlinedIcon fontSize="large" />
+          </AwesomeButton>
+        </Link>
+  );
+};

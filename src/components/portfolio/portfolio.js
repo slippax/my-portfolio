@@ -3,7 +3,7 @@ import AboutMe from "./aboutme/aboutme";
 import WorkXp from "./workxp/workxp";
 import Projects from "./projects/projects";
 import Contact from "./contact/contact";
-import ButtonComponent from "./ui/button/button";
+import {HomeButton} from "./ui/button/button";
 import ReactScrollWheelHandler from "react-scroll-wheel-handler";
 import scrollToComponent from "react-scroll-to-component";
 import { useNavigate } from "react-router-dom";
@@ -103,8 +103,7 @@ const Portfolio = () => {
             aboutClick={() => scrollToComponentMenuHandler(0)}
             projectClick={() => scrollToComponentMenuHandler(1)}
             workClick={() => scrollToComponentMenuHandler(2)}
-            contactClick={() => scrollToComponentMenuHandler(3)}
-          />
+            contactClick={() => scrollToComponentMenuHandler(3)}/>
         </div>
         <SocialIcons />
         <PageProgress color={"gray"} height={5} />
@@ -113,42 +112,35 @@ const Portfolio = () => {
           clickedprojects={() => scrollToComponentMenuHandler(1)}
           clickedwork={() => scrollToComponentMenuHandler(2)}
           clickedcontact={() => scrollToComponentMenuHandler(3)}
-          clickedhome={() => navigate("/", { replace: true })}
-        />
+          clickedhome={() => navigate("/", { replace: true })}/>
         <section
           ref={(section) => {
             pages[0] = section;
-          }}
-        ></section>
-
+          }}>
+          </section>
         <div className={classes.button}>
           <RubberBand>
-            <ButtonComponent />
+            <HomeButton />
           </RubberBand>
         </div>
-        <AboutMe
-        />
+        <AboutMe/>
         <section
           ref={(section) => {
             pages[1] = section;
           }}
         ></section>
-        <Projects
-        />
+        <Projects/>
         <section
           ref={(section) => {
             pages[2] = section;
-          }}
-        ></section>
-        <WorkXp
-        />
+          }}></section>
+        <WorkXp/>
         <section
           ref={(section) => {
             pages[3] = section;
           }}
         ></section>
-        <Contact
-        />
+        <Contact/>
       </ReactScrollWheelHandler>
     </div>
   );
