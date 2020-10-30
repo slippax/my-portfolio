@@ -46,7 +46,7 @@ function SplashPage() {
 
               <Typist avgTypingDelay={65}>
                 <Typist.Delay ms={5000} />
-                <span className={classes.taglineText2}>
+                <span className={classes.taglineText}>
                   I am a front end developer.
               </span>
                 <Typist.Delay ms={1000} />

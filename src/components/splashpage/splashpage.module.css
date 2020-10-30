@@ -127,11 +127,6 @@
     font-weight: 300;
     margin: 0;
   }
-  .taglineText2 {
-    font-size: 44px;
-    font-weight: 300;
-    margin: 0;
-  }
 
   .button {
     width: 90px;
@@ -210,12 +205,6 @@
     font-weight: 300;
     margin: 0;
   }
-  .taglineText2 {
-    font-size: 44px;
-    font-weight: 300;
-    margin: 0;
-    
-  }
   .button {
     width: 90px;
     margin: auto;
@@ -289,11 +278,6 @@ margin-right: 10px;
   }
   .taglineText {
     font-size: 40px;
-    font-weight: 300;
-    margin: 0;
-  }
-  .taglineText2 {
-    font-size: 39px;
     font-weight: 300;
     margin: 0;
   }
@@ -375,11 +359,6 @@ margin-right: 25px;
     font-weight: 300;
     margin: 0;
   }
-  .taglineText2 {
-    font-size: 39px;
-    font-weight: 300;
-    margin: 0;
-  }
   .button {
     width: 90px;
     padding-top: 25px;
@@ -456,11 +435,6 @@ margin-right: 25px;
     font-weight: 300;
     margin: 0;
   }
-  .taglineText2 {
-    font-size: 34px;
-    font-weight: 300;
-    margin: 0;
-  }
   .button {
     width: 90px;
     padding-top: 25px;
@@ -522,19 +496,19 @@ margin-right: 25px;
   }
 
   .taglineText {
-    font-size: 29px;
-    font-weight: 300;
-    margin: 0;
-  }
-  .taglineText2 {
-    font-size: 26px;
+    font-size: 27px;
     font-weight: 300;
     margin: 0;
   }
   .button {
     width: 90px;
     margin: auto;
-    padding-top: 30px;
+    padding-top: 40px;
   }
-
+  .icontainer {
+    position: fixed; /* Set the navbar to fixed position */
+    top:55%;
+    left: 31%;
+    z-index: 100;
+  }
 }
