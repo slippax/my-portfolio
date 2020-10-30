@@ -501,14 +501,14 @@ margin-right: 25px;
     margin: 0;
   }
   .button {
-    width: 90px;
+    width: 100px;
     margin: auto;
     padding-top: 40px;
   }
   .icontainer {
     position: fixed; /* Set the navbar to fixed position */
-    top:55%;
-    left: 31%;
+    top:70%;
+    left: 28.5%;
     z-index: 100;
   }
 }
