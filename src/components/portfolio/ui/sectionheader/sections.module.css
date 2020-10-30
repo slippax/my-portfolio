@@ -14,7 +14,7 @@
   outline: none;
 }
 .aboutme{
- 
+  text-decoration: underline;
 }
 .home:hover {
   color:rgb(9, 10, 10);

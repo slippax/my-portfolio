@@ -3,7 +3,7 @@ import AboutMe from "./aboutme/aboutme";
 import WorkXp from "./workxp/workxp";
 import Projects from "./projects/projects";
 import Contact from "./contact/contact";
-import ButtonComponent from "./ui/button/button";
+import {HomeButton} from "./ui/button/button";
 import ReactScrollWheelHandler from "react-scroll-wheel-handler";
 import scrollToComponent from "react-scroll-to-component";
 import { useNavigate } from "react-router-dom";
@@ -20,6 +20,11 @@ const Portfolio = () => {
 
   const [index, setIndex] = useState(0);
   const [pause, setPause] = useState(false);
+  const [menuToggle, setMenuToggle] = useState(false);
+
+  useEffect(() => {
+    setMenuToggle(false);
+  }, [menuToggle]);
 
   useEffect(() => {
     setPause(true);
@@ -53,6 +58,37 @@ const Portfolio = () => {
       duration: 700,
     });
     setIndex(num);
+    if (!menuToggle) {
+      setMenuToggle(true);
+    }
+    currentHandler(num);
+  };
+
+  const currentHandler = (num) => {
+    if (num === 0) {
+      document.getElementById("about").style.textDecoration = "underline";
+      document.getElementById("project").style.textDecoration = "none";
+      document.getElementById("work").style.textDecoration = "none";
+      document.getElementById("contact").style.textDecoration = "none";
+    }
+    if (num === 1) {
+      document.getElementById("project").style.textDecoration = "underline";
+      document.getElementById("about").style.textDecoration = "none";
+      document.getElementById("work").style.textDecoration = "none";
+      document.getElementById("contact").style.textDecoration = "none";
+    }
+    if (num === 2) {
+      document.getElementById("work").style.textDecoration = "underline";
+      document.getElementById("about").style.textDecoration = "none";
+      document.getElementById("project").style.textDecoration = "none";
+      document.getElementById("contact").style.textDecoration = "none";
+    }
+    if (num === 3) {
+      document.getElementById("contact").style.textDecoration = "underline";
+      document.getElementById("about").style.textDecoration = "none";
+      document.getElementById("project").style.textDecoration = "none";
+      document.getElementById("work").style.textDecoration = "none";
+    }
   };
   return (
     <div>
@@ -63,12 +99,11 @@ const Portfolio = () => {
       >
         <div className={classes.mobilemenu}>
           <Menu
-            open={false}
+            open={menuToggle}
             aboutClick={() => scrollToComponentMenuHandler(0)}
             projectClick={() => scrollToComponentMenuHandler(1)}
             workClick={() => scrollToComponentMenuHandler(2)}
-            contactClick={() => scrollToComponentMenuHandler(3)}
-          />
+            contactClick={() => scrollToComponentMenuHandler(3)}/>
         </div>
         <SocialIcons />
         <PageProgress color={"gray"} height={5} />
@@ -77,42 +112,35 @@ const Portfolio = () => {
           clickedprojects={() => scrollToComponentMenuHandler(1)}
           clickedwork={() => scrollToComponentMenuHandler(2)}
           clickedcontact={() => scrollToComponentMenuHandler(3)}
-          clickedhome={() => navigate("/", { replace: true })}
-        />
+          clickedhome={() => navigate("/", { replace: true })}/>
         <section
           ref={(section) => {
             pages[0] = section;
-          }}
-        ></section>
-
+          }}>
+          </section>
         <div className={classes.button}>
           <RubberBand>
-            <ButtonComponent />
+            <HomeButton />
           </RubberBand>
         </div>
-        <AboutMe
-        />
+        <AboutMe/>
         <section
           ref={(section) => {
             pages[1] = section;
           }}
         ></section>
-        <Projects
-        />
+        <Projects/>
         <section
           ref={(section) => {
             pages[2] = section;
-          }}
-        ></section>
-        <WorkXp
-        />
+          }}></section>
+        <WorkXp/>
         <section
           ref={(section) => {
             pages[3] = section;
           }}
         ></section>
-        <Contact
-        />
+        <Contact/>
       </ReactScrollWheelHandler>
     </div>
   );

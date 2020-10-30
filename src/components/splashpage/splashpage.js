@@ -1,110 +1,110 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import classes from "./splashpage.module.css";
 import Typist from "react-typist";
-import { AwesomeButton } from "react-awesome-button";
-import "react-awesome-button/dist/themes/theme-c137.css";
-import ArrowDropDownOutlinedIcon from "@material-ui/icons/ArrowDropDownOutlined";
-import { Link } from "react-router-dom";
+import { NextButton } from '../portfolio/ui/button/button';
 import ReactScrollWheelHandler from "react-scroll-wheel-handler";
-import Roll from "react-reveal/Roll";
-import Flip from "react-reveal/Zoom";
+import Rotate from 'react-reveal/Zoom';
+import Roll from 'react-reveal/Roll';
 import Fade from "react-reveal/Fade";
 import Tada from 'react-reveal/Jello';
-import Pulse from 'react-reveal/Pulse';
 import { SocialMediaIconsReact } from "social-media-icons-react";
 function SplashPage() {
   let navigate = useNavigate();
-const [linked, wiggleLinked] = useState(false);
-const [git, wiggleGit] = useState(false);
-const [next, wiggleNext] = useState(false);
-const [box, wiggleBox] = useState(false);
+  const [linked, wiggleLinked] = useState(false);
+  const [git, wiggleGit] = useState(false);
+  const [next, wiggleNext] = useState(false);
+  const [greet1, setgreet1] = useState(false);
+  const [greet2, setgreet2] = useState(false);
+  const [greet3, setgreet3] = useState(false);
+  const [greet4, setgreet4] = useState(false);
+  setTimeout(() => {
+    setgreet1(true);
+  }, 1400);
+  setTimeout(() => {
+    setgreet2(true);
+  }, 2400);
+  setTimeout(() => {
+    setgreet3(true);
+  }, 3700);
+  setTimeout(() => {
+    setgreet4(true);
+  }, 4200);
   return (
-    <div onMouseEnter={()=>wiggleBox(!box)}>
-      
+    <div>
       <div className={classes.container}>
-      
         <ReactScrollWheelHandler className={classes.handlerbox}
-          downHandler={() => navigate("/portfolio", { replace: true })}
-        >
-        
+          downHandler={() => navigate("/portfolio", { replace: true })}>
+            <Rotate>
           <div className={classes.headerText}>
-          <Pulse spy={box}>
-            <Roll bottom cascade>
-              <p className={classes.greetingText}>Hi, my name is</p>
-              <p className={classes.nameText}>Stephen Lippa</p>
-            </Roll>
+          
+              {greet1 ? (<Fade right cascade>
+                <p className={classes.greetingText}>Hi, my name is</p>
+              </Fade>) : (<p className={classes.greetingText2}>.</p>)}
+              {greet2 ? (<Roll top cascade><p className={classes.nameText}>Stephen Lippa</p></Roll>) : (<p className={classes.nameText2}>.</p>)}
 
-            <Typist avgTypingDelay={60}>
-              <Typist.Delay ms={2600} />
-
-              <span className={classes.taglineText2}>
-                I am a front end developer.
+              <Typist avgTypingDelay={65}>
+                <Typist.Delay ms={6000} />
+                <span className={classes.taglineText}>
+                  I am a front end developer.
               </span>
-
-              <Typist.Delay ms={1000} />
-              <Typist.Backspace count={27} />
-              <span className={classes.taglineText}>
-                I build things for the web.
+                <Typist.Delay ms={1000} />
+                <Typist.Backspace count={25} />
+                <span className={classes.taglineText}>
+                  build things for the web.
               </span>
-            </Typist>
-            </Pulse>
-            <Fade bottom>
-              <div className={classes.button} onMouseEnter={()=> wiggleNext(!next)}>
-                <Link to="/portfolio">
-                  <Tada spy={next}>
-                  <AwesomeButton type="primary" size="medium">
-                    <ArrowDropDownOutlinedIcon fontSize="large" />
-                  </AwesomeButton>
-                  </Tada>
-                </Link>
-              </div>
-            </Fade>
-            <div className={classes.icontainer}>
+              </Typist>
+        
+            {greet3 ? (<div className={classes.button} onMouseEnter={() => wiggleNext(!next)}>
+                <Tada spy={next}>
+                  <Rotate>
+                  <NextButton />
+                  </Rotate>
+                </Tada>
+              </div>) : (<div/>)}
+              {greet4 ? (<div className={classes.icontainer}>
               <Tada spy={git}>
-              <div className={classes.icongit} onMouseEnter= {()=> wiggleGit(!git)}>
-                <Flip>
-                  <SocialMediaIconsReact
-                    borderColor="rgba(0,0,0,0.25)"
-                    borderWidth="3"
-                    borderStyle="solid"
-                    icon="github"
-                    url="https://github.com/slippax"
-                    iconColor="rgba(255,255,255,1)"
-                    backgroundColor="rgba(77,100,100,0.66)"
-                    iconSize="4"
-                    roundness="50%"
-                    size="60"
-                  />
-                </Flip>
-              </div>
+                <div className={classes.icongit} onMouseEnter={() => wiggleGit(!git)}>
+                  <Rotate>
+                    <SocialMediaIconsReact
+                      borderColor="rgba(0,0,0,0.25)"
+                      borderWidth="3"
+                      borderStyle="solid"
+                      icon="github"
+                      url="https://github.com/slippax"
+                      iconColor="rgba(255,255,255,1)"
+                      backgroundColor="rgba(77,100,100,0.66)"
+                      iconSize="4"
+                      roundness="50%"
+                      size="60"
+                    />
+                  </Rotate>
+                </div>
               </Tada>
-              <div className={classes.iconlinked} onMouseEnter= {()=> wiggleLinked(!linked)}>
-                <Tada spy = {linked}>
-                <Flip>
-                  <SocialMediaIconsReact
-                    borderColor="rgba(0,0,0,0.25)"
-                    borderWidth="3"
-                    borderStyle="solid"
-                    icon="linkedin"
-                    url="https://ca.linkedin.com/in/stephen-lippa-465203198"
-                    iconColor="rgba(255,255,255,1)"
-                    backgroundColor="rgba(77,100,100,0.66)"
-                    iconSize="4"
-                    roundness="50%"
-                    size="60"
-                  />
-                </Flip>
+              <div className={classes.iconlinked} onMouseEnter={() => wiggleLinked(!linked)}>
+                <Tada spy={linked}>
+                  <Rotate>
+                    <SocialMediaIconsReact
+                      borderColor="rgba(0,0,0,0.25)"
+                      borderWidth="3"
+                      borderStyle="solid"
+                      icon="linkedin"
+                      url="https://ca.linkedin.com/in/stephen-lippa-465203198"
+                      iconColor="rgba(255,255,255,1)"
+                      backgroundColor="rgba(77,100,100,0.66)"
+                      iconSize="4"
+                      roundness="50%"
+                      size="60"
+                    />
+                  </Rotate>
                 </Tada>
               </div>
+            </div>) : (<div/>)}
+              
             </div>
-          
-
-          </div>
+            </Rotate>
         </ReactScrollWheelHandler>
-        
       </div>
-         
     </div>
   );
 }

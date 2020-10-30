@@ -12,7 +12,7 @@ const particles = () => {
             position: "50% 50%",
             repeat: "no-repeat",
             size: "cover",
-            opacity: 1,
+            opacity: 0.5,
           },
           detectRetina: true,
           fpsLimit: 60,
@@ -64,7 +64,7 @@ const particles = () => {
               },
               outMode: "destroy",
               random: false,
-              speed: 3,
+              speed: 2,
               straight: false,
               trail: {
                 enable: false,
@@ -97,7 +97,7 @@ const particles = () => {
           emitters: {
             direction: "top",
             life: {},
-            rate: { quantity: 0.5, delay: 0.5 },
+            rate: { quantity: 0.5, delay: 0.8 },
             size: { mode: "percent", height: 0, width: 100 },
             position: { x: 50, y: 100 },
           },
