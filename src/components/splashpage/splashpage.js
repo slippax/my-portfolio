@@ -5,10 +5,8 @@ import Typist from "react-typist";
 import { NextButton } from '../portfolio/ui/button/button';
 import ReactScrollWheelHandler from "react-scroll-wheel-handler";
 import Rotate from 'react-reveal/Zoom';
-import Slide from 'react-reveal/Rotate';
 import Fade from "react-reveal/Fade";
 import Tada from 'react-reveal/Jello';
-import Bounce from 'react-reveal/Bounce';
 import { SocialMediaIconsReact } from "social-media-icons-react";
 function SplashPage() {
   let navigate = useNavigate();
@@ -27,10 +25,10 @@ function SplashPage() {
   }, 2100);
   setTimeout(() => {
     setgreet3(true);
-  }, 3500);
+  }, 3700);
   setTimeout(() => {
     setgreet4(true);
-  }, 4000);
+  }, 4200);
   return (
     <div>
       <div className={classes.container}>
@@ -42,10 +40,10 @@ function SplashPage() {
               {greet1 ? (<Fade right cascade>
                 <p className={classes.greetingText}>Hi, my name is</p>
               </Fade>) : (<p className={classes.greetingText2}>.</p>)}
-              {greet2 ? (<Slide cascade><p className={classes.nameText}>Stephen Lippa</p></Slide>) : (<p className={classes.nameText2}>.</p>)}
+              {greet2 ? (<Rotate right cascade><p className={classes.nameText}>Stephen Lippa</p></Rotate>) : (<p className={classes.nameText2}>.</p>)}
 
               <Typist avgTypingDelay={65}>
-                <Typist.Delay ms={5000} />
+                <Typist.Delay ms={6000} />
                 <span className={classes.taglineText}>
                   I am a front end developer.
               </span>
@@ -58,15 +56,15 @@ function SplashPage() {
         
             {greet3 ? (<div className={classes.button} onMouseEnter={() => wiggleNext(!next)}>
                 <Tada spy={next}>
-                  <Bounce>
+                  <Rotate>
                   <NextButton />
-                  </Bounce>
+                  </Rotate>
                 </Tada>
               </div>) : (<div/>)}
               {greet4 ? (<div className={classes.icontainer}>
               <Tada spy={git}>
                 <div className={classes.icongit} onMouseEnter={() => wiggleGit(!git)}>
-                  <Bounce>
+                  <Rotate>
                     <SocialMediaIconsReact
                       borderColor="rgba(0,0,0,0.25)"
                       borderWidth="3"
@@ -79,12 +77,12 @@ function SplashPage() {
                       roundness="50%"
                       size="60"
                     />
-                  </Bounce>
+                  </Rotate>
                 </div>
               </Tada>
               <div className={classes.iconlinked} onMouseEnter={() => wiggleLinked(!linked)}>
                 <Tada spy={linked}>
-                  <Bounce>
+                  <Rotate>
                     <SocialMediaIconsReact
                       borderColor="rgba(0,0,0,0.25)"
                       borderWidth="3"
@@ -97,7 +95,7 @@ function SplashPage() {
                       roundness="50%"
                       size="60"
                     />
-                  </Bounce>
+                  </Rotate>
                 </Tada>
               </div>
             </div>) : (<div/>)}
