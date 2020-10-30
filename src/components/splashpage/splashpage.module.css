@@ -109,7 +109,23 @@
     margin: 0;
     padding-bottom: 3px;
   }
-
+  .greetingText2 {
+    font-size: 60px;
+    font-weight: 300;
+    padding-right: 10px;
+    margin: 0;
+    padding-bottom: 0px;
+    padding-top: 5px;
+    color: transparent;
+  }
+  
+  .nameText2 {
+    font-size: 50px;
+    font-weight: 300;
+    margin: 0;
+    padding-bottom: 3px;
+    color: transparent;
+  }
   .taglineText {
     font-size: 45px;
     font-weight: 300;
@@ -136,9 +152,10 @@
 @media (min-width: 1025px) and (max-width: 1280px) {
   .headerText {
     position: absolute;
-    top: 38%;
-    left: 26%;
-    margin-top: -120px;
+    z-index: 15;
+    top: 50%;
+    left: 50%;
+    margin: -240px 0 0 -300px;
     font-size: 30px;
     z-index: 100;
     padding-left: 50px;
@@ -148,6 +165,7 @@
 
     border: 2px solid darkslategray;
     width: 550px;
+    height: 415px;
   }
   .headerText:hover {
     box-shadow: 5px 6px 7px 11px rgba(0, 0, 0, 0.38);
@@ -173,7 +191,24 @@
     padding-bottom: 3px;
     animation: fadein 1s;
   }
+  .greetingText2 {
+    font-size: 60px;
+    font-weight: 300;
+    padding-right: 10px;
+    margin: 0;
+    padding-bottom: 0px;
+    padding-top: 5px;
+    color: transparent;
+  }
 
+  .nameText2 {
+    font-size: 50px;
+    font-weight: 300;
+    margin: 0;
+    padding-bottom: 3px;
+    animation: fadein 1s;
+    color: transparent;
+  }
   .taglineText {
     font-size: 45px;
     font-weight: 300;
@@ -216,6 +251,7 @@ margin-right: 10px;
     padding-right: 40px;
     border: 2px solid darkslategray;
     width: 490px;
+    height: 390px;
   }
   .headerText:hover {
     box-shadow: 5px 6px 7px 11px rgba(0, 0, 0, 0.38);
@@ -238,6 +274,22 @@ margin-right: 10px;
     margin: 0;
     padding-bottom: 5px;
     animation: fadein 1s;
+  }
+  .greetingText2 {
+    font-size: 55px;
+    font-weight: 300;
+    padding-right: 0px;
+    margin: 0;
+    padding-bottom: 5px;
+    padding-top: 0px;
+  color: transparent;
+  }
+  .nameText2 {
+    font-size: 45px;
+    font-weight: 300;
+    margin: 0;
+    padding-bottom: 5px;
+    color: transparent;
   }
   .taglineText {
     font-size: 40px;
@@ -281,6 +333,7 @@ margin-right: 25px;
 
     border: 2px solid darkslategray;
     width: 490px;
+    height: 390px;
   }
   .headerText:hover {
     box-shadow: 5px 6px 7px 11px rgba(0, 0, 0, 0.38);
@@ -303,6 +356,23 @@ margin-right: 25px;
     margin: 0;
     padding-bottom: 5px;
     animation: fadein 1s;
+  }
+  
+  .greetingText2 {
+    font-size: 55px;
+    font-weight: 300;
+    padding-right: 0px;
+    margin: 0;
+    padding-bottom: 5px;
+    padding-top: 0px;
+   color: transparent;
+  }
+  .nameText2 {
+    font-size: 45px;
+    font-weight: 300;
+    margin: 0;
+    padding-bottom: 5px;
+    color: transparent;
   }
   .taglineText {
     font-size: 40px;
@@ -345,6 +415,7 @@ margin-right: 25px;
   
     border: 2px solid darkslategray;
     width: 430px;
+    height: 370px;
   }
   .headerText:hover {
     box-shadow: 5px 6px 7px 11px rgba(0, 0, 0, 0.38);
@@ -367,6 +438,22 @@ margin-right: 25px;
     margin: 0;
     padding-bottom: 5px;
     animation: fadein 1s;
+  }
+  .greetingText2 {
+    font-size: 50px;
+    font-weight: 300;
+    padding-right: 0px;
+    margin: 0;
+    padding-bottom: 5px;
+    padding-top: 0px;
+    color: transparent;
+  }
+  .nameText2 {
+    font-size: 40px;
+    font-weight: 300;
+    margin: 0;
+    padding-bottom: 5px;
+    color: transparent;
   }
   .taglineText {
     font-size: 35px;
@@ -419,6 +506,23 @@ margin-right: 25px;
     margin: 0;
     padding-bottom: 10px;
     animation: fadein 1s;
+  }
+  .greetingText2 {
+    font-size: 42px;
+    font-weight: 300;
+    padding-right: 0px;
+    margin: 0;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    color: transparent;
+  }
+
+  .nameText2 {
+    font-size: 40px;
+    font-weight: 300;
+    margin: 0;
+    padding-bottom: 10px;
+    color: transparent;
   }
 
   .taglineText {
