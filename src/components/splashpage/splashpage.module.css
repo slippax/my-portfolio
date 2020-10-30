@@ -30,10 +30,6 @@
   margin: 0;
 }
 
-.button {
-  padding-top: 10px;
-  animation: fadein 2s;
-}
 
 .icontainer {
   padding-top: 50px;
@@ -140,7 +136,7 @@
   .button {
     width: 90px;
     margin: auto;
-    padding-top: 30px;
+    margin-top: 40px;
   }
 }
 
@@ -251,7 +247,7 @@ margin-right: 10px;
     padding-right: 40px;
     border: 2px solid darkslategray;
     width: 490px;
-    height: 390px;
+    height: 400px;
   }
   .headerText:hover {
     box-shadow: 5px 6px 7px 11px rgba(0, 0, 0, 0.38);

@@ -9,14 +9,12 @@ import Slide from 'react-reveal/Rotate';
 import Fade from "react-reveal/Fade";
 import Tada from 'react-reveal/Jello';
 import Bounce from 'react-reveal/Bounce';
-import Pulse from 'react-reveal/Pulse';
 import { SocialMediaIconsReact } from "social-media-icons-react";
 function SplashPage() {
   let navigate = useNavigate();
   const [linked, wiggleLinked] = useState(false);
   const [git, wiggleGit] = useState(false);
   const [next, wiggleNext] = useState(false);
-  const [box, wiggleBox] = useState(false);
   const [greet1, setgreet1] = useState(false);
   const [greet2, setgreet2] = useState(false);
   const [greet3, setgreet3] = useState(false);
@@ -34,14 +32,13 @@ function SplashPage() {
     setgreet4(true);
   }, 4000);
   return (
-    <div onMouseEnter={() => wiggleBox(!box)}>
-      
+    <div>
       <div className={classes.container}>
         <ReactScrollWheelHandler className={classes.handlerbox}
           downHandler={() => navigate("/portfolio", { replace: true })}>
             <Rotate>
           <div className={classes.headerText}>
-            <Pulse spy={box}>
+          
               {greet1 ? (<Fade right cascade>
                 <p className={classes.greetingText}>Hi, my name is</p>
               </Fade>) : (<p className={classes.greetingText2}>.</p>)}
@@ -58,7 +55,7 @@ function SplashPage() {
                   build things for the web.
               </span>
               </Typist>
-            </Pulse>
+        
             {greet3 ? (<div className={classes.button} onMouseEnter={() => wiggleNext(!next)}>
                 <Tada spy={next}>
                   <Bounce>
