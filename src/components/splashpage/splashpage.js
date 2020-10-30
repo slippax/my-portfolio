@@ -5,6 +5,7 @@ import Typist from "react-typist";
 import { NextButton } from '../portfolio/ui/button/button';
 import ReactScrollWheelHandler from "react-scroll-wheel-handler";
 import Rotate from 'react-reveal/Zoom';
+import Roll from 'react-reveal/Roll';
 import Fade from "react-reveal/Fade";
 import Tada from 'react-reveal/Jello';
 import { SocialMediaIconsReact } from "social-media-icons-react";
@@ -19,10 +20,10 @@ function SplashPage() {
   const [greet4, setgreet4] = useState(false);
   setTimeout(() => {
     setgreet1(true);
-  }, 1100);
+  }, 1400);
   setTimeout(() => {
     setgreet2(true);
-  }, 2100);
+  }, 2400);
   setTimeout(() => {
     setgreet3(true);
   }, 3700);
@@ -40,7 +41,7 @@ function SplashPage() {
               {greet1 ? (<Fade right cascade>
                 <p className={classes.greetingText}>Hi, my name is</p>
               </Fade>) : (<p className={classes.greetingText2}>.</p>)}
-              {greet2 ? (<Rotate right cascade><p className={classes.nameText}>Stephen Lippa</p></Rotate>) : (<p className={classes.nameText2}>.</p>)}
+              {greet2 ? (<Roll top cascade><p className={classes.nameText}>Stephen Lippa</p></Roll>) : (<p className={classes.nameText2}>.</p>)}
 
               <Typist avgTypingDelay={65}>
                 <Typist.Delay ms={6000} />
