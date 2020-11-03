@@ -7,7 +7,7 @@
 }
 .sectionbox {
   text-align: center;
-  position: fixed; /* Set the navbar to fixed position */
+  position: absolute;
   top: 30%;
   left: 5%;
   z-index: 100;
@@ -43,8 +43,7 @@
   }
   .sectionbox {
     text-align: center;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 305px;
+    top: 24vh;
     left: -40px;
     z-index: 100;
     outline: none;
@@ -77,8 +76,7 @@
   }
   .sectionbox {
     text-align: center;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 240px;
+    top: 29vh;
     left: -65px;
     z-index: 100;
     outline: none;

@@ -5,14 +5,13 @@ import Projects from "./projects/projects";
 import Contact from "./contact/contact";
 import {HomeButton} from "./ui/button/button";
 import ReactScrollWheelHandler from "react-scroll-wheel-handler";
-import scrollToComponent from "react-scroll-to-component";
 import { useNavigate } from "react-router-dom";
 import classes from "./portfolio.module.css";
 import RubberBand from "react-reveal/Zoom";
-import PageProgress from "react-page-progress";
 import Menu from "../portfolio/ui/menu/sidebar";
 import SocialIcons from "./ui/socialicons/socialicons";
 import SectionHeader from "../portfolio/ui/sectionheader/sectionheader";
+import Flip from 'react-reveal/Zoom';
 const Portfolio = () => {
   let navigate = useNavigate();
 
@@ -22,17 +21,21 @@ const Portfolio = () => {
   const [pause, setPause] = useState(false);
   const [menuToggle, setMenuToggle] = useState(false);
 
+  const [aboutMe, showAboutMe] = useState(true);
+  const [workXP, showWorkXP] = useState(false)
+  const [project, showProject] = useState(false);
+  const [contact, showContact] = useState(false);
+
   useEffect(() => {
     setMenuToggle(false);
   }, [menuToggle]);
-
+  
   useEffect(() => {
     setPause(true);
     setTimeout(() => {
       setPause(false);
-    }, 800);
+    }, 1000);
   }, [])
-
   const scrollToComponentHandler = (down) => {
     let num = index;
     if (down) {
@@ -46,24 +49,53 @@ const Portfolio = () => {
         navigate("/", { replace: true })
       }
       num--;
+   
     };
+    
     scrollToComponentMenuHandler(num);
     console.log(pages);
+    
   };
 
+  const refreshPages = () => {
+    showAboutMe(false);
+    showProject(false);
+    showWorkXP(false);
+    showContact(false);
+  }
+
   const scrollToComponentMenuHandler = (num) => {
-    scrollToComponent(pages[num], {
-      offset: 0,
-      align: "top",
-      duration: 700,
-    });
+    refreshPages();
+    if(num === 0) {
+      setTimeout(() => {
+        showAboutMe(true);
+      }, 600);
+      
+    }
+    if (num === 1) {
+      setTimeout(() => {
+        showProject(true);
+      }, 600);
+    }
+    if (num ===2) {
+  
+      setTimeout(() => {
+        showWorkXP(true);
+      }, 600);
+    }
+    if (num === 3) {
+   
+      setTimeout(() => {
+        showContact(true);
+      }, 600);
+    }
     setIndex(num);
     if (!menuToggle) {
       setMenuToggle(true);
     }
     currentHandler(num);
   };
-
+  
   const currentHandler = (num) => {
     if (num === 0) {
       document.getElementById("about").style.textDecoration = "underline";
@@ -106,41 +138,29 @@ const Portfolio = () => {
             contactClick={() => scrollToComponentMenuHandler(3)}/>
         </div>
         <SocialIcons />
-        <PageProgress color={"gray"} height={5} />
         <SectionHeader
           clickedabout={() => scrollToComponentMenuHandler(0)}
           clickedprojects={() => scrollToComponentMenuHandler(1)}
           clickedwork={() => scrollToComponentMenuHandler(2)}
           clickedcontact={() => scrollToComponentMenuHandler(3)}
           clickedhome={() => navigate("/", { replace: true })}/>
-        <section
-          ref={(section) => {
-            pages[0] = section;
-          }}>
-          </section>
         <div className={classes.button}>
           <RubberBand>
             <HomeButton />
           </RubberBand>
         </div>
-        <AboutMe/>
-        <section
-          ref={(section) => {
-            pages[1] = section;
-          }}
-        ></section>
-        <Projects/>
-        <section
-          ref={(section) => {
-            pages[2] = section;
-          }}></section>
-        <WorkXp/>
-        <section
-          ref={(section) => {
-            pages[3] = section;
-          }}
-        ></section>
-        <Contact/>
+        <Flip duration={600} opposite appear={aboutMe} when={aboutMe}>
+        {aboutMe ? (<AboutMe/>) : <div />}
+        </Flip>
+         <Flip duration={600} opposite appear={project} when={project}>
+        {project ? (<Projects/>) : <div />}
+        </Flip>
+          <Flip  duration={600} opposite appear={workXP} when={workXP}>
+          {workXP ? (<WorkXp/>) : <div />}
+          </Flip>
+        <Flip duration={600} opposite appear={contact} when={contact}>
+        {contact ? (<Contact/>) : <div />}
+        </Flip>
       </ReactScrollWheelHandler>
     </div>
   );

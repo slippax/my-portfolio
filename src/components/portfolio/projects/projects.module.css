@@ -4,6 +4,7 @@
   box-shadow: 3px 4px 5px 10px rgba(0, 0, 0, 0.38);
      background-color: #d2d8d6;
     background-image: linear-gradient(360deg, #b6b6b6 1%, #eaeaea 50%);
+    position: relative;
 }
 
 img {
@@ -22,21 +23,20 @@ img {
   .Container {
     border-radius: 2.5vw 2.5vw 2.5vw 2.5vw;
     font-size: 25px;
-    margin-top: 5.5%;
-    margin-bottom: 40%;
     padding-bottom: 12px;
     background-color: #d2d8d6;
     background-image: linear-gradient(360deg, #b6b6b6 1%, #eaeaea 50%);
     padding-top: 10px;
+    top:10vh;
+    right: 0vw;
+    left: 0vw;
   }
   .Container:hover{
     box-shadow: 5px 6px 7px 11px rgba(0, 0, 0, 0.38);
     background-color: #d2d8d6;
     background-image: linear-gradient(360deg, #b6b6b6 1%, #ffffff 50%);
   }
-  .paddingbox{
-    padding-top: 3.5%;
-  }
+
   img {
     max-width: 90%;
     max-height: 91%;
@@ -51,20 +51,19 @@ img {
 @media (min-width: 1025px) and (max-width: 1280px) {
   .Container {
     font-size: 23px;
-    margin-top: 6%;
-    margin-bottom: 50%;
     padding-bottom: 12px;
     background-color: #d2d8d6;
     background-image: linear-gradient(360deg, #b6b6b6 1%, #eaeaea 50%);
+    top:13vh;
+    right: 0vw;
+    left: 0vw;
   }
   .Container:hover{
     box-shadow: 5px 6px 7px 11px rgba(0, 0, 0, 0.38);
     background-color: #d2d8d6;
     background-image: linear-gradient(360deg, #b6b6b6 1%, #ffffff 50%);
   }
-  .paddingbox{
-    padding-top: 3.5%;
-  }
+
   img {
     max-width: 90%;
     max-height: 80%;
@@ -81,13 +80,11 @@ img {
 @media (min-width: 768px) and (max-width: 1024px) {
   .Container {
     font-size: 23px;
-    margin-top: 15%;
-    margin-bottom: 50%;
     background-color: #d2d8d6;
     background-image: linear-gradient(360deg, #b6b6b6 1%, #eaeaea 50%);
-  }
-  .paddingbox{
-    padding-top: 7%;
+    top:15vh;
+    right: 0vw;
+    left: 0vw;
   }
   img {
     max-width: 90%;
@@ -106,14 +103,13 @@ img {
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .Container {
     font-size: 23px;
-    margin-top: 2%;
-    margin-bottom: 50%;
     background-color: #d2d8d6;
     background-image: linear-gradient(360deg, #b6b6b6 1%, #eaeaea 50%);
+    top:7vh;
+    right: 0vw;
+    left: 0vw;
   }
-  .paddingbox{
-    padding-top: 3%;
-  }
+
   img {
     max-width: 90%;
     max-height:80%;
@@ -135,14 +131,13 @@ img {
   }
   .Container {
     font-size: 22px;
-    margin-top: 13%;
-    margin-bottom: 50%;
     background-color: #d2d8d6;
     background-image: linear-gradient(360deg, #b6b6b6 1%, #eaeaea 50%);
+    top:10vh;
+    right: 0vw;
+    left: 0vw;
   }
-  .paddingbox{
-    padding-top: 5%;
-  }
+
   .projectstitle{
     margin-bottom: 0px;
   }
@@ -151,15 +146,12 @@ img {
 @media (min-width: 320px) and (max-width: 480px) {
   .Container {
     font-size: 19px;
-    margin-top: 15%;
-    margin-bottom: 100%;
+    top: 10vh;
     border:none;
     box-shadow: none;
     background: #9f9fac;
   }
-  .paddingbox{
-    padding-top: 9%;
-  }
+
   img {
     max-width: 99%;
     max-height: 83%;

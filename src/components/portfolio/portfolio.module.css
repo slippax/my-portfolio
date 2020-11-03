@@ -28,6 +28,10 @@
  outline: none;
 }
 
+.nobox{
+  display: none;
+}
+
 @media (min-width: 1281px) {
   .mobilemenu {
     display: none;

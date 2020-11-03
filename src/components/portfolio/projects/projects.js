@@ -6,12 +6,9 @@ import ezsens from "./ezsens.JPG";
 import weathergrabbr from "./weathergrabbr.JPG";
 import todoz from "./todoz.JPG";
 import type from "./type.JPG";
-import Zoom from "react-reveal/Zoom";
 const Projects = () => {
   return (
-    <div className={classes.projectbox}>
-      <Zoom>
-        <div className={classes.paddingbox}></div>
+    <div>
         <Container maxWidth="sm" className={classes.Container}>
             <div>
               <h3 className={classes.projectstitle}>Projects</h3>
@@ -23,7 +20,6 @@ const Projects = () => {
               />
             </div>
         </Container>
-      </Zoom>
     </div>
   );
 };

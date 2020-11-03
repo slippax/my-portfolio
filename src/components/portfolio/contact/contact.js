@@ -4,14 +4,11 @@ import classes from "./contact.module.css";
 import { AwesomeButton } from "react-awesome-button";
 import "react-awesome-button/dist/themes/theme-c137.css";
 import ArrowDropDownOutlinedIcon from "@material-ui/icons/MailOutlined";
-import Zoom from "react-reveal/Zoom";
 import Jello from 'react-reveal/Jello';
 const Contact = () => {
   const [button, wiggleButton] = useState(false);
   return (
     <div>
-      <Zoom>
-        <div className={classes.paddingbox}></div>
         <Container maxWidth="sm" className={classes.Container}>
             <div>
               <h3 className={classes.contacttitle}>Get In Touch</h3>
@@ -36,7 +33,6 @@ const Contact = () => {
               </div>
             </div>
         </Container>
-      </Zoom>
     </div>
   );
 };

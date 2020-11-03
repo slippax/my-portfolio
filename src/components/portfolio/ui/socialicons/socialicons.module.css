@@ -1,12 +1,5 @@
 .menu {
-  position: fixed; /* Set the navbar to fixed position */
-  top: 80%;
-  left: 40%;
-  z-index: 100;
-}
-
-.icontainer {
-  display: flex;
+  position: absolute;
 }
 
 .icongit {
@@ -17,23 +10,22 @@
   padding: 5px;
 }
 
+.icontainer{
+  display: flex;
+}
+
 @media (min-width: 1281px) {
   .menu {
-    position: fixed;
-    top: 90%;
-    left: 46%;
-    z-index: 100;
+top: 31vh;
+right: -1%;
   }
   .icontainer {
     display: inline-block;
-    position: fixed;
-    top: 370px;
-    right: -1px;
     z-index: 100;
     border: 2px solid darkslategray;
     border-radius: 2.5vw 0vw 0vw 2.5vw;
     height: 150px;
-    padding-top: 20px;
+    padding-top: 15px;
     padding-left: 30px;
     padding-right: 80px;
     background-color: #d2d8d6;
@@ -54,14 +46,11 @@
 
 @media (min-width: 1025px) and (max-width: 1280px) {
   .menu {
-    position: fixed; /* Set the navbar to fixed position */
-    top: 90%;
-    left: 45%;
-    z-index: 100;
+   top: 33vh;
+right: -1%;
   }
   .icontainer {
     display: inline-block;
-    position: fixed; /* Set the navbar to fixed position */
     top: 300px;
     right: -15px;
     z-index: 100;
@@ -94,6 +83,7 @@
     z-index: 100;
   }
   .icontainer {
+    display: flex;
     position: fixed; /* Set the navbar to fixed position */
     top: 90%;
     left: 42%;
@@ -110,13 +100,13 @@
   .menu {
     position: fixed; /* Set the navbar to fixed position */
     top: 90%;
-    left: 45%;
+    left: 49%;
     z-index: 100;
   }
   .icontainer {
     position: fixed; /* Set the navbar to fixed position */
     top: 90%;
-    left: 42%;
+    left: 44%;
     z-index: 100;
   }
 }

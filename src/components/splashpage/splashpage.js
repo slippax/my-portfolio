@@ -14,37 +14,30 @@ function SplashPage() {
   const [linked, wiggleLinked] = useState(false);
   const [git, wiggleGit] = useState(false);
   const [next, wiggleNext] = useState(false);
-  const [greet1, setgreet1] = useState(false);
-  const [greet2, setgreet2] = useState(false);
-  const [greet3, setgreet3] = useState(false);
-  const [greet4, setgreet4] = useState(false);
-  setTimeout(() => {
-    setgreet1(true);
-  }, 1400);
-  setTimeout(() => {
-    setgreet2(true);
-  }, 2400);
-  setTimeout(() => {
-    setgreet3(true);
-  }, 3700);
-  setTimeout(() => {
-    setgreet4(true);
-  }, 4200);
+  const [box, showBox] = useState(true);
+
+  const nextHandler = () => {
+    showBox(!box);
+    setTimeout(() => {
+      navigate("/portfolio", { replace: true })
+    }, 1000);
+    
+  }
   return (
     <div>
       <div className={classes.container}>
         <ReactScrollWheelHandler className={classes.handlerbox}
-          downHandler={() => navigate("/portfolio", { replace: true })}>
-            <Rotate>
+          downHandler={() => nextHandler()}>
+            <Rotate opposite when={box} appear={box}>
           <div className={classes.headerText}>
           
-              {greet1 ? (<Fade right cascade>
+              <Fade delay={1400} right cascade>
                 <p className={classes.greetingText}>Hi, my name is</p>
-              </Fade>) : (<p className={classes.greetingText2}>.</p>)}
-              {greet2 ? (<Roll top cascade><p className={classes.nameText}>Stephen Lippa</p></Roll>) : (<p className={classes.nameText2}>.</p>)}
+              </Fade>
+              <Roll delay={2400} top cascade><p className={classes.nameText}>Stephen Lippa</p></Roll>
 
               <Typist avgTypingDelay={65}>
-                <Typist.Delay ms={6000} />
+                <Typist.Delay ms={5900} />
                 <span className={classes.taglineText}>
                   I am a front end developer.
               </span>
@@ -55,17 +48,16 @@ function SplashPage() {
               </span>
               </Typist>
         
-            {greet3 ? (<div className={classes.button} onMouseEnter={() => wiggleNext(!next)}>
+            <div className={classes.button} onMouseEnter={() => wiggleNext(!next)}>
                 <Tada spy={next}>
-                  <Rotate>
+                  <Rotate delay={3700}>
                   <NextButton />
                   </Rotate>
                 </Tada>
-              </div>) : (<div/>)}
-              {greet4 ? (<div className={classes.icontainer}>
+              <div className={classes.icontainer}>
               <Tada spy={git}>
                 <div className={classes.icongit} onMouseEnter={() => wiggleGit(!git)}>
-                  <Rotate>
+                  <Rotate delay={4200}>
                     <SocialMediaIconsReact
                       borderColor="rgba(0,0,0,0.25)"
                       borderWidth="3"
@@ -83,7 +75,7 @@ function SplashPage() {
               </Tada>
               <div className={classes.iconlinked} onMouseEnter={() => wiggleLinked(!linked)}>
                 <Tada spy={linked}>
-                  <Rotate>
+                  <Rotate delay={4200}>
                     <SocialMediaIconsReact
                       borderColor="rgba(0,0,0,0.25)"
                       borderWidth="3"
@@ -99,12 +91,13 @@ function SplashPage() {
                   </Rotate>
                 </Tada>
               </div>
-            </div>) : (<div/>)}
-              
+            </div>
+            </div>
             </div>
             </Rotate>
         </ReactScrollWheelHandler>
       </div>
+     
     </div>
   );
 }

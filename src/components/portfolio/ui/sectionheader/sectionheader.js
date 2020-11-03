@@ -3,7 +3,7 @@ import classes from "./sections.module.css";
 import Flip from "react-reveal/Rotate";
 import Zoom from "react-reveal/Zoom";
 import Tada from 'react-reveal/Pulse';
-import Jello from 'react-reveal/Jello';
+import Jello from 'react-reveal/Swing';
 const Sectionheader = (props) => {
   const [box, wiggleBox] = useState(false);
   const [home, wiggleHome] = useState(false);

@@ -4,7 +4,7 @@
   box-shadow: 3px 4px 5px 10px rgba(0, 0, 0, 0.38);
   background-color: #d2d8d6;
   background-image: linear-gradient(360deg, #b6b6b6 1%, #eaeaea 50%);
-  
+position: relative;
 }
 
 ul {
@@ -25,22 +25,20 @@ ul {
   .Container {
     border-radius: 2.5vw 2.5vw 2.5vw 2.5vw;
     font-size: 25px;
-    margin-top: 3%;
-    margin-bottom: 40%;
     padding: 5px;
     outline: none;
     background-color: #d2d8d6;
     background-image: linear-gradient(360deg, #b6b6b6 1%, #eaeaea 50%);
+    top:10vh;
+    bottom: 3vh;
+    right: 0vw;
+    left: 0vw;
   }
   .Container:hover{
     box-shadow: 5px 6px 7px 11px rgba(0, 0, 0, 0.38);
     background-color: #d2d8d6;
     background-image: linear-gradient(360deg, #b6b6b6 1%, #ffffff 50%);
   }
-  .paddingbox{
-    padding-top: 6%;
-  }
-  
 }
 
 /* 
@@ -51,19 +49,18 @@ ul {
 @media (min-width: 1025px) and (max-width: 1280px) {
   .Container {
     font-size: 23px;
-    margin-top: 3.5%;
-    margin-bottom: 50%;
     background-color: #d2d8d6;
     background-image: linear-gradient(360deg, #b6b6b6 1%, #eaeaea 50%);
+    top:13vh;
+    right: 0vw;
+    left: 0vw;
   }
   .Container:hover{
     box-shadow: 5px 6px 7px 11px rgba(0, 0, 0, 0.38);
     background-color: #d2d8d6;
     background-image: linear-gradient(360deg, #b6b6b6 1%, #ffffff 50%);
   }
-  .paddingbox{
-    padding-top: 6%;
-  }
+
   
 }
 
@@ -76,14 +73,13 @@ ul {
   
   .Container {
     font-size: 22px;
-    margin-top: 15%;
-    margin-bottom: 50%;
     background-color: #d2d8d6;
     background-image: linear-gradient(360deg, #b6b6b6 1%, #eaeaea 50%);
+    top:18vh;
+    right: 0vw;
+    left: 0vw;
   }
-  .paddingbox{
-    padding-top: 5%;
-  }
+
 }
 
 /* 
@@ -93,15 +89,14 @@ ul {
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .Container {
-    margin-top: 5%;
-    margin-bottom: 50%;
     font-size: 20px;
     background-color: #d2d8d6;
     background-image: linear-gradient(360deg, #b6b6b6 1%, #eaeaea 50%);
+    top:12vh;
+    right: 0vw;
+    left: 0vw;
   }
-  .paddingbox{
-    padding-top: 4%;
-  }
+  
 }
 
 /* 
@@ -112,28 +107,26 @@ ul {
 @media (min-width: 481px) and (max-width: 767px) {
   .Container {
     font-size: 22px;
-    margin-top: 13%;
-    margin-bottom: 50%;
+  
     background-color: #d2d8d6;
     background-image: linear-gradient(360deg, #b6b6b6 1%, #eaeaea 50%);
+    top:12vh;
+    right: 0vw;
+    left: 0vw;
   }
-  .paddingbox{
-    padding-top: 5%;
-  }
+
   
 }
 @media (min-width: 320px) and (max-width: 480px) {
   .Container {
     font-size: 19px;
-    margin-top: 16%;
-    margin-bottom: 100%;
+    top: 10vh;
     border: none;
     box-shadow: none;
     background: #9f9fac;
+    
   }
-  .paddingbox{
-    padding-top: 8%;
-  }
+
   ul {
     -moz-column-count: 2;
     -moz-column-gap: 10px;
