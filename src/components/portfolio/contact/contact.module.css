@@ -93,7 +93,7 @@ position: relative;
 @media (min-width: 320px) and (max-width: 480px) {
   .Container {
     font-size: 19px;
-    top: 10vh;
+    top: 9vh;
 
     box-shadow: none;
     border:none;
