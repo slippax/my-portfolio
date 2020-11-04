@@ -183,6 +183,9 @@
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
+  .mobilemenu{
+    padding-top: 1px;
+  }
   .button {
     position: fixed;
     left: 75%;

@@ -136,8 +136,8 @@ z-index: 100;
 @media (min-width: 320px) and (max-width: 480px) {
   .menu {
     position: fixed; /* Set the navbar to fixed position */
-    top: 89.5%;
-    left: 34%;
+    top: 90%;
+    left: 33%;
     z-index: 100;
   }
 }
