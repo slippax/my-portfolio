@@ -185,7 +185,7 @@
 @media (min-width: 320px) and (max-width: 480px) {
   .button {
     position: fixed;
-    left: 75%;
+    left: 79%;
     top: 2%;
     z-index: 100;
   }

@@ -9,13 +9,20 @@ position: relative;
 
 ul {
   -moz-column-count: 2;
-  -moz-column-gap: 10px;
+  -moz-column-gap:1px;
   -webkit-column-count: 2;
-  -webkit-column-gap: 10px;
+  -webkit-column-gap: 1px;
   column-count: 2;
-  column-gap: 0px;
+  column-gap: 1px;
+  list-style: none;
+padding-left: 15px;
 }
 
+ul li{
+  padding: 10px;
+  white-space: nowrap;
+
+}
 .about{
   color: darkslategray;
   border-bottom: 2px solid darkslategray;
@@ -75,7 +82,7 @@ ul {
     font-size: 22px;
     background-color: #d2d8d6;
     background-image: linear-gradient(360deg, #b6b6b6 1%, #eaeaea 50%);
-    top:18vh;
+    top:12vh;
     right: 0vw;
     left: 0vw;
   }
@@ -92,7 +99,7 @@ ul {
     font-size: 20px;
     background-color: #d2d8d6;
     background-image: linear-gradient(360deg, #b6b6b6 1%, #eaeaea 50%);
-    top:12vh;
+    top:10vh;
     right: 0vw;
     left: 0vw;
   }

@@ -149,16 +149,16 @@ const Portfolio = () => {
             <HomeButton />
           </RubberBand>
         </div>
-        <Flip duration={600} opposite appear={aboutMe} when={aboutMe}>
+        <Flip duration={600} appear={aboutMe} when={aboutMe}>
         {aboutMe ? (<AboutMe/>) : <div />}
         </Flip>
-         <Flip duration={600} opposite appear={project} when={project}>
+         <Flip duration={600} appear={project} when={project}>
         {project ? (<Projects/>) : <div />}
         </Flip>
-          <Flip  duration={600} opposite appear={workXP} when={workXP}>
+          <Flip duration={600} appear={workXP} when={workXP}>
           {workXP ? (<WorkXp/>) : <div />}
           </Flip>
-        <Flip duration={600} opposite appear={contact} when={contact}>
+        <Flip duration={600} appear={contact} when={contact}>
         {contact ? (<Contact/>) : <div />}
         </Flip>
       </ReactScrollWheelHandler>
