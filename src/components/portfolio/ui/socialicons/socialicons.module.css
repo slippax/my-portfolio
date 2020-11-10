@@ -80,14 +80,14 @@ z-index: 100;
 @media (min-width: 768px) and (max-width: 1024px) {
   .menu {
     position: fixed; /* Set the navbar to fixed position */
-    top: 82%;
+    bottom: 1%;
     left: 42%;
     z-index: 100;
   }
   .icontainer {
     display: flex;
     position: fixed; /* Set the navbar to fixed position */
-    top: 90%;
+    bottom: 1%;
     left: 42%;
     z-index: 100;
   }
@@ -107,7 +107,7 @@ z-index: 100;
   }
   .icontainer {
     position: fixed; /* Set the navbar to fixed position */
-    top: 90%;
+    bottom: 1%;
     left: 44%;
     z-index: 100;
   }
@@ -119,15 +119,9 @@ z-index: 100;
     */
 
 @media (min-width: 481px) and (max-width: 767px) {
-  .menu {
-    position: fixed; /* Set the navbar to fixed position */
-    top: 82%;
-    left: 42%;
-    z-index: 100;
-  }
   .icontainer {
     position: fixed; /* Set the navbar to fixed position */
-    top: 88%;
+    bottom: 1%;
     left: 42%;
     z-index: 100;
   }
@@ -137,7 +131,7 @@ z-index: 100;
   .menu {
     position: fixed; /* Set the navbar to fixed position */
     top: 90%;
-    left: 33%;
+    left: 35%;
     z-index: 100;
   }
 }

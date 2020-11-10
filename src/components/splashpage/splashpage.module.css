@@ -13,6 +13,7 @@
   padding-bottom: 0px;
   padding-top: 5px;
   animation: fadein 2s;
+
 }
 .nameText {
   font-size: 30px;
@@ -35,7 +36,11 @@
   display: flex;
   align-items: center;
     justify-content: center;
-    margin-right: 9px;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .icongit {
@@ -128,10 +133,13 @@
   }
 
   .button {
-    width: 90px;
-    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding-top: 0px;
     margin-top: 40px;
+  }
+  .buttonbox{
   }
 }
 
@@ -206,8 +214,6 @@
     margin: 0;
   }
   .button {
-    width: 90px;
-    margin: auto;
     padding-top: 30px;
   }
 }
@@ -220,8 +226,6 @@
 @media (min-width: 768px) and (max-width: 1024px) {
   .icontainer {
     padding-top: 38px;
-margin: auto;
-margin-right: 10px;
   }
   .headerText {
     position: absolute;
@@ -282,9 +286,7 @@ margin-right: 10px;
     margin: 0;
   }
   .button {
-    width: 90px;
     padding-top: 40px;
-    margin: auto;
   }
 }
 
@@ -296,8 +298,6 @@ margin-right: 10px;
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .icontainer {
     padding-top: 40px;
-    margin: auto;
-    margin-right: 10px;
   }
   .headerText {
     position: absolute;
@@ -360,9 +360,7 @@ margin-right: 10px;
     margin: 0;
   }
   .button {
-    width: 90px;
     padding-top: 25px;
-    margin: auto;
   }
 }
 /* 
@@ -373,8 +371,6 @@ margin-right: 10px;
 @media (min-width: 481px) and (max-width: 767px) {
   .icontainer {
     padding-top: 40px;
-    margin: auto;
-    margin-right: 10px;
   }
   .headerText {
     position: absolute;
@@ -436,9 +432,7 @@ margin-right: 10px;
     margin: 0;
   }
   .button {
-    width: 90px;
     padding-top: 25px;
-    margin: auto;
   }
 }
 /* 
@@ -501,12 +495,9 @@ margin-right: 10px;
     margin: 0;
   }
   .button {
-    width: 107px;
-    margin: auto;
     padding-top: 40px;
   }
   .icontainer {
     margin-top: 20px;
-    margin-right: 25px;
   }
 }

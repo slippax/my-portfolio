@@ -3,7 +3,7 @@ import AboutMe from "./aboutme/aboutme";
 import WorkXp from "./workxp/workxp";
 import Projects from "./projects/projects";
 import Contact from "./contact/contact";
-import {HomeButton} from "./ui/button/button";
+import { HomeButton } from "./ui/button/button";
 import ReactScrollWheelHandler from "react-scroll-wheel-handler";
 import { useNavigate } from "react-router-dom";
 import classes from "./portfolio.module.css";
@@ -29,7 +29,7 @@ const Portfolio = () => {
   useEffect(() => {
     setMenuToggle(false);
   }, [menuToggle]);
-  
+
   useEffect(() => {
     setPause(true);
     setTimeout(() => {
@@ -49,12 +49,8 @@ const Portfolio = () => {
         navigate("/", { replace: true })
       }
       num--;
-   
     };
-    
     scrollToComponentMenuHandler(num);
-    console.log(pages);
-    
   };
 
   const refreshPages = () => {
@@ -66,25 +62,23 @@ const Portfolio = () => {
 
   const scrollToComponentMenuHandler = (num) => {
     refreshPages();
-    if(num === 0) {
+    if (num === 0) {
       setTimeout(() => {
         showAboutMe(true);
       }, 600);
-      
+
     }
     if (num === 1) {
       setTimeout(() => {
         showProject(true);
       }, 600);
     }
-    if (num ===2) {
-  
+    if (num === 2) {
       setTimeout(() => {
         showWorkXP(true);
       }, 600);
     }
     if (num === 3) {
-   
       setTimeout(() => {
         showContact(true);
       }, 600);
@@ -95,7 +89,7 @@ const Portfolio = () => {
     }
     currentHandler(num);
   };
-  
+
   const currentHandler = (num) => {
     if (num === 0) {
       document.getElementById("about").style.textDecoration = "underline";
@@ -135,7 +129,7 @@ const Portfolio = () => {
             aboutClick={() => scrollToComponentMenuHandler(0)}
             projectClick={() => scrollToComponentMenuHandler(1)}
             workClick={() => scrollToComponentMenuHandler(2)}
-            contactClick={() => scrollToComponentMenuHandler(3)}/>
+            contactClick={() => scrollToComponentMenuHandler(3)} />
         </div>
         <SocialIcons />
         <SectionHeader
@@ -143,23 +137,23 @@ const Portfolio = () => {
           clickedprojects={() => scrollToComponentMenuHandler(1)}
           clickedwork={() => scrollToComponentMenuHandler(2)}
           clickedcontact={() => scrollToComponentMenuHandler(3)}
-          clickedhome={() => navigate("/", { replace: true })}/>
+          clickedhome={() => navigate("/", { replace: true })} />
         <div className={classes.button}>
           <RubberBand>
             <HomeButton />
           </RubberBand>
         </div>
         <Flip duration={600} appear={aboutMe} when={aboutMe}>
-        {aboutMe ? (<AboutMe/>) : <div />}
+          {aboutMe ? (<AboutMe />) : <div />}
         </Flip>
-         <Flip duration={600} appear={project} when={project}>
-        {project ? (<Projects/>) : <div />}
+        <Flip duration={600} appear={project} when={project}>
+          {project ? (<Projects />) : <div />}
         </Flip>
-          <Flip duration={600} appear={workXP} when={workXP}>
-          {workXP ? (<WorkXp/>) : <div />}
-          </Flip>
+        <Flip duration={600} appear={workXP} when={workXP}>
+          {workXP ? (<WorkXp />) : <div />}
+        </Flip>
         <Flip duration={600} appear={contact} when={contact}>
-        {contact ? (<Contact/>) : <div />}
+          {contact ? (<Contact />) : <div />}
         </Flip>
       </ReactScrollWheelHandler>
     </div>

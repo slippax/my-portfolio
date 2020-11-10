@@ -47,13 +47,14 @@ function SplashPage() {
                   build things for the web.
               </span>
               </Typist>
-        
+        <div className={classes.buttonbox}>
             <div className={classes.button} onMouseEnter={() => wiggleNext(!next)}>
                 <Tada spy={next}>
                   <Rotate delay={3700}>
                   <NextButton />
                   </Rotate>
                 </Tada>
+                </div>
               <div className={classes.icontainer}>
               <Tada spy={git}>
                 <div className={classes.icongit} onMouseEnter={() => wiggleGit(!git)}>
