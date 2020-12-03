@@ -6,6 +6,7 @@ import ezsens from "./ezsens.JPG";
 import weathergrabbr from "./weathergrabbr.JPG";
 import todoz from "./todoz.JPG";
 import type from "./type.JPG";
+import covid from "./covid.JPG"
 const Projects = () => {
   return (
     <div>
@@ -13,6 +14,7 @@ const Projects = () => {
             <div>
               <h3 className={classes.projectstitle}>Projects</h3>
               <Card
+              covidimage={covid}
                 ezsensimage={ezsens}
                 weatherimage={weathergrabbr}
                 todozimage={todoz}

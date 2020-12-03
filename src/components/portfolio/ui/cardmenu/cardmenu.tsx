@@ -35,11 +35,19 @@ export default function IconBreadcrumbs(props:any) {
     <Breadcrumbs aria-label="breadcrumb" className={classes.breadcrumbs}>
       <Link color="inherit" onClick={()=>(pressHandler(0))}  className={classes.link}>
         <KeyboardIcon className={classes.icon} />
-        Type King
+        Virus Trackr
       </Link>
       <Link
         color="inherit"
         onClick={()=>(pressHandler(1))}
+        className={classes.link}
+      >
+        <GamepadIcon className={classes.icon} />
+        Type King
+      </Link>
+      <Link
+        color="inherit"
+        onClick={()=>(pressHandler(2))}
         className={classes.link}
       >
         <CloudIcon className={classes.icon} />
@@ -47,19 +55,11 @@ export default function IconBreadcrumbs(props:any) {
       </Link>
       <Link
         color="inherit"
-        onClick={()=>(pressHandler(2))}
-        className={classes.link}
-      >
-        <AssignmentTurnedInIcon className={classes.icon} />
-        Todoz
-      </Link>
-      <Link
-        color="inherit"
         onClick={()=>(pressHandler(3))}
         className={classes.link}
       >
-        <GamepadIcon className={classes.icon} />
-        Ez Sens
+        <AssignmentTurnedInIcon className={classes.icon} />
+       Todoz
       </Link>
     </Breadcrumbs>
   );

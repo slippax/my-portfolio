@@ -14,6 +14,13 @@ const Card = (props) => {
     <div>
       <div className={classes.root}>
         <ReactCardCarousel autoplay={true} autoplay_speed={10000} ref={Carousal}>
+        <div
+            className={classes.media}
+          >
+            <img src={props.covidimage} alt="type"></img>
+
+            <p className={classes.iconbox}><SportsEsportsIcon onClick={() => window.open("https://slippax.github.io/virus-trackr")} className={classes.demoicon} fontSize="large" /><CodeIcon onClick={() => window.open("https://github.com/slippax/virus-trackr")} className={classes.demoicon} fontSize="large" /></p>
+          </div>
           <div
             className={classes.media}
           >
