@@ -6,6 +6,7 @@ import CloudIcon from '@material-ui/icons/Cloud';
 import KeyboardIcon from '@material-ui/icons/Keyboard';
 import AssignmentTurnedInIcon from '@material-ui/icons/AssignmentTurnedIn';
 import GamepadIcon from '@material-ui/icons/Gamepad';
+import MouseIcon from '@material-ui/icons/Mouse';
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     link: {
@@ -14,14 +15,14 @@ const useStyles = makeStyles((theme: Theme) =>
       color: 'black'
     },
     icon: {
-      marginRight: theme.spacing(0.5),
-      width: 20,
+      marginRight: theme.spacing(0),
+      width: 17,
       height: 20,
     },
 
     breadcrumbs : {
-      marginTop: '12px',
-marginLeft : '45px',
+      marginTop: '5px',
+marginLeft : '0px',
     }
   }),
 );
@@ -60,6 +61,14 @@ export default function IconBreadcrumbs(props:any) {
       >
         <AssignmentTurnedInIcon className={classes.icon} />
        Todoz
+      </Link>
+      <Link
+        color="inherit"
+        onClick={()=>(pressHandler(4))}
+        className={classes.link}
+      >
+        <MouseIcon className={classes.icon} />
+       Ez Sens
       </Link>
     </Breadcrumbs>
   );
