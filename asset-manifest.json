@@ -1,30 +1,30 @@
 {
   "files": {
-    "main.css": "/static/css/main.65956c5d.chunk.css",
-    "main.js": "/static/js/main.77512915.chunk.js",
-    "main.js.map": "/static/js/main.77512915.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.6b3488d1.js",
-    "runtime-main.js.map": "/static/js/runtime-main.6b3488d1.js.map",
-    "static/css/2.b1e262b2.chunk.css": "/static/css/2.b1e262b2.chunk.css",
-    "static/js/2.7ba9add1.chunk.js": "/static/js/2.7ba9add1.chunk.js",
-    "static/js/2.7ba9add1.chunk.js.map": "/static/js/2.7ba9add1.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.137181d0ac0c839c1e7d3149139c87ec.js": "/precache-manifest.137181d0ac0c839c1e7d3149139c87ec.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.b1e262b2.chunk.css.map": "/static/css/2.b1e262b2.chunk.css.map",
-    "static/css/main.65956c5d.chunk.css.map": "/static/css/main.65956c5d.chunk.css.map",
-    "static/js/2.7ba9add1.chunk.js.LICENSE.txt": "/static/js/2.7ba9add1.chunk.js.LICENSE.txt",
-    "static/media/covid.JPG": "/static/media/covid.1ca56f60.JPG",
-    "static/media/ezsens.JPG": "/static/media/ezsens.22f34347.JPG",
-    "static/media/todoz.JPG": "/static/media/todoz.d8e24267.JPG",
-    "static/media/type.JPG": "/static/media/type.b69fa6b8.JPG",
-    "static/media/weathergrabbr.JPG": "/static/media/weathergrabbr.83065f64.JPG"
+    "main.css": "/my-portfolio/static/css/main.65956c5d.chunk.css",
+    "main.js": "/my-portfolio/static/js/main.9e514798.chunk.js",
+    "main.js.map": "/my-portfolio/static/js/main.9e514798.chunk.js.map",
+    "runtime-main.js": "/my-portfolio/static/js/runtime-main.8b00eace.js",
+    "runtime-main.js.map": "/my-portfolio/static/js/runtime-main.8b00eace.js.map",
+    "static/css/2.b1e262b2.chunk.css": "/my-portfolio/static/css/2.b1e262b2.chunk.css",
+    "static/js/2.34ea792d.chunk.js": "/my-portfolio/static/js/2.34ea792d.chunk.js",
+    "static/js/2.34ea792d.chunk.js.map": "/my-portfolio/static/js/2.34ea792d.chunk.js.map",
+    "index.html": "/my-portfolio/index.html",
+    "precache-manifest.f7d74662486563dfefe009da13ef1032.js": "/my-portfolio/precache-manifest.f7d74662486563dfefe009da13ef1032.js",
+    "service-worker.js": "/my-portfolio/service-worker.js",
+    "static/css/2.b1e262b2.chunk.css.map": "/my-portfolio/static/css/2.b1e262b2.chunk.css.map",
+    "static/css/main.65956c5d.chunk.css.map": "/my-portfolio/static/css/main.65956c5d.chunk.css.map",
+    "static/js/2.34ea792d.chunk.js.LICENSE.txt": "/my-portfolio/static/js/2.34ea792d.chunk.js.LICENSE.txt",
+    "static/media/covid.JPG": "/my-portfolio/static/media/covid.1ca56f60.JPG",
+    "static/media/ezsens.JPG": "/my-portfolio/static/media/ezsens.22f34347.JPG",
+    "static/media/todoz.JPG": "/my-portfolio/static/media/todoz.d8e24267.JPG",
+    "static/media/type.JPG": "/my-portfolio/static/media/type.b69fa6b8.JPG",
+    "static/media/weathergrabbr.JPG": "/my-portfolio/static/media/weathergrabbr.83065f64.JPG"
   },
   "entrypoints": [
-    "static/js/runtime-main.6b3488d1.js",
+    "static/js/runtime-main.8b00eace.js",
     "static/css/2.b1e262b2.chunk.css",
-    "static/js/2.7ba9add1.chunk.js",
+    "static/js/2.34ea792d.chunk.js",
     "static/css/main.65956c5d.chunk.css",
-    "static/js/main.77512915.chunk.js"
+    "static/js/main.9e514798.chunk.js"
   ]
 }
