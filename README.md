@@ -1,4 +1,1 @@
-My development portfolio. Created using react.
-
-Live - https://slippa.dev
-
+Old portfolio. No longer used.
